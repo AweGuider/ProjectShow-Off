@@ -20,23 +20,32 @@ public class PlayerManager : MonoBehaviour
     {
         players = new();
         //playerPrefabs = new();
+        foreach (InputDevice dev in InputSystem.devices)
+        {
+            Debug.Log(dev.name);
+            Debug.Log(dev.deviceId);
+            Debug.Log(dev.layout);
+        }
+        //InputSystem.
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K) & !kPressed)
-        {
-            for (int i = 0; i < playerCount; i++)
-            {
-                if (i > playerPrefabs.Count) break;
-                PlayerInputManager.instance.playerPrefab = playerPrefabs[i];
-                PlayerInputManager.instance.JoinPlayer();
-            }
-            kPressed = true;
-            Debug.Log("BUTTON PRESSED");
-        }
-        kPressed = false;
+        //if (Input.GetKeyDown(KeyCode.K) & !kPressed)
+        //{
+        //    PlayerInputManager.instance.playerPrefab = playerPrefabs[playerCount];
+        //    PlayerInputManager.instance.JoinPlayer();
+        //    //for (int i = 0; i < playerCount; i++)
+        //    //{
+        //    //    if (i > playerPrefabs.Count) break;
+        //    //    PlayerInputManager.instance.playerPrefab = playerPrefabs[i];
+        //    //    PlayerInputManager.instance.JoinPlayer();
+        //    //}
+        //    kPressed = true;
+        //    Debug.Log("BUTTON PRESSED");
+        //}
+        //kPressed = false;
     }
 
     //private void OnPlayerJoined()

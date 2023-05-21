@@ -49,6 +49,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Drift",
+                    "type": "Button",
+                    "id": "e9db7ab7-4443-4426-8cf6-82a7193d899f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -335,6 +344,61 @@
                     "processors": "",
                     "groups": "Joystick",
                     "action": "Decelerate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "379fa4f5-4462-44b6-ae3a-bba4d19272f8",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Drift",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cfb13f64-102b-417b-a45b-dc61e88c0f82",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Drift",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ffdcd735-f36a-4d09-abc0-6ba6f68eef3a",
+                    "path": "<HID::BDA NSW wired controller>/button7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Drift",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d94bf55d-b180-4700-9534-e97a13e7a58c",
+                    "path": "<HID::BDA NSW wired controller>/button8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Joystick",
+                    "action": "Drift",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d61ff9ed-8ed4-4d93-a66f-895898de0ac4",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Drift",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -866,8 +930,8 @@
                 {
                     "name": "",
                     "id": "d24fffcb-7132-4f23-867e-59be9c5df70a",
-                    "path": "<Keyboard>/anyKey",
-                    "interactions": "",
+                    "path": "<Keyboard>/q",
+                    "interactions": "Hold(duration=10),MultiTap(tapCount=20)",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Join",

@@ -4811,7 +4811,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
-  - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9636,7 +9635,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
-  - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14460,7 +14458,6 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
   - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -24110,7 +24107,6 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
   - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -38717,7 +38713,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
-  - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -43661,8 +43656,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5fd8464c76287b24784b565b50b31514, type: 2}
-  - {fileID: 2100000, guid: 5fd8464c76287b24784b565b50b31514, type: 2}
+  - {fileID: 2100000, guid: 496d3286b8715bb4e9a94ed359a8417b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48577,8 +48571,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 69a49b53463d6f94d97234631199e9b8, type: 2}
-  - {fileID: 2100000, guid: 69a49b53463d6f94d97234631199e9b8, type: 2}
+  - {fileID: 2100000, guid: 2244877b1fb5c8a46b44469b9b9639f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -53446,8 +53439,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b917f6d28a1463479232fcf9e26b678, type: 2}
-  - {fileID: 2100000, guid: 0b917f6d28a1463479232fcf9e26b678, type: 2}
+  - {fileID: 2100000, guid: c1f3c26aab2fa6b4586b3c40adeaa28a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58361,8 +58353,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 69a49b53463d6f94d97234631199e9b8, type: 2}
-  - {fileID: 2100000, guid: 69a49b53463d6f94d97234631199e9b8, type: 2}
+  - {fileID: 2100000, guid: 2244877b1fb5c8a46b44469b9b9639f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -63959,7 +63950,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
-  - {fileID: 2100000, guid: 2c48b7ac150c907448a6a5ae92091bcc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -68841,8 +68831,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5fd8464c76287b24784b565b50b31514, type: 2}
-  - {fileID: 2100000, guid: 5fd8464c76287b24784b565b50b31514, type: 2}
+  - {fileID: 2100000, guid: 496d3286b8715bb4e9a94ed359a8417b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78588,6 +78577,7 @@ GameObject:
   - component: {fileID: 5997810670072084709}
   - component: {fileID: 5997810670072084706}
   - component: {fileID: 8113047114792081309}
+  - component: {fileID: 3262700329860730395}
   m_Layer: 2
   m_Name: Kart
   m_TagString: Untagged
@@ -78664,6 +78654,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3262700329860730395}
+        m_TargetAssemblyTypeName: KartControllerUpdated, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: cf274ae0-8184-4a52-8fe9-7ddea206a0f0
     m_ActionName: Player/Move[/DualShock4GamepadHID/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
@@ -78680,12 +78682,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3262700329860730395}
+        m_TargetAssemblyTypeName: KartControllerUpdated, Assembly-CSharp
+        m_MethodName: OnAccelerate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6ee83c14-4ba0-4338-870d-d6539b8bc636
     m_ActionName: Player/Accelerate[/Keyboard/w,/DualShock4GamepadHID/buttonEast]
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8113047114792081309}
         m_TargetAssemblyTypeName: KartController, Assembly-CSharp
+        m_MethodName: OnDecelerate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3262700329860730395}
+        m_TargetAssemblyTypeName: KartControllerUpdated, Assembly-CSharp
         m_MethodName: OnDecelerate
         m_Mode: 0
         m_Arguments:
@@ -78746,6 +78772,27 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 3675ee65-15b9-472c-9389-c1301a8280fc
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7d5fa15e-e9b7-4945-b246-390990fd7dde
+    m_ActionName: UI/Join[/Keyboard/anyKey,/BDA NSW wired controller/stick,/DualShock4GamepadHID/leftStick,/DualShock4GamepadHID/rightStick]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8113047114792081309}
+        m_TargetAssemblyTypeName: KartController, Assembly-CSharp
+        m_MethodName: OnDrift
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e9db7ab7-4443-4426-8cf6-82a7193d899f
+    m_ActionName: Player/Drift[/DualShock4GamepadHID/leftTrigger,/DualShock4GamepadHID/rightTrigger,/BDA
+      NSW wired controller/button7,/BDA NSW wired controller/button8,/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -78768,7 +78815,7 @@ MonoBehaviour:
   sphere: {fileID: 5997810669264951409}
   primaryParticles: []
   secondaryParticles: []
-  drifting: 0
+  isDrifting: 0
   accelerationRate: 30
   steeringRate: 30
   gravityRate: 10
@@ -78784,6 +78831,40 @@ MonoBehaviour:
   - {r: 0.21176471, g: 0.8980392, b: 1, a: 0}
   - {r: 1, g: 0.6862745, b: 0.13725491, a: 0}
   - {r: 0.9529412, g: 0.21176471, b: 1, a: 0}
+--- !u!114 &3262700329860730395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5997810670072084728}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d197dfb646735764e98c27156970c16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _frontTire: 0
+  _car: {fileID: 0}
+  _rayCastDistance: 0
+  suspensionTest: 0
+  _suspensionRestDist: 0
+  _springStrength: 0
+  _springDamper: 0
+  steeringTest: 0
+  _steeringAngle: 0
+  _steeringSpeed: 0
+  _tireGripFactor: 0
+  _tireMass: 0
+  accelerationTest: 0
+  _carSpeed: 0
+  _carTopSpeed: 0
+  _powerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _rotationFactor: 0
 --- !u!1 &5997810670353002903
 GameObject:
   m_ObjectHideFlags: 0
@@ -83635,8 +83716,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0b917f6d28a1463479232fcf9e26b678, type: 2}
-  - {fileID: 2100000, guid: 0b917f6d28a1463479232fcf9e26b678, type: 2}
+  - {fileID: 2100000, guid: c1f3c26aab2fa6b4586b3c40adeaa28a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88460,7 +88540,6 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fdcd8f6d85733f846b54548bd3e0cb7f, type: 2}
   - {fileID: 2100000, guid: fdcd8f6d85733f846b54548bd3e0cb7f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0

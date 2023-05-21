@@ -50,11 +50,8 @@ public class SelectionManager : MonoBehaviour
         kPressed = false;
     }
 
-
-
     private void OnPlayerJoined(UnityEngine.InputSystem.PlayerInput playerInput)
     {
-        //GameObject playerCursor = Instantiate(cursorPrefabs[0], cursorPanel);
 
         playerInput.gameObject.transform.SetParent(cursorPanel);
         connectedPlayers.Add(playerInput);
