@@ -931,7 +931,7 @@
                     "name": "",
                     "id": "d24fffcb-7132-4f23-867e-59be9c5df70a",
                     "path": "<Keyboard>/q",
-                    "interactions": "Hold(duration=10),MultiTap(tapCount=20)",
+                    "interactions": "Hold(duration=5),MultiTap(tapCount=5)",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "Join",
