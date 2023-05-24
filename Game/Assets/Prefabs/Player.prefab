@@ -78810,14 +78810,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc96e243e12d0de468ae92a9bc204daf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: {x: 0, y: 0}
+  accelerate: 0
+  decelerate: 0
+  drift: 0
   kartModel: {fileID: 5997810669696861588}
   kartNormal: {fileID: 5997810670589319159}
   sphere: {fileID: 5997810669264951409}
   primaryParticles: []
   secondaryParticles: []
   isDrifting: 0
-  accelerationRate: 30
-  steeringRate: 30
+  accelerationRate: 60
+  steeringRate: 5
   gravityRate: 10
   layerMask:
     serializedVersion: 2
@@ -88617,14 +88621,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6954824511501026053}
-  m_LocalRotation: {x: 0.34098506, y: 0.040867247, z: -0.014858056, w: 0.9390625}
-  m_LocalPosition: {x: -0.72092426, y: 6.7216516, z: -6.325384}
+  m_LocalRotation: {x: 0.3063362, y: 0.04138438, z: -0.013350151, w: 0.9509297}
+  m_LocalPosition: {x: -0.71, y: 4.24, z: -6.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5997810670072084711}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 35.712, y: 4.983, z: -0.002}
 --- !u!20 &6954824511501026055
 Camera:
   m_ObjectHideFlags: 0
@@ -88653,7 +88657,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 99
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
