@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerManager : MonoBehaviour
+public class MainGameManager : MonoBehaviour
 {
     [SerializeField]
     private int playerCount;
