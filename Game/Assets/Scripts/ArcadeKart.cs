@@ -307,11 +307,12 @@ namespace KartGame.KartSystems
             // calculate how grounded and airborne we are
             GroundPercent = (float) groundedCount / 4.0f;
             AirPercent = 1 - GroundPercent;
-
+            Debug.Log($"Can move? {m_CanMove}");
             // apply vehicle physics
             if (m_CanMove)
             {
                 MoveVehicle(Input.Accelerate, Input.Brake, Input.TurnInput);
+                
             }
             GroundAirbourne();
 
