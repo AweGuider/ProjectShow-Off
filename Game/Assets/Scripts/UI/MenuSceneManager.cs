@@ -1,0 +1,67 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+public class MenuSceneManager : MonoBehaviour
+{
+    [SerializeField]
+    private GameData pData;
+
+    [SerializeField]
+    private int _amountOfPlayers;
+
+    [Header("Buttons")]
+    [SerializeField]
+    private GameObject twoPlayers;
+    [SerializeField]
+    private GameObject fourPlayers;
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        twoPlayers.GetComponent<Button>().onClick.AddListener(() =>
+            OnButtonClicked(twoPlayers));
+        fourPlayers.GetComponent<Button>().onClick.AddListener(() =>
+            OnButtonClicked(fourPlayers));
+
+    }
+
+    private void OnButtonClicked(GameObject buttonObj)
+    {
+        MenuPlayerAmountButton button = buttonObj.GetComponent<MenuPlayerAmountButton>();
+        _amountOfPlayers = button.AmountOfPlayers;
+        pData.SetNumberOfPlayers(_amountOfPlayers);
+
+        StartCoroutine(LoadScene(_amountOfPlayers));
+    }
+
+    private IEnumerator LoadScene(int amount)
+    {
+
+        if (amount == 0)
+        {
+            Debug.LogError($"Amount of players wasn't set!");
+        }
+
+        yield return new WaitForSeconds(2f);
+
+        if (amount == 2)
+        {
+            SceneManager.LoadScene("2 Player Selection");
+        }
+        if (amount == 4)
+        {
+            SceneManager.LoadScene("4 Player Selection");
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

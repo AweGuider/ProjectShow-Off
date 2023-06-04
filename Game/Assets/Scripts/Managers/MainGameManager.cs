@@ -18,15 +18,29 @@ public class MainGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerInputManager.instance.playerPrefab = playerPrefabs[0];
+        //Debug.LogWarning(GameData.Instance.PlayersConfigurations.Count);
+        for (int i = 0; i < GameData.Instance.PlayersPlaying; i++)
+        {
+            var pConfig = GameData.Instance.PlayersConfigurations[i];
+            // TODO: Fix later and add prefabs
+            //PlayerInputManager.instance.playerPrefab = playerPrefabs[pConfig.character];
+
+            PlayerInputManager.instance.JoinPlayer(pairWithDevice: pConfig.device);
+            Debug.LogWarning($"Player {i} using {pConfig.device} chose character {pConfig.character}");
+
+        }
         players = new();
         //playerPrefabs = new();
-        foreach (InputDevice dev in InputSystem.devices)
-        {
-            Debug.Log(dev.name);
-            Debug.Log(dev.deviceId);
-            Debug.Log(dev.layout);
-        }
-        //InputSystem.
+        //Debug.Log(PlayerInputManager.instance.playerCount);
+        //foreach (InputDevice dev in InputSystem.devices)
+        //{
+        //    Debug.Log(dev.name);
+        //    Debug.Log(dev.deviceId);
+        //    Debug.Log(dev.layout);
+        //}
+        //PlayerInputManager.instance.JoinPlayer(pairWithDevice: )
+
     }
 
     // Update is called once per frame

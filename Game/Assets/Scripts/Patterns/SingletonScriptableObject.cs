@@ -32,4 +32,5 @@ public abstract class SingletonScriptableObject<T> : ScriptableObject where T : 
             return _instance;
         }
     }
+
 }
