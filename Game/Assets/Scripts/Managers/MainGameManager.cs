@@ -13,6 +13,9 @@ public class MainGameManager : MonoBehaviour
 
     [SerializeField]
     private List<GameObject> playerPrefabs;
+
+    [SerializeField]
+    private List<Transform> playerPositions;
     private bool kPressed;
 
     // Start is called before the first frame update
@@ -86,6 +89,7 @@ public class MainGameManager : MonoBehaviour
 
     private void OnPlayerJoined(UnityEngine.InputSystem.PlayerInput pInput)
     {
+        pInput.gameObject.transform.position = playerPositions[pInput.playerIndex].transform.position;
         players.Add(pInput);
         playerCount++;
     }

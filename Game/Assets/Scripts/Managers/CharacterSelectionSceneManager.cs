@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -69,6 +70,27 @@ public class CharacterSelectionSceneManager : MonoBehaviour
             // TODO: Depending on amount of initially selected players and so probably the amount of playing
             // load according scene
             // Will probably have 2 game scenes for 2P and 4P modes.
+            StartCoroutine(LoadScene(pData.GetNumberOfPlayers()));
+            //SceneManager.LoadScene("Game Scene");
+        }
+    }
+
+    private IEnumerator LoadScene(int amount)
+    {
+
+        if (amount == 0)
+        {
+            Debug.LogError($"Amount of players wasn't set!");
+        }
+        //Debug.Log($"Amount of players to spawn: {amount}");
+        yield return new WaitForSeconds(2f);
+
+        if (amount == 2)
+        {
+            SceneManager.LoadScene("Game Scene");
+        }
+        if (amount == 4)
+        {
             SceneManager.LoadScene("Game Scene");
         }
     }

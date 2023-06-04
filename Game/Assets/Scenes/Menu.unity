@@ -317,7 +317,7 @@ MonoBehaviour:
   m_ActionsAsset: {fileID: -944628639613478452, guid: 70b8b912a732da0438bdc8c91e29749e, type: 3}
   m_PointAction: {fileID: 8696697006150431606, guid: 70b8b912a732da0438bdc8c91e29749e, type: 3}
   m_MoveAction: {fileID: -311901874901592920, guid: 70b8b912a732da0438bdc8c91e29749e, type: 3}
-  m_SubmitAction: {fileID: 8631364403837697436, guid: 70b8b912a732da0438bdc8c91e29749e, type: 3}
+  m_SubmitAction: {fileID: -4682142246220898272, guid: 70b8b912a732da0438bdc8c91e29749e, type: 3}
   m_CancelAction: {fileID: -757644079068963990, guid: 70b8b912a732da0438bdc8c91e29749e, type: 3}
   m_LeftClickAction: {fileID: -5315883823801292236, guid: 70b8b912a732da0438bdc8c91e29749e, type: 3}
   m_MiddleClickAction: {fileID: -3827211323510109675, guid: 70b8b912a732da0438bdc8c91e29749e, type: 3}

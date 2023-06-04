@@ -4816,10 +4816,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4361263769348929795, guid: c985fa752fe90f646b32ad3b6a406f5a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: deaf22ec7d788d94882d62abc94ac7cb, type: 2}
     - target: {fileID: 919132149155446097, guid: c985fa752fe90f646b32ad3b6a406f5a, type: 3}
       propertyPath: m_Name
       value: IceCarBody_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 6607155793456369957, guid: c985fa752fe90f646b32ad3b6a406f5a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f0635b2b5c982044e988f25ffef9330e, type: 2}
+    - target: {fileID: 6607155793456369957, guid: c985fa752fe90f646b32ad3b6a406f5a, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: f0635b2b5c982044e988f25ffef9330e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c985fa752fe90f646b32ad3b6a406f5a, type: 3}
 --- !u!4 &7277914258610498681 stripped
@@ -4894,10 +4906,26 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7971225856886957021, guid: 75ad2a424a6155a45994af66ba248498, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: deaf22ec7d788d94882d62abc94ac7cb, type: 2}
+    - target: {fileID: -7033085199077308820, guid: 75ad2a424a6155a45994af66ba248498, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: deaf22ec7d788d94882d62abc94ac7cb, type: 2}
+    - target: {fileID: -3436938307033942765, guid: 75ad2a424a6155a45994af66ba248498, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: deaf22ec7d788d94882d62abc94ac7cb, type: 2}
     - target: {fileID: 919132149155446097, guid: 75ad2a424a6155a45994af66ba248498, type: 3}
       propertyPath: m_Name
       value: IceCarWeels_Test
       objectReference: {fileID: 0}
+    - target: {fileID: 5501890565360017507, guid: 75ad2a424a6155a45994af66ba248498, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: deaf22ec7d788d94882d62abc94ac7cb, type: 2}
     - target: {fileID: 5866666021909216657, guid: 75ad2a424a6155a45994af66ba248498, type: 3}
       propertyPath: m_CullingMode
       value: 0
