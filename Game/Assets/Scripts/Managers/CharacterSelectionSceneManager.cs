@@ -69,7 +69,7 @@ public class CharacterSelectionSceneManager : MonoBehaviour
             // TODO: Depending on amount of initially selected players and so probably the amount of playing
             // load according scene
             // Will probably have 2 game scenes for 2P and 4P modes.
-            SceneManager.LoadScene("TestScene");
+            SceneManager.LoadScene("Game Scene");
         }
     }
 }

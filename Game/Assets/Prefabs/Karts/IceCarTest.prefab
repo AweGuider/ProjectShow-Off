@@ -1074,16 +1074,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats:
-    TopSpeed: 60
-    Acceleration: 28
-    ReverseSpeed: 40
-    ReverseAcceleration: 12
-    AccelerationCurve: 0.5
-    Braking: 64
-    CoastingDrag: 6
-    Grip: 1
-    Steer: 4
-    AddedGravity: 1
+    TopSpeed: 120
+    Acceleration: 56
+    ReverseSpeed: 80
+    ReverseAcceleration: 24
+    AccelerationCurve: 0.2
+    Braking: 128
+    CoastingDrag: 24
+    Grip: 0.75
+    Steer: 3
+    AddedGravity: 4
   m_VisualWheels:
   - {fileID: 521794603588869351}
   - {fileID: 8682819177777382568}
@@ -1092,7 +1092,7 @@ MonoBehaviour:
   CenterOfMass: {fileID: 8375638285619651135}
   AirborneReorientationCoefficient: 1
   DriftGrip: 0.85
-  DriftAdditionalSteer: 0
+  DriftAdditionalSteer: 1
   MinAngleToFinishDrift: 29
   MinSpeedPercentToFinishDrift: 0.95
   DriftControl: 16
@@ -1105,7 +1105,7 @@ MonoBehaviour:
   JumpVFX: {fileID: 0}
   NozzleVFX: {fileID: 0}
   Nozzles: []
-  SuspensionHeight: 0.2
+  SuspensionHeight: 0.3
   SuspensionSpring: 70000
   SuspensionDamp: 5000
   WheelsPositionVerticalOffset: 0.05

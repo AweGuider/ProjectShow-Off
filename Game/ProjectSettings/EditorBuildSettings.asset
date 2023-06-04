@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/4 Player Selection.unity
     guid: 7f6ec6bdaf06af9429570da5facca58e
   - enabled: 1
+    path: Assets/Scenes/Game Scene.unity
+    guid: d22d08ffbe220924d98b195cd9e8e1b9
+  - enabled: 1
     path: Assets/Scenes/TestScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
