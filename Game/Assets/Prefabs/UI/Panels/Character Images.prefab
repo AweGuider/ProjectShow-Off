@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6537336767785933058}
   - component: {fileID: 6537336767785933085}
   - component: {fileID: 6537336767785933059}
+  - component: {fileID: 5411458017058480005}
   m_Layer: 5
   m_Name: Character Images
   m_TagString: Untagged
@@ -104,6 +105,18 @@ MonoBehaviour:
   MinAngle: 288
   MaxAngle: 0
   StartAngle: 90
+--- !u!114 &5411458017058480005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6537336767785933086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89aa37f6a582d9249afab3c499b12c30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &247044517610824268
 PrefabInstance:
   m_ObjectHideFlags: 0

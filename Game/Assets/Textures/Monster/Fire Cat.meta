@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Game/Assets/Models/Monsters/Clopfy.meta
+guid: 5defc835aac318d4190e7c7bf26c1401
+========
 guid: 92e00b91dc3978041b7f4702a1fc625c
+>>>>>>>> b700494fd18832435952ec77f1fee94f33dbc6a3:Game/Assets/Textures/Monster/Fire Cat.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
