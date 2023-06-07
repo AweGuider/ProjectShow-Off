@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
@@ -123,98 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!28 &16416014
-Texture2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 2
-  m_Width: 2
-  m_Height: 2
-  m_CompleteImageSize: 20
-  m_MipsStripped: 0
-  m_TextureFormat: 4
-  m_MipCount: 2
-  m_IsReadable: 1
-  m_IsPreProcessed: 0
-  m_IgnoreMasterTextureLimit: 0
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_VTOnly: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_LightmapFormat: 0
-  m_ColorSpace: 1
-  m_PlatformBlob: 
-  image data: 20
-  _typelessdata: aeaeaeffaeaeaeffaeaeaeffaeaeaeffaeaeaeff
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
---- !u!114 &26296881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 896618322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 9411fa7b02b4d754bacac1f5b9a9a877, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
 --- !u!1001 &36743412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -322,14 +230,9 @@ Transform:
   m_Father: {fileID: 978795827}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &86070865 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 418189495, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &86070866 stripped
+--- !u!218 &60026971 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 418189497, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1876652921, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &90702359
@@ -502,6 +405,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!218 &104429683 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1268506244, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &128929353
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,51 +773,26 @@ Transform:
   m_Father: {fileID: 1459039342}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -6.124, z: 0}
---- !u!114 &252111360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!218 &247233541 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1500616864, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213577249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 3e2433894c85f314688d8fb1e69522ee, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
+--- !u!218 &249030015 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1606989910846547139, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!218 &260961586 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1724411299, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!218 &266503445 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1606989909672386644, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &286861031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,6 +889,11 @@ MonoBehaviour:
   perpDirRotated: {x: 0.94385123, y: 0.000015258768, z: 0.33037063}
   markerStartUVY: 0.84285736
   customPoints: []
+--- !u!4 &305284170 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1606989909720272017, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &311617802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1494,12 +1382,12 @@ MonoBehaviour:
   infoTexture: {fileID: 0}
   infoTexture2: {fileID: 0}
   infoTextures: []
-  plusSignTexture: {fileID: 1176407399}
-  minSignTexture: {fileID: 366973151}
-  signPostHeaderBG: {fileID: 335639961}
-  signPostListBG: {fileID: 518942147}
-  signPostListSelBG: {fileID: 16416014}
-  editorSkin: 1
+  plusSignTexture: {fileID: 1435243339}
+  minSignTexture: {fileID: 1612326589}
+  signPostHeaderBG: {fileID: 884917942}
+  signPostListBG: {fileID: 674131910}
+  signPostListSelBG: {fileID: 372531951}
+  editorSkin: 0
   showAllPrefabs: 1
   standardPrefabsFlag: 0
   sceneSettingsFoldOut: 0
@@ -1535,7 +1423,7 @@ MonoBehaviour:
   terrainCellAngleThreshold: 30
   terrainCellHeightThreshold: 25
   maxIndentSurrounding: 50
-  terrainY: 0
+  terrainY: 0.000030517578
   terrainDetailSplatX: 0.48828125
   terrainDetailSplatY: 0.48828125
   detailOffsetVec: {x: 0.48828125, y: 0, z: 0.48828125}
@@ -1544,78 +1432,78 @@ MonoBehaviour:
   mirrorCrossings: 1
   terrainNames:
   - All Terrains
-  - Terrain_(-2489.89, 0.00, 5164.15)
-  - Terrain_(-1000.00, 0.00, 7315.00)
-  - New Map Terrain
-  - Terrain_(-2000.00, 0.00, 3315.00)
-  - Terrain_(1510.11, 0.00, 5164.15)
-  - Terrain_(0.00, 0.00, 4315.00)
-  - Terrain_(0.00, 0.00, 6315.00)
-  - Terrain_(-489.89, 0.00, 1164.15)
-  - Terrain_(-2000.00, 0.00, 7315.00)
-  - Terrain_(0.00, 0.00, 5315.00)
-  - Terrain_(1510.11, 0.00, 4164.15)
-  - Terrain_(-2489.89, 0.00, 2164.15)
-  - Terrain_(-2000.00, 0.00, 4315.00)
-  - Terrain_(-2489.89, 0.00, 6164.15)
-  - Terrain_(-1000.00, 0.00, 5315.00)
-  - Terrain_(-2489.89, 0.00, 1164.15)
-  - Terrain_(1510.11, 0.00, 1164.15)
-  - Terrain_(-2489.89, 0.00, 7164.15)
-  - Terrain_(510.11, 0.00, 1164.15)
-  - Terrain_(-2000.00, 0.00, 6315.00)
-  - Terrain_(-1000.00, 0.00, 6315.00)
-  - Terrain_(-2000.00, 0.00, 5315.00)
-  - Terrain_(1510.11, 0.00, 7164.15)
-  - Terrain_(-1000.00, 0.00, 4315.00)
   - Terrain_(-2489.89, 0.00, 3164.15)
-  - Terrain_(510.11, 0.00, 7164.15)
-  - Terrain_(0.00, 0.00, 7315.00)
   - Terrain_(-2489.89, 0.00, 4164.15)
-  - Terrain_(-489.89, 0.00, 7164.15)
-  - Terrain_(1510.11, 0.00, 2164.15)
-  - Terrain_(1510.11, 0.00, 6164.15)
-  - Terrain_(-1000.00, 0.00, 3315.00)
+  - Terrain_(-2489.89, 0.00, 5164.15)
+  - Terrain_(-2489.89, 0.00, 6164.15)
+  - Terrain_(-2489.89, 0.00, 7164.15)
   - Terrain_(-1489.89, 0.00, 7164.15)
-  - Terrain_(-1489.89, 0.00, 1164.15)
+  - Terrain_(-489.89, 0.00, 7164.15)
+  - Terrain_(510.11, 0.00, 7164.15)
+  - Terrain_(1510.11, 0.00, 7164.15)
+  - Terrain_(1510.11, 0.00, 6164.15)
+  - Terrain_(1510.11, 0.00, 5164.15)
+  - Terrain_(1510.11, 0.00, 4164.15)
   - Terrain_(1510.11, 0.00, 3164.15)
+  - Terrain_(1510.11, 0.00, 2164.15)
+  - Terrain_(1510.11, 0.00, 1164.15)
+  - Terrain_(510.11, 0.00, 1164.15)
+  - Terrain_(-489.89, 0.00, 1164.15)
+  - Terrain_(-2489.89, 0.00, 1164.15)
+  - Terrain_(-2489.89, 0.00, 2164.15)
+  - Terrain_(-1489.89, 0.00, 1164.15)
+  - Terrain_(-2000.00, 0.00, 7315.00)
+  - Terrain_(-2000.00, 0.00, 6315.00)
+  - Terrain_(-2000.00, 0.00, 5315.00)
+  - Terrain_(-2000.00, 0.00, 4315.00)
+  - Terrain_(-2000.00, 0.00, 3315.00)
+  - Terrain_(-1000.00, 0.00, 3315.00)
+  - Terrain_(-1000.00, 0.00, 4315.00)
+  - Terrain_(-1000.00, 0.00, 5315.00)
+  - Terrain_(-1000.00, 0.00, 6315.00)
+  - Terrain_(-1000.00, 0.00, 7315.00)
+  - Terrain_(0.00, 0.00, 7315.00)
+  - Terrain_(0.00, 0.00, 6315.00)
+  - Terrain_(0.00, 0.00, 5315.00)
+  - Terrain_(0.00, 0.00, 4315.00)
+  - New Map Terrain
   terrainObjects:
   - {fileID: 0}
-  - {fileID: 896618323}
-  - {fileID: 1350595028}
-  - {fileID: 810197654}
-  - {fileID: 1196027045}
-  - {fileID: 1213577250}
-  - {fileID: 1540849585}
-  - {fileID: 1818452715}
-  - {fileID: 86070866}
-  - {fileID: 1350069559}
-  - {fileID: 2052700998}
-  - {fileID: 1373048721}
-  - {fileID: 1159861718}
-  - {fileID: 1847104123}
-  - {fileID: 1526610805}
-  - {fileID: 2147316611}
-  - {fileID: 2123015032}
-  - {fileID: 789805090}
-  - {fileID: 1278026089}
-  - {fileID: 2004799774}
-  - {fileID: 1031640755}
-  - {fileID: 1610057026}
-  - {fileID: 2094593549}
-  - {fileID: 1615155610}
-  - {fileID: 1051433086}
-  - {fileID: 1225609271}
-  - {fileID: 1016332968}
-  - {fileID: 1241683552}
-  - {fileID: 1699893355}
-  - {fileID: 2049046955}
-  - {fileID: 550163782}
-  - {fileID: 944960955}
-  - {fileID: 1312438991}
-  - {fileID: 767488512}
-  - {fileID: 1841215443}
-  - {fileID: 438141036}
+  - {fileID: 603764613}
+  - {fileID: 60026971}
+  - {fileID: 1273464250}
+  - {fileID: 1792593940}
+  - {fileID: 1508510203}
+  - {fileID: 986973442}
+  - {fileID: 1915477707}
+  - {fileID: 260961586}
+  - {fileID: 247233541}
+  - {fileID: 1638763659}
+  - {fileID: 1475110670}
+  - {fileID: 2061422173}
+  - {fileID: 1554880129}
+  - {fileID: 1749885648}
+  - {fileID: 104429683}
+  - {fileID: 1989740411}
+  - {fileID: 1077777201}
+  - {fileID: 1575542351}
+  - {fileID: 1013870544}
+  - {fileID: 762610604}
+  - {fileID: 266503445}
+  - {fileID: 464000088}
+  - {fileID: 1853371552}
+  - {fileID: 670031827}
+  - {fileID: 2078595796}
+  - {fileID: 1367611821}
+  - {fileID: 1064403586}
+  - {fileID: 1668591711}
+  - {fileID: 687795780}
+  - {fileID: 2131186012}
+  - {fileID: 249030015}
+  - {fileID: 1285364038}
+  - {fileID: 1454031197}
+  - {fileID: 1287492012}
+  - {fileID: 1595384796}
   terrainSplatTextures: []
   activeTerrain: {fileID: 0}
   activeTerrainY: 0
@@ -2002,53 +1890,6 @@ Transform:
   m_Father: {fileID: 978795827}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!28 &335639961
-Texture2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 2
-  m_Width: 2
-  m_Height: 2
-  m_CompleteImageSize: 20
-  m_MipsStripped: 0
-  m_TextureFormat: 4
-  m_MipCount: 2
-  m_IsReadable: 1
-  m_IsPreProcessed: 0
-  m_IgnoreMasterTextureLimit: 0
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_VTOnly: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_LightmapFormat: 0
-  m_ColorSpace: 1
-  m_PlatformBlob: 
-  image data: 20
-  _typelessdata: c8c8c8ffc8c8c8ffc8c8c8ffc8c8c8ffc8c8c8ff
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &360606019
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,7 +2014,7 @@ MonoBehaviour:
   ignore: 0
   backupObject: {fileID: 0}
   terrain: {fileID: 0}
---- !u!28 &366973151
+--- !u!28 &372531951
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2187,12 +2028,12 @@ Texture2D:
   m_DownscaleFallback: 0
   m_IsAlphaChannelOptional: 0
   serializedVersion: 2
-  m_Width: 10
+  m_Width: 2
   m_Height: 2
-  m_CompleteImageSize: 112
+  m_CompleteImageSize: 20
   m_MipsStripped: 0
   m_TextureFormat: 4
-  m_MipCount: 4
+  m_MipCount: 2
   m_IsReadable: 1
   m_IsPreProcessed: 0
   m_IgnoreMasterTextureLimit: 0
@@ -2213,8 +2054,8 @@ Texture2D:
   m_LightmapFormat: 0
   m_ColorSpace: 1
   m_PlatformBlob: 
-  image data: 112
-  _typelessdata: 555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff
+  image data: 20
+  _typelessdata: 4d4d4dff4d4d4dff4d4d4dff4d4d4dff4d4d4dff
   m_StreamData:
     serializedVersion: 2
     offset: 0
@@ -2251,11 +2092,6 @@ Transform:
   m_Father: {fileID: 514498175}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &403585250 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1606989909720272017, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &418149244
 Mesh:
   m_ObjectHideFlags: 0
@@ -2420,60 +2256,10 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &418189499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86070865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: c93169cba3d825e45b7cba0a6b70c4bc, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
---- !u!1 &438141035 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2137452670, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &438141036 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 2137452672, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
+--- !u!4 &440239764 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6d1fd293e1163b44b8e0eea317777866, type: 3}
+  m_PrefabInstance: {fileID: 2005013952}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &461493411
 GameObject:
@@ -2723,6 +2509,11 @@ MonoBehaviour:
   ignore: 0
   backupObject: {fileID: 0}
   terrain: {fileID: 0}
+--- !u!218 &464000088 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1606989911594687459, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &474643407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,11 +2545,6 @@ Transform:
   m_Father: {fileID: 514498175}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &478880692 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6d1fd293e1163b44b8e0eea317777866, type: 3}
-  m_PrefabInstance: {fileID: 2005013952}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &498228729
 GameObject:
   m_ObjectHideFlags: 0
@@ -3082,53 +2868,6 @@ Transform:
   m_Father: {fileID: 840211324}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!28 &518942147
-Texture2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 2
-  m_Width: 2
-  m_Height: 2
-  m_CompleteImageSize: 20
-  m_MipsStripped: 0
-  m_TextureFormat: 4
-  m_MipCount: 2
-  m_IsReadable: 1
-  m_IsPreProcessed: 0
-  m_IgnoreMasterTextureLimit: 0
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_VTOnly: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_LightmapFormat: 0
-  m_ColorSpace: 1
-  m_PlatformBlob: 
-  image data: 20
-  _typelessdata: c8c8c8ffc8c8c8ffc8c8c8ffc8c8c8ffc8c8c8ff
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &537734036
 GameObject:
   m_ObjectHideFlags: 0
@@ -6810,16 +6549,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537734036}
   m_Mesh: {fileID: 418149244}
---- !u!1 &550163781 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1944748042, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &550163782 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1944748044, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &592735627
 GameObject:
   m_ObjectHideFlags: 0
@@ -6877,6 +6606,11 @@ MonoBehaviour:
   m_Script: {fileID: 1419717442, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!218 &603764613 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1680016055, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &614926766
 GameObject:
   m_ObjectHideFlags: 0
@@ -6927,11 +6661,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
-  far clip plane: 2000
+  near clip plane: 0.3
+  far clip plane: 2500
   field of view: 60
   orthographic: 1
-  orthographic size: 1500
+  orthographic size: 2000
   m_Depth: 2
   m_CullingMask:
     serializedVersion: 2
@@ -7183,6 +6917,63 @@ MonoBehaviour:
   perpDirRotated: {x: 0.94698745, y: 0.000017089891, z: 0.3212704}
   markerStartUVY: 0.985466
   customPoints: []
+--- !u!218 &670031827 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1606989909780863940, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!28 &674131910
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 2
+  m_Height: 2
+  m_CompleteImageSize: 20
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 2
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMasterTextureLimit: 0
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 20
+  _typelessdata: 414141ff414141ff414141ff414141ff414141ff
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+--- !u!218 &687795780 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1606989911577429874, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &691841680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7375,96 +7166,11 @@ MonoBehaviour:
   perpDirRotated: {x: 0.9477404, y: 0.000017700171, z: 0.31904253}
   markerStartUVY: 0.4744835
   customPoints: []
---- !u!114 &713435356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!4 &712057978 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8888941986988621811, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
+  m_PrefabInstance: {fileID: 9030793918459475440}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373048720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: e75a22f1faaef0d4487ad34548bd3c6e, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
---- !u!114 &718970828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1159861717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 3ad8a0671e917dc4bad5cfa90b84a1f5, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
 --- !u!1 &723987595
 GameObject:
   m_ObjectHideFlags: 0
@@ -7589,14 +7295,9 @@ MonoBehaviour:
   ignore: 0
   backupObject: {fileID: 0}
   terrain: {fileID: 0}
---- !u!1 &767488511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2051716466, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &767488512 stripped
+--- !u!218 &762610604 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 2051716468, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 2100511671, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &783704086
@@ -7695,26 +7396,6 @@ MonoBehaviour:
   perpDirRotated: {x: 0.9477596, y: 0.000017700257, z: 0.31898546}
   markerStartUVY: 0
   customPoints: []
---- !u!1 &789805089 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1268506242, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &789805090 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1268506244, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &797928763 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5762460148778837045, guid: ad5420364a4e34542a619eee6b262e80, type: 3}
-  m_PrefabInstance: {fileID: 1345233542}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &810197654 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989910351403851, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &840211323
 GameObject:
   m_ObjectHideFlags: 0
@@ -7745,55 +7426,10 @@ Transform:
   m_Children:
   - {fileID: 1459039342}
   - {fileID: 514498175}
-  - {fileID: 797928763}
+  - {fileID: 1180611370}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &846511436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526610804}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 361a65d3dc1f05b46afa82dfe4f3fe11, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
 --- !u!1 &863267212
 GameObject:
   m_ObjectHideFlags: 0
@@ -10517,15 +10153,57 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!1 &896618322 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 26296877, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
+--- !u!28 &884917942
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!218 &896618323 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 26296879, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 2
+  m_Height: 2
+  m_CompleteImageSize: 20
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 2
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMasterTextureLimit: 0
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 20
+  _typelessdata: 383838ff383838ff383838ff383838ff383838ff
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
+--- !u!4 &907605513 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a48a9da9d3e9fe7429edc078a18988a9, type: 3}
+  m_PrefabInstance: {fileID: 1092114980}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &911811954
 MonoBehaviour:
@@ -10720,16 +10398,6 @@ Transform:
   m_Father: {fileID: 56933980}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -16.401, z: 0}
---- !u!1 &944960954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1983858663, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &944960955 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1983858665, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &947953499
 GameObject:
   m_ObjectHideFlags: 0
@@ -10807,15 +10475,20 @@ Transform:
   - {fileID: 614926769}
   - {fileID: 1056559960}
   - {fileID: 90702360}
-  - {fileID: 403585250}
+  - {fileID: 305284170}
   - {fileID: 317085265}
-  - {fileID: 1984962699}
-  - {fileID: 478880692}
-  - {fileID: 1639255622}
+  - {fileID: 907605513}
+  - {fileID: 440239764}
+  - {fileID: 1563316071}
   - {fileID: 56933980}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!218 &986973442 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 2051716468, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &987161556
 GameObject:
   m_ObjectHideFlags: 0
@@ -11036,24 +10709,9 @@ MonoBehaviour:
   perpDirRotated: {x: 0.9453978, y: 0.000016479533, z: 0.32591876}
   markerStartUVY: 0.8589878
   customPoints: []
---- !u!1 &1016332967 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1724411297, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1016332968 stripped
+--- !u!218 &1013870544 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1724411299, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1031640755 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989911594687459, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1051433086 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989911674493015, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 718970826, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1056559958
@@ -11129,7 +10787,7 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.5, y: 0.5}
   m_BounceIntensity: 1
-  m_ColorTemperature: 2000
+  m_ColorTemperature: 1500
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 1.02e-43, y: 0, z: 0, w: 1.102884e-18}
   m_UseBoundingSphereOverride: 0
@@ -11143,14 +10801,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056559958}
-  m_LocalRotation: {x: 0.02457584, y: 0.83406967, z: 0.00211837, w: 0.55110747}
-  m_LocalPosition: {x: -3011.4263, y: 89.48514, z: -3250.686}
+  m_LocalRotation: {x: 0.017828444, y: 0.8333957, z: 0.012576776, w: 0.552246}
+  m_LocalPosition: {x: -7020, y: 1473, z: 4894.9995}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 978795827}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 1.35, y: 113.12, z: 2.484}
+  m_LocalEulerAnglesHint: {x: -0.073, y: 112.938, z: 2.499}
 --- !u!114 &1056559961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11273,51 +10931,11 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
---- !u!114 &1067465076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!218 &1064403586 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1606989911674493015, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2123015031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 98e2220c6d9c3164f887463d3b38e1fa, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
 --- !u!43 &1071364684
 Mesh:
   m_ObjectHideFlags: 0
@@ -11482,6 +11100,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!218 &1077777201 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 418189497, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1092114980
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11718,7 +11341,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: be07d86423527c14ab1b331050a8a00b, type: 2}
+  - {fileID: 2100000, guid: 263ec21fb6492064c8966c9a9fadb4c0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11763,92 +11386,10 @@ Transform:
   m_Father: {fileID: 56933980}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 72.344, z: 0}
---- !u!1 &1159861717 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 718970824, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1159861718 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 718970826, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!28 &1176407399
-Texture2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 2
-  m_Width: 12
-  m_Height: 12
-  m_CompleteImageSize: 760
-  m_MipsStripped: 0
-  m_TextureFormat: 4
-  m_MipCount: 4
-  m_IsReadable: 1
-  m_IsPreProcessed: 0
-  m_IgnoreMasterTextureLimit: 0
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_VTOnly: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_LightmapFormat: 0
-  m_ColorSpace: 1
-  m_PlatformBlob: 
-  image data: 760
-  _typelessdata: 0000000000000000000000000000000000000000555555ff555555ff00000000000000000000000000000000000000000000000000000000000000000000000000000000555555ff555555ff00000000000000000000000000000000000000000000000000000000000000000000000000000000555555ff555555ff00000000000000000000000000000000000000000000000000000000000000000000000000000000555555ff555555ff00000000000000000000000000000000000000000000000000000000000000000000000000000000555555ff555555ff0000000000000000000000000000000000000000555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff555555ff0000000000000000000000000000000000000000555555ff555555ff00000000000000000000000000000000000000000000000000000000000000000000000000000000555555ff555555ff00000000000000000000000000000000000000000000000000000000000000000000000000000000555555ff555555ff00000000000000000000000000000000000000000000000000000000000000000000000000000000555555ff555555ff00000000000000000000000000000000000000000000000000000000000000000000000000000000555555ff555555ff000000000000000000000000000000000000000000000000000000002a2a2a7f2a2a2a7f000000000000000000000000000000002a2a2a7f2a2a2a7f00000000000000002a2a2a7f2a2a2a7f3f3f3fbf3f3f3fbf2a2a2a7f2a2a2a7f2a2a2a7f2a2a2a7f3f3f3fbf3f3f3fbf2a2a2a7f2a2a2a7f00000000000000002a2a2a7f2a2a2a7f000000000000000000000000000000002a2a2a7f2a2a2a7f0000000000000000000000002a2a2a7f000000002a2a2a7f3f3f3fbf2a2a2a7f000000002a2a2a7f000000003f3f3fbf
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
---- !u!218 &1196027045 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989910321262056, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1213577249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 252111356, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1213577250 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 252111358, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1225609270 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1680016053, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1225609271 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1680016055, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1241683552 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989910846547139, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
+--- !u!4 &1180611370 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5762460148778837045, guid: ad5420364a4e34542a619eee6b262e80, type: 3}
+  m_PrefabInstance: {fileID: 1345233542}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1248121023
 MonoBehaviour:
@@ -11946,51 +11487,6 @@ MonoBehaviour:
   perpDirRotated: {x: 0.95001096, y: 0.000017394997, z: 0.3122164}
   markerStartUVY: 0.38773155
   customPoints: []
---- !u!114 &1268506246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789805089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: a621bc8fd9f9dd446a134bc274ef8c75, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
 --- !u!1 &1270080209
 GameObject:
   m_ObjectHideFlags: 0
@@ -12088,66 +11584,21 @@ Transform:
   m_Father: {fileID: 56933980}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -16.401, z: 0}
---- !u!1 &1278026088 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1321088793, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1278026089 stripped
+--- !u!218 &1273464250 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1321088795, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 26296879, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
---- !u!218 &1312438991 stripped
+--- !u!218 &1285364038 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989911200470436, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1606989910471674433, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1321088797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!218 &1287492012 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1606989910287924373, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278026088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 4693268e0fc01e54981bd2a527988c60, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
 --- !u!1001 &1345233542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12155,10 +11606,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 840211324}
     m_Modifications:
-    - target: {fileID: 5762460148778837044, guid: ad5420364a4e34542a619eee6b262e80, type: 3}
-      propertyPath: playerPositions.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 5762460148778837044, guid: ad5420364a4e34542a619eee6b262e80, type: 3}
       propertyPath: playerPositions.Array.data[0]
       value: 
@@ -12223,90 +11670,73 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerGameManager
       objectReference: {fileID: 0}
-    - target: {fileID: 5762460148778837047, guid: ad5420364a4e34542a619eee6b262e80, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad5420364a4e34542a619eee6b262e80, type: 3}
---- !u!114 &1346432965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004799773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: a452762eab081464a9baf4ca5d6a7283, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
---- !u!218 &1350069559 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989909672386644, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1350595028 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989910198989235, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1361570685
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639255621}
+  m_GameObject: {fileID: 1563316070}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.2496341, y: 1, z: 0.60608864}
   m_Center: {x: 0.5263353, y: 0, z: 0.19695579}
---- !u!1 &1373048720 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 713435352, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1373048721 stripped
+--- !u!218 &1367611821 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 713435354, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1606989911200470436, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
+--- !u!28 &1435243339
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 12
+  m_Height: 12
+  m_CompleteImageSize: 760
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 4
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMasterTextureLimit: 0
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 760
+  _typelessdata: 0000000000000000000000000000000000000000ffffffccffffffcc00000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffccffffffcc00000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffccffffffcc00000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffccffffffcc00000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffccffffffcc0000000000000000000000000000000000000000ffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffcc0000000000000000000000000000000000000000ffffffccffffffcc00000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffccffffffcc00000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffccffffffcc00000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffccffffffcc00000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffccffffffcc000000000000000000000000000000000000000000000000000000007f7f7f667f7f7f66000000000000000000000000000000007f7f7f667f7f7f6600000000000000007f7f7f667f7f7f66bfbfbf99bfbfbf997f7f7f667f7f7f667f7f7f667f7f7f66bfbfbf99bfbfbf997f7f7f667f7f7f6600000000000000007f7f7f667f7f7f66000000000000000000000000000000007f7f7f667f7f7f660000000000000000000000007f7f7f66000000007f7f7f66bfbfbf997f7f7f66000000007f7f7f6600000000bfbfbf99
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1440994371
 GameObject:
   m_ObjectHideFlags: 0
@@ -12431,6 +11861,11 @@ MonoBehaviour:
   ignore: 0
   backupObject: {fileID: 0}
   terrain: {fileID: 0}
+--- !u!218 &1454031197 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1606989909854341233, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1457086294
 GameObject:
   m_ObjectHideFlags: 0
@@ -12495,64 +11930,19 @@ Transform:
   m_Father: {fileID: 840211324}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1500616866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1615155609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 0207385ef18a7c648a9aa49e37239b82, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
---- !u!1 &1526610804 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 846511432, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+--- !u!218 &1475110670 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 252111358, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
---- !u!218 &1526610805 stripped
+--- !u!218 &1508510203 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 846511434, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1321088795, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
---- !u!218 &1540849585 stripped
+--- !u!218 &1554880129 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989910287924373, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 2137452672, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1561351529
@@ -12586,11 +11976,73 @@ Transform:
   m_Father: {fileID: 514498175}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!218 &1610057026 stripped
+--- !u!1 &1563316070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 34b5968002332cb43a04ea01a322f7bc, type: 3}
+  m_PrefabInstance: {fileID: 36743412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1563316071 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34b5968002332cb43a04ea01a322f7bc, type: 3}
+  m_PrefabInstance: {fileID: 36743412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!218 &1575542351 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989911577429874, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1067465074, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
+--- !u!218 &1595384796 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1606989910351403851, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
+  m_PrefabAsset: {fileID: 0}
+--- !u!28 &1612326589
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 2
+  m_Width: 10
+  m_Height: 2
+  m_CompleteImageSize: 112
+  m_MipsStripped: 0
+  m_TextureFormat: 4
+  m_MipCount: 4
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMasterTextureLimit: 0
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 112
+  _typelessdata: ffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffccffffffcc
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1613610241
 GameObject:
   m_ObjectHideFlags: 0
@@ -12715,281 +12167,36 @@ MonoBehaviour:
   ignore: 0
   backupObject: {fileID: 0}
   terrain: {fileID: 0}
---- !u!1 &1615155609 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1500616862, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1615155610 stripped
+--- !u!218 &1638763659 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1500616864, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1983858665, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1639255621 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 34b5968002332cb43a04ea01a322f7bc, type: 3}
-  m_PrefabInstance: {fileID: 36743412}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1639255622 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 34b5968002332cb43a04ea01a322f7bc, type: 3}
-  m_PrefabInstance: {fileID: 36743412}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1680016057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1225609270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 5e0b61bb5f3ae9c4691408525f1d1d55, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
---- !u!1 &1699893354 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1876652919, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1699893355 stripped
+--- !u!218 &1668591711 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1876652921, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1606989909947666315, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1724411301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016332967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: a7c75faf2fb68154daab867b0be1ff01, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
---- !u!218 &1818452715 stripped
+--- !u!218 &1749885648 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989910471674433, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1944748044, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1841215442 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2100511669, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &1841215443 stripped
+--- !u!218 &1792593940 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 2100511671, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 846511434, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
---- !u!218 &1847104123 stripped
+--- !u!218 &1853371552 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989909780863940, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1606989911561771979, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1876652923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!218 &1915477707 stripped
+Terrain:
+  m_CorrespondingSourceObject: {fileID: 1900085310, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1699893354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 9c854f7a9f6c46941b0e57abfbecf0f6, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
---- !u!114 &1900085312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049046954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: ee5d1113ba5ebf0479c9fdc61747c06d, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
---- !u!114 &1944748046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550163781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: ed6935b83cdd151488187a7ac6deb6cf, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
 --- !u!1 &1964788685
 GameObject:
   m_ObjectHideFlags: 0
@@ -13114,62 +12321,7 @@ MonoBehaviour:
   ignore: 0
   backupObject: {fileID: 0}
   terrain: {fileID: 0}
---- !u!114 &1983858667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 944960954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 21028a674d7ae93469ee0325ac7e64d3, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
---- !u!4 &1984962699 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a48a9da9d3e9fe7429edc078a18988a9, type: 3}
-  m_PrefabInstance: {fileID: 1092114980}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2004799773 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1346432961, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &2004799774 stripped
+--- !u!218 &1989740411 stripped
 Terrain:
   m_CorrespondingSourceObject: {fileID: 1346432963, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
@@ -13371,121 +12523,16 @@ MonoBehaviour:
   ignore: 0
   backupObject: {fileID: 0}
   terrain: {fileID: 0}
---- !u!1 &2049046954 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1900085308, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &2049046955 stripped
+--- !u!218 &2061422173 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1900085310, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 713435354, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2051716470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 767488511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 89c87a134f47f224fa4d50971a80b866, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
---- !u!218 &2052700998 stripped
+--- !u!218 &2078595796 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989909854341233, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1606989910321262056, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2054863087 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8888941986988621811, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-  m_PrefabInstance: {fileID: 9030793918459475440}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &2094593549 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989911561771979, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2100511673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1841215442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 143e2319a6c601f4ca46fa4a9db05c35, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
 --- !u!1 &2112212042
 GameObject:
   m_ObjectHideFlags: 0
@@ -13514,68 +12561,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2054863087}
+  - {fileID: 712057978}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2123015031 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1067465072, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!218 &2123015032 stripped
+--- !u!218 &2131186012 stripped
 Terrain:
-  m_CorrespondingSourceObject: {fileID: 1067465074, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-  m_PrefabInstance: {fileID: 1606989910274244334}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2137452674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438141035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 910771039, guid: f56d46228aee4734f9114056c53bb57e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  surfacevecs: []
-  tdataFloat: []
-  terrainData: {fileID: 15600000, guid: 265f06149916b9043a7a3c08174778e0, type: 2}
-  xStart: 0
-  zStart: 0
-  roadSurface: {fileID: 0}
-  surfaceMesh: {fileID: 0}
-  surfaceCollider: {fileID: 0}
-  terrainDataStored: []
-  terrainChanges: []
-  terrainTrees: []
-  detailInstances: []
-  detailInstanceStarts: 
-  surfaceObjects: []
-  terrainTestPoints: []
-  splatData: []
-  addedTrees: []
-  holes: []
-  terrainHeightsBackup: []
-  terrainTreesBackup: []
-  terrainDetailBackup: []
-  terrainSplatBackup: []
-  detailInstanceStartsBackUp: 
-  heightmapFlag: 0
-  splatmapFlag: 0
-  treeFlag: 0
-  detailFlag: 0
-  holesFlag: 0
-  terrainDone: 0
-  backupFlagNotification: 0
-  ignore: 0
-  backupObject: {fileID: 0}
-  terrain: {fileID: 0}
---- !u!218 &2147316611 stripped
-Terrain:
-  m_CorrespondingSourceObject: {fileID: 1606989909947666315, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1606989910198989235, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
   m_PrefabInstance: {fileID: 1606989910274244334}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1606989910274244334
@@ -13588,10 +12580,6 @@ PrefabInstance:
     - target: {fileID: 1606989909720272016, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
       propertyPath: m_Name
       value: Final Map Terrain + Sea
-      objectReference: {fileID: 0}
-    - target: {fileID: 1606989909720272016, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1606989909720272017, guid: 16c5764c8f12b7d44b0eeafdc3fde133, type: 3}
       propertyPath: m_RootOrder
@@ -13647,76 +12635,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 2112212043}
     m_Modifications:
     - target: {fileID: 1130777566777530093, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.220001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1130777566777530093, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.600098
-      objectReference: {fileID: 0}
-    - target: {fileID: 1130777566777530093, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016695447
+      value: -0.0000000021488813
       objectReference: {fileID: 0}
     - target: {fileID: 1130777566777530093, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000041619375
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270185177053025482, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_Height
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1270185177053025482, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_Radius
-      value: 0.4
+      value: 9.077716e-11
       objectReference: {fileID: 0}
     - target: {fileID: 2379374158768193047, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2401884077618799667, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_Height
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2401884077618799667, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_Radius
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3082128771025002909, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 8.220001
-      objectReference: {fileID: 0}
-    - target: {fileID: 3082128771025002909, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -8.600098
-      objectReference: {fileID: 0}
     - target: {fileID: 3082128771025002909, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016695447
+      value: -0.0000000021488813
       objectReference: {fileID: 0}
     - target: {fileID: 3082128771025002909, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000041619375
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193546351465029115, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_Height
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4193546351465029115, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_Radius
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399353657555970228, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_Height
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6399353657555970228, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_Radius
-      value: 0.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7176962819689564683, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: 9.077716e-11
       objectReference: {fileID: 0}
     - target: {fileID: 8888941986988621811, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
       propertyPath: m_RootOrder
@@ -13768,7 +12704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8888941986988621812, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
