@@ -49,6 +49,11 @@ MonoBehaviour:
   players: []
   playerPrefabs:
   - {fileID: 5635990831923955403, guid: 717bb4603a441314caf911c3d73d5298, type: 3}
+  playerPositions:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &5762460148778837035
 MonoBehaviour:
   m_ObjectHideFlags: 0
