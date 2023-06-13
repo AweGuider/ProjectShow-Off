@@ -340,8 +340,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2684356547642771447}
-  m_LocalRotation: {x: 0.04220632, y: -0.0000003874302, z: 0.000000015832484, w: 0.99910897}
-  m_LocalPosition: {x: -0.000039100647, y: 12, z: -17.999832}
+  m_LocalRotation: {x: 0.04220627, y: 0.0000000021488809, z: -9.077714e-11, w: 0.99910897}
+  m_LocalPosition: {x: 0, y: 12, z: -18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1455,8 +1455,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5521963311992606476}
-  m_LocalRotation: {x: 0.04220632, y: -0.0000003874302, z: 0.000000015832484, w: 0.99910897}
-  m_LocalPosition: {x: -0.000039100647, y: 12, z: -17.999832}
+  m_LocalRotation: {x: 0.04220627, y: 0.0000000021488809, z: -9.077714e-11, w: 0.99910897}
+  m_LocalPosition: {x: 0, y: 12, z: -18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2353,6 +2353,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 1eb5a1ee-1f10-4fb2-9171-99233e1eee65
     m_ActionName: UI/Select[/Keyboard/s,/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ActivatableArcadeKartPowerup, Assembly-CSharp
+        m_MethodName: OnPowerUp
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 3c213183-9035-476c-b580-3cad1fac7418
+    m_ActionName: Player/PowerUp[/Keyboard/r]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

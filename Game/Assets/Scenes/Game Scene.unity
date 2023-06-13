@@ -4168,7 +4168,19 @@ PrefabInstance:
     m_TransformParent: {fileID: 840211324}
     m_Modifications:
     - target: {fileID: 5762460148778837044, guid: ad5420364a4e34542a619eee6b262e80, type: 3}
+      propertyPath: playerPrefabs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762460148778837044, guid: ad5420364a4e34542a619eee6b262e80, type: 3}
       propertyPath: playerPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 8888941986988621812, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
+    - target: {fileID: 5762460148778837044, guid: ad5420364a4e34542a619eee6b262e80, type: 3}
+      propertyPath: playerPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 8532489521356807948, guid: 7368a1292e6144243b8db750add12047, type: 3}
+    - target: {fileID: 5762460148778837044, guid: ad5420364a4e34542a619eee6b262e80, type: 3}
+      propertyPath: playerPrefabs.Array.data[2]
       value: 
       objectReference: {fileID: 8888941986988621812, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
     - target: {fileID: 5762460148778837044, guid: ad5420364a4e34542a619eee6b262e80, type: 3}

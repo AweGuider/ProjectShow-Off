@@ -27,7 +27,8 @@ public class MainGameManager : MonoBehaviour
         {
             var pConfig = GameData.Instance.PlayersConfigurations[i];
             // TODO: Fix later and add prefabs
-            //PlayerInputManager.instance.playerPrefab = playerPrefabs[pConfig.character];
+            int prefabIndex = pConfig.character > (playerPrefabs.Count - 1) ? 0 : pConfig.character;
+            PlayerInputManager.instance.playerPrefab = playerPrefabs[prefabIndex];
 
             PlayerInputManager.instance.JoinPlayer(pairWithDevice: pConfig.device);
             Debug.LogWarning($"Player {i} using {pConfig.device} chose character {pConfig.character}");

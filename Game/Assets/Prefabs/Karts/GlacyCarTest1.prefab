@@ -2043,6 +2043,7 @@ GameObject:
   - component: {fileID: 8532489521356807958}
   - component: {fileID: 1529924734179394883}
   - component: {fileID: 3302046241309370319}
+  - component: {fileID: 5278429426664672242}
   m_Layer: 2
   m_Name: GlacyCarTest1
   m_TagString: Player
@@ -2072,6 +2073,7 @@ Transform:
   - {fileID: 1488634014741239275}
   - {fileID: 8183951162890465434}
   - {fileID: 3186190736046087912}
+  - {fileID: 8348640190242977930}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2337,11 +2339,65 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 1eb5a1ee-1f10-4fb2-9171-99233e1eee65
     m_ActionName: UI/Select[/Keyboard/s,/Keyboard/w]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5278429426664672242}
+        m_TargetAssemblyTypeName: IceWallPowerUp, Assembly-CSharp
+        m_MethodName: OnPowerUp
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 3c213183-9035-476c-b580-3cad1fac7418
+    m_ActionName: Player/PowerUp[/Keyboard/r]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 6493808804914002062}
+--- !u!114 &5278429426664672242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8532489521356807948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a71e46d39bafff5448ee8d0dbf0c4ecf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boostStats:
+    modifiers:
+      TopSpeed: 0
+      Acceleration: 0
+      ReverseSpeed: 0
+      ReverseAcceleration: 0
+      AccelerationCurve: 0
+      Braking: 0
+      CoastingDrag: 0
+      Grip: 0
+      Steer: 0
+      AddedGravity: 0
+    PowerUpID: 
+    ElapsedTime: 0
+    MaxTime: 5
+  cooldown: 5
+  disableGameObjectWhenActivated: 0
+  onPowerupActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onPowerupFinishCooldown:
+    m_PersistentCalls:
+      m_Calls: []
+  kart: {fileID: 8532489521356807945}
+  _wallPrefab: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+  _walls: []
 --- !u!1 &8532489521513317521
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,6 +2926,72 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3124521936383007385, guid: da2e7d0c0774a49498d499333d770482, type: 3}
   m_PrefabInstance: {fileID: 5583588378256923529}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7713454050097187004
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8532489521356807947}
+    m_Modifications:
+    - target: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946645144889197856, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_Name
+      value: IceWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946645144889197856, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+--- !u!4 &8348640190242977930 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1790151793870385206, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+  m_PrefabInstance: {fileID: 7713454050097187004}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9140094963264409377
 PrefabInstance:
