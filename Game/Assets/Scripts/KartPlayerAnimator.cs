@@ -13,7 +13,7 @@ namespace KartGame.KartSystems
 
         int m_SteerHash, m_GroundHash;
 
-        float steeringSmoother;
+        [SerializeField]  float steeringSmoother;
 
         void Awake()
         {
