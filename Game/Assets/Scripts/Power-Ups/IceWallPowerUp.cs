@@ -24,6 +24,8 @@ public class IceWallPowerUp : ActivatableArcadeKartPowerup
             if (isCoolingDown) return;
 
             ApplyPowerUps(kart);
+
+
             Transform spawnedWall = Instantiate(_wallPrefab);
             spawnedWall.position = transform.TransformPoint(spawnedWall.localPosition);
             spawnedWall.rotation = transform.rotation;

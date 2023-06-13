@@ -16,6 +16,9 @@ public abstract class ActivatableArcadeKartPowerup : ArcadeKartPowerup
 
     public virtual void OnPowerUp(InputAction.CallbackContext context)
     {
-        Debug.Log($"Activated PowerUp: {context.performed}");
+        if (context.performed)
+        {
+            Debug.Log($"Activated PowerUp: {context.performed}");
+        }
     }
 }
