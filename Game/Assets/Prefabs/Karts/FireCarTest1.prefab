@@ -171,7 +171,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3167455207676940290}
-  m_LocalRotation: {x: 0.04220627, y: -0.0000000021488813, z: 9.077716e-11, w: 0.99910897}
+  m_LocalRotation: {x: 0.04220627, y: 0.0000000021488809, z: -9.077714e-11, w: 0.99910897}
   m_LocalPosition: {x: 0, y: 12, z: -18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1979,24 +1979,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats:
-    TopSpeed: 120
-    Acceleration: 56
-    ReverseSpeed: 80
-    ReverseAcceleration: 24
-    AccelerationCurve: 0.2
-    Braking: 128
-    CoastingDrag: 24
-    Grip: 0.75
-    Steer: 3
-    AddedGravity: 4
+    TopSpeed: 150
+    Acceleration: 50
+    ReverseSpeed: 40
+    ReverseAcceleration: 40
+    AccelerationCurve: 0.3
+    Braking: 150
+    CoastingDrag: 20
+    Grip: 1
+    Steer: 2.5
+    AddedGravity: 5
   m_VisualWheels:
   - {fileID: 4590142589013618966}
   - {fileID: 8816658157069547159}
   - {fileID: 2008458237958693719}
   - {fileID: 6654416205627751196}
   CenterOfMass: {fileID: 7495041320048266441}
-  AirborneReorientationCoefficient: 1
-  DriftGrip: 0.85
+  AirborneReorientationCoefficient: 2
+  DriftGrip: 0.75
   DriftAdditionalSteer: 1
   MinAngleToFinishDrift: 29
   MinSpeedPercentToFinishDrift: 0.95
@@ -2270,6 +2270,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   kart: {fileID: 8497749408110389252}
+  _cannon: {fileID: 0}
+  FirePowerMultiplier: 1
 --- !u!1 &8524714851107761388
 GameObject:
   m_ObjectHideFlags: 0
