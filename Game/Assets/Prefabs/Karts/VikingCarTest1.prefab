@@ -94,7 +94,7 @@ Transform:
   m_Children:
   - {fileID: 5399658303213082409}
   m_Father: {fileID: 7866801311037922814}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!146 &8707652093996003200
 WheelCollider:
@@ -264,10 +264,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 55464405673966686}
-  - {fileID: 6379489116901366470}
   - {fileID: 5556363673503745415}
   - {fileID: 8839954372465237263}
+  - {fileID: 55464405673966686}
+  - {fileID: 6379489116901366470}
   m_Father: {fileID: 8497749408110389254}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1887,7 +1887,7 @@ Transform:
   m_Children:
   - {fileID: 8803766495615810796}
   m_Father: {fileID: 7866801311037922814}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!146 &5943841387203070504
 WheelCollider:
@@ -2263,7 +2263,7 @@ Transform:
   m_Children:
   - {fileID: 58990288229654508}
   m_Father: {fileID: 7866801311037922814}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!146 &3891326224450418556
 WheelCollider:
@@ -2917,7 +2917,7 @@ Transform:
   m_Children:
   - {fileID: 1715325526732791673}
   m_Father: {fileID: 7866801311037922814}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!146 &3850021671180409472
 WheelCollider:
