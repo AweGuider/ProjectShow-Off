@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: graph_0
   m_EditorClassIdentifier: 
   AssetPath: Assets/Textures/Substance Designer/Beach_Sand.sbsar
-  RawData: {fileID: -244192453324840774, guid: da5debfc18dda974a97978d15ca278b8, type: 3}
+  RawData: {fileID: 0}
   Name: graph_0
   IsRoot: 1
   FlagedForDelete: 0
-  GUID: 0a4e3663-831f-4aed-936e-450967adc8c7
+  GUID: a3730647-b0da-4889-ba56-5eaf1b06c0e6
   Index: 0
   Input:
-  - rid: 3689394003601260544
-  - rid: 3689394003601260545
+  - rid: 6763904535615242240
+  - rid: 6763904535615242241
   Output:
   - Index: 0
     VirtualOutputIndex: 7
@@ -31,7 +31,7 @@ MonoBehaviour:
       Index: 0
       Type: 8
       Channel: baseColor
-    OutputTexture: {fileID: 2800000, guid: 3dd1ccac10a28594c94aad156c51da96, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 1
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -47,7 +47,7 @@ MonoBehaviour:
       Index: 1
       Type: 8
       Channel: normal
-    OutputTexture: {fileID: 2800000, guid: cd42e6b92f263784ba0619e3f8de8384, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 0
     IsVirtual: 0
     IsAlphaAssignable: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
       Index: 4
       Type: 8
       Channel: height
-    OutputTexture: {fileID: 2800000, guid: 9603468ffd96eed409a912ee586f52c8, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 1
     IsVirtual: 0
     IsAlphaAssignable: 1
@@ -127,7 +127,7 @@ MonoBehaviour:
       Index: 6
       Type: 8
       Channel: mask
-    OutputTexture: {fileID: 2800000, guid: 5eeaece48d7096e47a1be59e07bc9bf8, type: 3}
+    OutputTexture: {fileID: 0}
     sRGB: 0
     IsVirtual: 1
     IsAlphaAssignable: 0
@@ -140,25 +140,22 @@ MonoBehaviour:
   EnablePhysicalSize: 0
   Thumbnail: 
   HasThumbnail: 0
-  CurrentStatePreset: " <sbspreset pkgurl=\"pkg://Substance_graph\" label=\"\" >\n 
-    <presetinput identifier=\"$outputsize\" uid=\"3795302352\" type=\"8\" value=\"11,11\"
-    />\n  <presetinput identifier=\"$randomseed\" uid=\"3041239426\" type=\"4\" value=\"7692\"
-    />\n </sbspreset>\n"
+  CurrentStatePreset: 
   IsRuntimeOnly: 0
   GenerateAllOutputs: 0
   GenerateAllMipmaps: 1
-  OutputMaterial: {fileID: 2100000, guid: 44e147e1820dc6f4bb22803ef99505e5, type: 2}
+  OutputMaterial: {fileID: 0}
   DefaultPreset: " <sbspreset pkgurl=\"pkg://Substance_graph\" label=\"\" >\n  <presetinput
     identifier=\"$outputsize\" uid=\"3795302352\" type=\"8\" value=\"10,10\" />\n
     </sbspreset>\n"
-  MaterialShader: HDRP/Lit
+  MaterialShader: 
   RenderTextures: 0
   OutputRemaped: 0
   Presets: []
   references:
     version: 2
     RefIds:
-    - rid: 3689394003601260544
+    - rid: 6763904535615242240
       type: {class: SubstanceInputInt2, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 0
@@ -169,7 +166,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 5
           WidgetType: 0
-        Data: {x: 11, y: 11}
+        Data: {x: 10, y: 10}
         NumericalDescription:
           DefaultValue: {x: 8, y: 8}
           MinValue: {x: 0, y: 0}
@@ -177,7 +174,7 @@ MonoBehaviour:
           SliderClamp: 0
           EnumValueCount: 0
           EnumValues: []
-    - rid: 3689394003601260545
+    - rid: 6763904535615242241
       type: {class: SubstanceInputInt, ns: Adobe.Substance.Input, asm: Adobe.Substance}
       data:
         Index: 1
@@ -188,7 +185,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 4
           WidgetType: 0
-        Data: 7692
+        Data: 0
         NumericalDescription:
           DefaultValue: 0
           MinValue: 0
