@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class CannonPowerUp : ActivatableArcadeKartPowerup
+public class NestedPowerUp : ActivatableArcadeKartPowerup
 {
 
     [SerializeField]
