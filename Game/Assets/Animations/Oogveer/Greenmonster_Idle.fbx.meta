@@ -1,0 +1,998 @@
+fileFormatVersion: 2
+guid: 55d3184eefcae5d41b0227638ce147de
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'GreenMonster_rig___Copy__1_:Head' has translation
+      animation that will be discarded.\n\t'GreenMonster_rig___Copy__1_:Antena_1'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: "\nRetargeting quality report for clip 'Take 001':\n\tRightLowerArm
+      average position error 15.7 mm and maximum position error 15.7 mm at time 1:23
+      (10.2%) Frame 47\n\tHead average position error 1.7 mm and maximum position
+      error 35.9 mm at time 0: 9 (1.8%) Frame 9\n"
+    animationDoRetargetingWarnings: 1
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      internalID: 1827226128182048838
+      firstFrame: 1
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: GreenMonster_rig___Copy__1_:Root
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Hip_L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Hip_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Knee_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Knee_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Ankle_L
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Ankle_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Belly
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Chest
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Sholder_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Sholder_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Elbow_L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Elbow_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Wrist_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Wrist_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Toepad_L
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Toepad_R
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Antena_2
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:FingerFront_2_L
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:FingerMiddle_1_L
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:FingerMiddle_2_L
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:FingerBack_1_L
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:FingerBack_2_L
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:FingerFront_1_R
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:FingerFront_2_R
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:FingerMiddle_1_R
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:FingerMiddle_2_R
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:FingerBack_1_R
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:FingerBack_2_R
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: GreenMonster_rig___Copy__1_:Sternum
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Greenmonster_Idle(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:squash1Handle
+      parentName: Greenmonster_Idle(Clone)
+      position: {x: 0.018307209, y: -1.0309119, z: 0.07786706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 4.0933347, y: 4.0933347, z: 4.0933347}
+    - name: group1
+      parentName: Greenmonster_Idle(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_Main
+      parentName: group1
+      position: {x: -0, y: 1.0347751, z: 0.4563519}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 2.9865348, y: 2.9865348, z: 2.9865348}
+    - name: GreenMonster_rig___Copy__1_:ctrl_Root
+      parentName: GreenMonster_rig___Copy__1_:ctrl_Main
+      position: {x: -0.0029464138, y: 0.39614725, z: -0.006590002}
+      rotation: {x: -0.48831594, y: 0.5513006, z: -0.4485361, w: 0.50638974}
+      scale: {x: 0.3348362, y: 0.3348362, z: 0.3348362}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle8
+      parentName: GreenMonster_rig___Copy__1_:ctrl_Root
+      position: {x: -0.5839249, y: -6.7545795e-17, z: -4.0852738e-16}
+      rotation: {x: 0.04053578, y: -0.012512321, z: 0.17726979, w: 0.9832476}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle9
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle8
+      position: {x: -0.49676615, y: -3.673277e-16, z: -3.400058e-16}
+      rotation: {x: 0.053409442, y: -0.013736783, z: -0.064632356, w: 0.9963842}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle10
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle9
+      position: {x: -0.29192656, y: 1.4116312e-16, z: -2.94903e-17}
+      rotation: {x: 0.9734105, y: -0.2223304, z: 0.0020723373, w: 0.055108633}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_WingUp_L_base
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle10
+      position: {x: -0.25245434, y: -0.69257945, z: 0.3180121}
+      rotation: {x: -0.5436057, y: 0.36458835, z: 0.13724, w: 0.7434605}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_WingUp_L2
+      parentName: GreenMonster_rig___Copy__1_:ctrl_WingUp_L_base
+      position: {x: -1.4691697, y: -4.3888504e-16, z: 1.7486013e-15}
+      rotation: {x: -0.03253415, y: 0.059537515, z: 0.008055753, w: 0.99766326}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_WingUp_L1
+      parentName: GreenMonster_rig___Copy__1_:ctrl_WingUp_L2
+      position: {x: -0.7706654, y: -0.0000014914265, z: -0.0000005402739}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_WingDown_L_Base
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle10
+      position: {x: -0.0150560485, y: -0.8785223, z: 0.37977332}
+      rotation: {x: -0.54101574, y: 0.75336, z: 0.32932994, w: 0.17689683}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_WingDown_L2
+      parentName: GreenMonster_rig___Copy__1_:ctrl_WingDown_L_Base
+      position: {x: -1.2485722, y: 0, z: 1.110223e-16}
+      rotation: {x: 0.021146867, y: 0.25456086, z: 0.00808515, w: 0.96679175}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_WingDown_L1
+      parentName: GreenMonster_rig___Copy__1_:ctrl_WingDown_L2
+      position: {x: -0.8525853, y: 0.000002450673, z: -0.0000005734551}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_wingUp_Base
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle10
+      position: {x: -0.25245744, y: -0.6925788, z: -0.33561158}
+      rotation: {x: 0.9080261, y: 0.023204923, z: 0.38508275, w: -0.16328326}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_WingUp_R2
+      parentName: GreenMonster_rig___Copy__1_:ctrl_wingUp_Base
+      position: {x: -1.4691687, y: 2.3678975e-16, z: -4.440892e-16}
+      rotation: {x: 0.027515143, y: -0.015266198, z: 0.094336964, w: 0.9950429}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_WingUp_R1
+      parentName: GreenMonster_rig___Copy__1_:ctrl_WingUp_R2
+      position: {x: -0.77066463, y: 4.440892e-16, z: 1.9984014e-15}
+      rotation: {x: 0, y: 0, z: 0.078986935, w: 0.99687564}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_WingDown_R_Base
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle10
+      position: {x: -0.015054053, y: -0.8785232, z: -0.39737257}
+      rotation: {x: -0.5568047, y: 0.7612621, z: -0.30186805, w: -0.13901195}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_WingDown_R2
+      parentName: GreenMonster_rig___Copy__1_:ctrl_WingDown_R_Base
+      position: {x: -1.2485744, y: -4.3715032e-16, z: 7.771561e-16}
+      rotation: {x: -0.021807844, y: -0.16335557, z: 0.006081699, w: 0.9863075}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_WingDown_R1
+      parentName: GreenMonster_rig___Copy__1_:ctrl_WingDown_R2
+      position: {x: -0.8525823, y: 4.440892e-16, z: -7.320533e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_SholderL
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle10
+      position: {x: -0.15620016, y: -0.22161387, z: 0.5161876}
+      rotation: {x: -0.23412465, y: 0.60605174, z: 0.7094471, w: -0.27307853}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle18
+      parentName: GreenMonster_rig___Copy__1_:ctrl_SholderL
+      position: {x: -0.8847036, y: -2.1811098e-16, z: -4.4495657e-16}
+      rotation: {x: 0.0004035585, y: 0.003962802, z: -0.037003554, w: 0.9993072}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle19
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle18
+      position: {x: -0.5014901, y: 3.3133218e-16, z: 4.4582393e-16}
+      rotation: {x: 0.2917234, y: -0.0058632917, z: -0.0319091, w: 0.9559524}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle28
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle19
+      position: {x: -0.15564893, y: -0.11869197, z: 0.5636526}
+      rotation: {x: 0.42927817, y: 0.011311626, z: 0.53339034, w: 0.7287572}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle29
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle28
+      position: {x: -0.33172956, y: -4.666203e-15, z: -2.0001362e-15}
+      rotation: {x: 0.0021274972, y: 0.012639553, z: -0.045413155, w: 0.99888605}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle30
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle19
+      position: {x: -0.36812988, y: -0.0036539736, z: 0.18253595}
+      rotation: {x: 0.13208286, y: 0.10930769, z: 0.19518222, w: 0.9656655}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle31
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle30
+      position: {x: -0.3234207, y: -9.650212e-16, z: 8.916479e-16}
+      rotation: {x: 0.013868042, y: 0.013827778, z: 0.7798676, w: 0.62563807}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle34
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle19
+      position: {x: -0.43673792, y: -0.09026149, z: -0.2494381}
+      rotation: {x: -0.17571323, y: 0.014745466, z: -0.05206918, w: 0.98295283}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle33
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle34
+      position: {x: -0.34677485, y: -1.4129865e-16, z: 1.3287982e-15}
+      rotation: {x: 0.03133788, y: 0.022291983, z: 0.871833, w: 0.48829117}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_SholderR
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle10
+      position: {x: -0.10807896, y: -0.2264856, z: -0.5337866}
+      rotation: {x: 0.3209681, y: -0.5683884, z: 0.714781, w: -0.25100246}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle13
+      parentName: GreenMonster_rig___Copy__1_:ctrl_SholderR
+      position: {x: -0.8949562, y: 0.06711221, z: -0.01014756}
+      rotation: {x: -0.00070335186, y: -0.0039206296, z: 0.039000098, w: 0.9992313}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle14
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle13
+      position: {x: -0.50148565, y: 5.377643e-16, z: -5.551115e-17}
+      rotation: {x: -0.30170706, y: -0.52863526, z: 0.34806922, w: 0.7129975}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle22
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle14
+      position: {x: -0.596673, y: 3.330669e-16, z: -8.6042284e-16}
+      rotation: {x: 0.22032402, y: 0.4690489, z: 0.5748098, w: 0.6332805}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle23
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle22
+      position: {x: -0.33172616, y: -3.4019554e-16, z: 2.220446e-16}
+      rotation: {x: -0.0021267452, y: -0.012635638, z: -0.045414295, w: 0.99888605}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle24
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle14
+      position: {x: -0.26919174, y: 0.05091503, z: 0.306261}
+      rotation: {x: 0.036802415, y: 0.60872316, z: 0.0015124336, w: 0.7925272}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle25
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle24
+      position: {x: -0.32342285, y: 4.9960036e-16, z: 8.187895e-16}
+      rotation: {x: 0.30146277, y: -0.06274278, z: 0.7332673, w: 0.60621995}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle26
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle14
+      position: {x: 0.013722913, y: -0.16788545, z: 0.50367963}
+      rotation: {x: 0.36218908, y: 0.4730842, z: -0.09318393, w: 0.79770124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle27
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle26
+      position: {x: -0.34677184, y: -8.860642e-17, z: 3.469447e-18}
+      rotation: {x: -0.023632335, y: -0.030338937, z: 0.6952913, w: 0.7176985}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle12
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle10
+      position: {x: -1.1224496, y: 0.32642984, z: -6.392456e-16}
+      rotation: {x: -0.4443783, y: 0.5783903, z: 0.41684443, w: 0.5424328}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_LegR
+      parentName: GreenMonster_rig___Copy__1_:ctrl_Main
+      position: {x: 0.21011542, y: 0.37256688, z: -0.022763371}
+      rotation: {x: -0.050912306, y: 0.69555086, z: -0.0036328752, w: 0.7166615}
+      scale: {x: 0.3348362, y: 0.3348362, z: 0.3348362}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle20
+      parentName: GreenMonster_rig___Copy__1_:ctrl_LegR
+      position: {x: -0.5318849, y: 6.548581e-17, z: 1.07552856e-16}
+      rotation: {x: 0.9427673, y: 0.32747605, z: -0.004784866, w: -0.06266094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_FootL
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle20
+      position: {x: -0.57764405, y: -8.4437665e-16, z: 1.7347235e-16}
+      rotation: {x: 0.6085252, y: 0.79146135, z: -0.035020534, w: 0.04538262}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_LegL
+      parentName: GreenMonster_rig___Copy__1_:ctrl_Main
+      position: {x: -0.21011557, y: 0.3725657, z: -0.02276337}
+      rotation: {x: 0.0020826932, y: 0.6766337, z: 0.016146583, w: 0.7361398}
+      scale: {x: 0.3348362, y: 0.3348362, z: 0.3348362}
+    - name: GreenMonster_rig___Copy__1_:nurbsCircle4
+      parentName: GreenMonster_rig___Copy__1_:ctrl_LegL
+      position: {x: -0.531886, y: -3.855423e-16, z: 5.481726e-16}
+      rotation: {x: 0.9427674, y: 0.32747567, z: 0.0047848932, w: 0.06266176}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ctrl_FoorR
+      parentName: GreenMonster_rig___Copy__1_:nurbsCircle4
+      position: {x: -0.57764256, y: -4.4473973e-16, z: 1.0061396e-16}
+      rotation: {x: 0.608519, y: 0.7914661, z: 0.035021055, w: -0.04538273}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Squish
+      parentName: GreenMonster_rig___Copy__1_:ctrl_Main
+      position: {x: -0, y: 2.1995196, z: 2.7755576e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.4701538, y: 0.4701538, z: 0.4701538}
+    - name: GreenMonster_rig___Copy__1_:Antena
+      parentName: group1
+      position: {x: 0.08703707, y: 6.237595, z: 1.1197362}
+      rotation: {x: 0.07966578, y: 0.03191766, z: 0.00260578, w: 0.99630713}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Horn1
+      parentName: group1
+      position: {x: 0.018307209, y: -1.0309119, z: 0.07786706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Antena
+      parentName: GreenMonster_rig___Copy__1_:Horn1
+      position: {x: -0.018307209, y: 1.0309119, z: -0.07786706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:wings
+      parentName: GreenMonster_rig___Copy__1_:Horn1
+      position: {x: -0.018307209, y: 1.0309119, z: -0.07786706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Arms
+      parentName: GreenMonster_rig___Copy__1_:Horn1
+      position: {x: -0.018307209, y: 1.0309119, z: -0.07786706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Bodey_
+      parentName: GreenMonster_rig___Copy__1_:Horn1
+      position: {x: -0.018307209, y: 1.0309119, z: -0.07786706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Eye
+      parentName: GreenMonster_rig___Copy__1_:Horn1
+      position: {x: -0.018307209, y: 1.0309119, z: -0.07786706}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Root
+      parentName: group1
+      position: {x: -0.008799568, y: 1.1481059, z: 0.048302323}
+      rotation: {x: -0.48831594, y: 0.5513006, z: -0.44853607, w: 0.5063898}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Belly
+      parentName: GreenMonster_rig___Copy__1_:Root
+      position: {x: -0.5839249, y: -1.6653345e-16, z: 2.4980018e-16}
+      rotation: {x: 0.041411817, y: -0.0092069805, z: 0.097504765, w: 0.9943305}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: GreenMonster_rig___Copy__1_:Chest
+      parentName: GreenMonster_rig___Copy__1_:Belly
+      position: {x: -0.49676615, y: -1.110223e-16, z: 2.3462135e-16}
+      rotation: {x: 0.05340944, y: -0.013736779, z: -0.06463237, w: 0.9963842}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: GreenMonster_rig___Copy__1_:Sternum
+      parentName: GreenMonster_rig___Copy__1_:Chest
+      position: {x: -0.29192656, y: 3.8857806e-16, z: 8.326673e-17}
+      rotation: {x: 0.97341055, y: -0.22233044, z: 0.002072272, w: 0.055108685}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000001}
+    - name: GreenMonster_rig___Copy__1_:WingUp_1_L
+      parentName: GreenMonster_rig___Copy__1_:Sternum
+      position: {x: -0.25245434, y: -0.69257945, z: 0.3180121}
+      rotation: {x: -0.5323993, y: 0.41522658, z: 0.28741756, w: 0.6793594}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: GreenMonster_rig___Copy__1_:WingUp_2_L
+      parentName: GreenMonster_rig___Copy__1_:WingUp_1_L
+      position: {x: -1.4691697, y: 4.440892e-16, z: 1.9984014e-15}
+      rotation: {x: -0.032533932, y: 0.05953742, z: 0.008055729, w: 0.9976632}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: GreenMonster_rig___Copy__1_:WingUp_3_L
+      parentName: GreenMonster_rig___Copy__1_:WingUp_2_L
+      position: {x: -0.7706654, y: -0.0000014914265, z: -0.0000005402739}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: GreenMonster_rig___Copy__1_:joint53
+      parentName: GreenMonster_rig___Copy__1_:WingUp_3_L
+      position: {x: -0.8183003, y: 0.0000014914265, z: 0.0000005402739}
+      rotation: {x: 0.0057722293, y: -0.022987481, z: 0.24347621, w: 0.9696173}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: GreenMonster_rig___Copy__1_:WingDown_1_L
+      parentName: GreenMonster_rig___Copy__1_:Sternum
+      position: {x: -0.0150560485, y: -0.8785223, z: 0.37977332}
+      rotation: {x: -0.30851638, y: 0.5684028, z: 0.5531491, w: 0.52513057}
+      scale: {x: 0.9999997, y: 0.9999998, z: 0.9999998}
+    - name: GreenMonster_rig___Copy__1_:WingDown_2_L
+      parentName: GreenMonster_rig___Copy__1_:WingDown_1_L
+      position: {x: -1.2485722, y: -4.3888504e-16, z: -3.0531133e-16}
+      rotation: {x: 0.022292046, y: 0.067708276, z: 0.003953039, w: 0.99744827}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.99999994}
+    - name: GreenMonster_rig___Copy__1_:WingDown_3_L
+      parentName: GreenMonster_rig___Copy__1_:WingDown_2_L
+      position: {x: -0.7919661, y: 0.000002450673, z: 0.31573954}
+      rotation: {x: -0, y: -0, z: 1.1641531e-10, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.9999999}
+    - name: GreenMonster_rig___Copy__1_:joint50
+      parentName: GreenMonster_rig___Copy__1_:WingDown_3_L
+      position: {x: -0.89456147, y: -0.000002450673, z: 0.0000005734551}
+      rotation: {x: 0.0017249526, y: 0.010620973, z: -0.16030672, w: 0.9870086}
+      scale: {x: 1.0000004, y: 1, z: 1.0000005}
+    - name: GreenMonster_rig___Copy__1_:WingDown_1_R
+      parentName: GreenMonster_rig___Copy__1_:Sternum
+      position: {x: -0.015054053, y: -0.8785232, z: -0.39737257}
+      rotation: {x: -0.30851763, y: 0.56840223, z: -0.55314785, w: -0.5251316}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: GreenMonster_rig___Copy__1_:WingDown_2_R
+      parentName: GreenMonster_rig___Copy__1_:WingDown_1_R
+      position: {x: -1.2485744, y: 0, z: 5.551115e-17}
+      rotation: {x: -0.02229172, y: -0.067707986, z: 0.0039554387, w: 0.9974483}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000005}
+    - name: GreenMonster_rig___Copy__1_:WingDown_3_R
+      parentName: GreenMonster_rig___Copy__1_:WingDown_2_R
+      position: {x: -0.8525823, y: 4.440892e-16, z: -6.6266437e-16}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+    - name: GreenMonster_rig___Copy__1_:joint50
+      parentName: GreenMonster_rig___Copy__1_:WingDown_3_R
+      position: {x: -0.89456075, y: -0.00000465535, z: -0.000000886941}
+      rotation: {x: -0.16030715, y: -0.9870086, z: 0.0017250963, w: -0.0106211975}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: GreenMonster_rig___Copy__1_:WingUp_1_R
+      parentName: GreenMonster_rig___Copy__1_:Sternum
+      position: {x: -0.25245744, y: -0.6925788, z: -0.33561158}
+      rotation: {x: 0.8263509, y: 0.026462197, z: 0.5415392, w: -0.15224773}
+      scale: {x: 0.9999998, y: 0.9999996, z: 0.9999998}
+    - name: GreenMonster_rig___Copy__1_:WingUp_2_R
+      parentName: GreenMonster_rig___Copy__1_:WingUp_1_R
+      position: {x: -1.4691687, y: -1.110223e-16, z: 0}
+      rotation: {x: 0.027515143, y: -0.015266198, z: 0.094336964, w: 0.9950429}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:WingUp_3_R
+      parentName: GreenMonster_rig___Copy__1_:WingUp_2_R
+      position: {x: -0.77066463, y: 5.551115e-16, z: 1.9984014e-15}
+      rotation: {x: -0.00057182077, y: -0.046858888, z: -0.084958956, w: 0.9952819}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: GreenMonster_rig___Copy__1_:joint53
+      parentName: GreenMonster_rig___Copy__1_:WingUp_3_R
+      position: {x: -0.8183038, y: 0.0000014230474, z: -0.0000013087509}
+      rotation: {x: 0.24347503, y: -0.9696176, z: 0.0057721618, w: 0.022987029}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Sholder_R
+      parentName: GreenMonster_rig___Copy__1_:Sternum
+      position: {x: -0.10807896, y: -0.2264856, z: -0.5337866}
+      rotation: {x: -0.3874974, y: 0.5849437, z: -0.47173962, w: -0.5339928}
+      scale: {x: 1.000001, y: 1.0000004, z: 1.0000006}
+    - name: GreenMonster_rig___Copy__1_:Elbow_R
+      parentName: GreenMonster_rig___Copy__1_:Sholder_R
+      position: {x: -0.8949562, y: 0.06711221, z: -0.01014756}
+      rotation: {x: -0.00040338928, y: -0.0039627547, z: -0.03700423, w: 0.9993072}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000005}
+    - name: GreenMonster_rig___Copy__1_:Wrist_R
+      parentName: GreenMonster_rig___Copy__1_:Elbow_R
+      position: {x: -0.50148565, y: 3.330669e-16, z: -4.440892e-16}
+      rotation: {x: -0.08033147, y: -0.6033484, z: 0.05382487, w: 0.79159373}
+      scale: {x: 0.9999998, y: 1, z: 0.9999997}
+    - name: GreenMonster_rig___Copy__1_:FingerFront_1_R
+      parentName: GreenMonster_rig___Copy__1_:Wrist_R
+      position: {x: -0.596673, y: 4.440892e-16, z: -1.110223e-15}
+      rotation: {x: 0.05414965, y: 0.08793111, z: -0.081904925, w: 0.99127567}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: GreenMonster_rig___Copy__1_:FingerFront_2_R
+      parentName: GreenMonster_rig___Copy__1_:FingerFront_1_R
+      position: {x: -0.33172616, y: -3.330669e-16, z: 2.220446e-16}
+      rotation: {x: -0.002127169, y: -0.011060856, z: -0.039754275, w: 0.999146}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000004}
+    - name: GreenMonster_rig___Copy__1_:joint12
+      parentName: GreenMonster_rig___Copy__1_:FingerFront_2_R
+      position: {x: -0.29639903, y: 2.879641e-16, z: 5.551115e-17}
+      rotation: {x: 0.058816075, y: 0.9684401, z: 0.014682871, w: -0.24176183}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:FingerMiddle_1_R
+      parentName: GreenMonster_rig___Copy__1_:Wrist_R
+      position: {x: -0.26919174, y: 0.05091503, z: 0.306261}
+      rotation: {x: 0.031178895, y: 0.47370902, z: -0.10057957, w: 0.8743635}
+      scale: {x: 1, y: 1.0000002, z: 0.9999998}
+    - name: GreenMonster_rig___Copy__1_:FingerMiddle_2_R
+      parentName: GreenMonster_rig___Copy__1_:FingerMiddle_1_R
+      position: {x: -0.32342285, y: -4.440892e-16, z: 8.881784e-16}
+      rotation: {x: 0.0021412554, y: -0.01946675, z: -0.0017157984, w: 0.9998067}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000002}
+    - name: GreenMonster_rig___Copy__1_:joint9
+      parentName: GreenMonster_rig___Copy__1_:FingerMiddle_2_R
+      position: {x: -0.3590544, y: 2.4980018e-16, z: -6.1062266e-16}
+      rotation: {x: -0.055501428, y: 0.9965595, z: -0.0034227653, w: -0.061457686}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:FingerBack_1_R
+      parentName: GreenMonster_rig___Copy__1_:Wrist_R
+      position: {x: 0.013722913, y: -0.16788545, z: 0.50367963}
+      rotation: {x: 0.031029899, y: 0.47303084, z: -0.09622112, w: 0.875226}
+      scale: {x: 1, y: 1.0000005, z: 1.0000002}
+    - name: GreenMonster_rig___Copy__1_:FingerBack_2_R
+      parentName: GreenMonster_rig___Copy__1_:FingerBack_1_R
+      position: {x: -0.34677184, y: -2.220446e-16, z: 0}
+      rotation: {x: 0.0029393097, y: -0.031889744, z: 0.026004145, w: 0.9991488}
+      scale: {x: 1.0000001, y: 0.9999998, z: 0.99999994}
+    - name: GreenMonster_rig___Copy__1_:joint6
+      parentName: GreenMonster_rig___Copy__1_:FingerBack_2_R
+      position: {x: -0.33897692, y: -2.5972063e-16, z: 0}
+      rotation: {x: -0.022566771, y: 0.9987842, z: -0.0009900253, w: -0.0438176}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Sholder_L
+      parentName: GreenMonster_rig___Copy__1_:Sternum
+      position: {x: -0.15620016, y: -0.22161387, z: 0.5161876}
+      rotation: {x: -0.40559155, y: 0.57468784, z: 0.45497325, w: 0.54610324}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.9999997}
+    - name: GreenMonster_rig___Copy__1_:Elbow_L
+      parentName: GreenMonster_rig___Copy__1_:Sholder_L
+      position: {x: -0.8847036, y: -4.9960036e-16, z: 8.881784e-16}
+      rotation: {x: 0.00040344888, y: 0.003962844, z: -0.037003573, w: 0.9993073}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000001}
+    - name: GreenMonster_rig___Copy__1_:Wrist_L
+      parentName: GreenMonster_rig___Copy__1_:Elbow_L
+      position: {x: -0.5014901, y: 1.6653345e-16, z: -4.440892e-16}
+      rotation: {x: 0.000119408345, y: 0.0037016273, z: -0.032231383, w: 0.9994736}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000004}
+    - name: GreenMonster_rig___Copy__1_:FingerFront_1_L
+      parentName: GreenMonster_rig___Copy__1_:Wrist_L
+      position: {x: -0.15564893, y: -0.11869197, z: 0.5636526}
+      rotation: {x: 0.024329852, y: 0.22846109, z: 0.10306307, w: 0.96777666}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000002}
+    - name: GreenMonster_rig___Copy__1_:FingerFront_2_L
+      parentName: GreenMonster_rig___Copy__1_:FingerFront_1_L
+      position: {x: -0.33172956, y: -4.6629367e-15, z: -2.4424907e-15}
+      rotation: {x: 0.002127621, y: 0.012639565, z: -0.045413017, w: 0.9988861}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: GreenMonster_rig___Copy__1_:joint12
+      parentName: GreenMonster_rig___Copy__1_:FingerFront_2_L
+      position: {x: -0.29639852, y: 6.591949e-17, z: -1.8041124e-16}
+      rotation: {x: -0.01468396, y: -0.24176301, z: -0.058820117, w: 0.96843964}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:FingerMiddle_1_L
+      parentName: GreenMonster_rig___Copy__1_:Wrist_L
+      position: {x: -0.36812988, y: -0.0036539736, z: 0.18253595}
+      rotation: {x: 0.0053158216, y: 0.15555775, z: -0.019972902, w: 0.9876105}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: GreenMonster_rig___Copy__1_:FingerMiddle_2_L
+      parentName: GreenMonster_rig___Copy__1_:FingerMiddle_1_L
+      position: {x: -0.3234207, y: -4.440892e-16, z: 4.440892e-16}
+      rotation: {x: -0.0021412207, y: 0.019466465, z: -0.0017192363, w: 0.99980676}
+      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000004}
+    - name: GreenMonster_rig___Copy__1_:joint9
+      parentName: GreenMonster_rig___Copy__1_:FingerMiddle_2_L
+      position: {x: -0.35905972, y: -7.480995e-17, z: 4.3715032e-16}
+      rotation: {x: 0.0034230214, y: -0.061457142, z: 0.055506058, w: 0.99655926}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:FingerBack_1_L
+      parentName: GreenMonster_rig___Copy__1_:Wrist_L
+      position: {x: -0.43673792, y: -0.09026149, z: -0.2494381}
+      rotation: {x: 0.008057553, y: 0.15636212, z: -0.01649836, w: 0.98752916}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: GreenMonster_rig___Copy__1_:FingerBack_2_L
+      parentName: GreenMonster_rig___Copy__1_:FingerBack_1_L
+      position: {x: -0.34677485, y: 2.220446e-16, z: 4.440892e-16}
+      rotation: {x: -0.0029392205, y: 0.031897604, z: 0.025994899, w: 0.9991488}
+      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000001}
+    - name: GreenMonster_rig___Copy__1_:joint6
+      parentName: GreenMonster_rig___Copy__1_:FingerBack_2_L
+      position: {x: -0.33897707, y: -1.4379231e-17, z: -1.3877788e-17}
+      rotation: {x: 0.0009904238, y: -0.04381809, z: 0.022575594, w: 0.99878395}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Neck
+      parentName: GreenMonster_rig___Copy__1_:Sternum
+      position: {x: -0.32792056, y: -8.326673e-17, z: 1.3877788e-17}
+      rotation: {x: -0.9839855, y: 0.1782484, z: 0.0000000623986, w: 0.000000013154928}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1.0000007}
+    - name: GreenMonster_rig___Copy__1_:Head
+      parentName: GreenMonster_rig___Copy__1_:Neck
+      position: {x: -0.85854834, y: -0.026975889, z: 1.0460383e-15}
+      rotation: {x: 0.4753616, y: -0.52347994, z: 0.47536162, w: 0.5234802}
+      scale: {x: 0.9999998, y: 0.9999998, z: 1.0000001}
+    - name: GreenMonster_rig___Copy__1_:Antena_1
+      parentName: GreenMonster_rig___Copy__1_:Head
+      position: {x: -0.0052088965, y: 1.0042192, z: -0.2607487}
+      rotation: {x: 0.00016045566, y: -0.00019654627, z: -0.6323539, w: 0.7746796}
+      scale: {x: 1.0000002, y: 1, z: 0.9999997}
+    - name: GreenMonster_rig___Copy__1_:Antena_2
+      parentName: GreenMonster_rig___Copy__1_:Antena_1
+      position: {x: -0.27416143, y: 6.482572e-17, z: -2.3716923e-20}
+      rotation: {x: -0.97640324, y: 0.21595487, z: -0.000007831978, w: -0.00048707158}
+      scale: {x: 1.0000004, y: 0.9999999, z: 1.0000002}
+    - name: GreenMonster_rig___Copy__1_:Antena_3
+      parentName: GreenMonster_rig___Copy__1_:Antena_2
+      position: {x: -0.22658844, y: -1.7619467e-16, z: -5.946517e-15}
+      rotation: {x: 0.04271433, y: -0.016970418, z: 0.14380324, w: 0.9885384}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
+    - name: GreenMonster_rig___Copy__1_:Antena_4
+      parentName: GreenMonster_rig___Copy__1_:Antena_3
+      position: {x: -0.1774078, y: -8.988036e-17, z: -6.938894e-18}
+      rotation: {x: 0.32423642, y: -0.13149463, z: -0.1282649, w: 0.9279699}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
+    - name: GreenMonster_rig___Copy__1_:joint32
+      parentName: GreenMonster_rig___Copy__1_:Antena_4
+      position: {x: -0.15683214, y: 2.7755576e-17, z: -4.510281e-17}
+      rotation: {x: -0.5649925, y: 0.7258364, z: -0.24100508, w: -0.3096152}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Hip_R
+      parentName: GreenMonster_rig___Copy__1_:Root
+      position: {x: 0.069206886, y: -0.014271234, z: 0.6381208}
+      rotation: {x: -0.029598247, y: 0.30323258, z: 0.93431604, w: 0.18500672}
+      scale: {x: 0.9999997, y: 0.9999999, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Knee_R
+      parentName: GreenMonster_rig___Copy__1_:Hip_R
+      position: {x: -0.5318849, y: -8.881784e-16, z: -1.110223e-16}
+      rotation: {x: -0.94497836, y: -0.32114843, z: 0.0074969074, w: 0.06183379}
+      scale: {x: 1, y: 1.0000004, z: 0.9999999}
+    - name: GreenMonster_rig___Copy__1_:Ankle_R
+      parentName: GreenMonster_rig___Copy__1_:Knee_R
+      position: {x: -0.57764405, y: -4.440892e-16, z: 2.7755576e-16}
+      rotation: {x: 0.5424504, y: 0.8077553, z: -0.14341523, w: 0.18086196}
+      scale: {x: 0.9999998, y: 0.9999999, z: 1.0000002}
+    - name: GreenMonster_rig___Copy__1_:Toepad_R
+      parentName: GreenMonster_rig___Copy__1_:Ankle_R
+      position: {x: -0.42526424, y: -2.6237693e-16, z: 1.110223e-16}
+      rotation: {x: -0.0027840503, y: 0.18027754, z: -0.013453689, w: 0.98351985}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000002}
+    - name: GreenMonster_rig___Copy__1_:ToeReft_R
+      parentName: GreenMonster_rig___Copy__1_:Toepad_R
+      position: {x: -0.18683986, y: 6.2189837e-16, z: 8.326673e-17}
+      rotation: {x: 0.0076955548, y: -0.13389003, z: -0.02803396, w: 0.9905698}
+      scale: {x: 1, y: 1.0000001, z: 1.0000004}
+    - name: GreenMonster_rig___Copy__1_:joint20
+      parentName: GreenMonster_rig___Copy__1_:ToeReft_R
+      position: {x: -0.23188803, y: 2.740863e-16, z: -1.2490009e-16}
+      rotation: {x: -0.039728556, y: 0.92651457, z: -0.016028909, w: -0.3738122}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ToeRigt_R
+      parentName: GreenMonster_rig___Copy__1_:Toepad_R
+      position: {x: -0.14218937, y: 0.0050921957, z: -0.12998259}
+      rotation: {x: 0.020165555, y: -0.41565636, z: -0.017600145, w: 0.90912783}
+      scale: {x: 1, y: 1.0000004, z: 1.0000005}
+    - name: GreenMonster_rig___Copy__1_:joint18
+      parentName: GreenMonster_rig___Copy__1_:ToeRigt_R
+      position: {x: -0.21097079, y: 1.9428903e-16, z: -1.110223e-16}
+      rotation: {x: 0.02640678, y: -0.7782731, z: 0.021274416, w: 0.62700963}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:Hip_L
+      parentName: GreenMonster_rig___Copy__1_:Root
+      position: {x: 0.08205425, y: 0.09133889, z: -0.6123963}
+      rotation: {x: 0.03548819, y: -0.38267374, z: 0.90576404, w: 0.17858596}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: GreenMonster_rig___Copy__1_:Knee_L
+      parentName: GreenMonster_rig___Copy__1_:Hip_L
+      position: {x: -0.531886, y: 4.440892e-16, z: 7.771561e-16}
+      rotation: {x: 0.94276744, y: 0.32747564, z: 0.004784897, w: 0.06266182}
+      scale: {x: 1, y: 1.0000001, z: 0.9999998}
+    - name: GreenMonster_rig___Copy__1_:Ankle_L
+      parentName: GreenMonster_rig___Copy__1_:Knee_L
+      position: {x: -0.57764256, y: 4.440892e-16, z: 2.7755576e-16}
+      rotation: {x: -0.53763956, y: -0.8118154, z: -0.13880569, w: 0.1806447}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000006}
+    - name: GreenMonster_rig___Copy__1_:Toepad_L
+      parentName: GreenMonster_rig___Copy__1_:Ankle_L
+      position: {x: -0.42526433, y: 1.8756698e-17, z: 5.551115e-17}
+      rotation: {x: 0.00037096435, y: -0.41710764, z: 0.00080823887, w: 0.90885663}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ToeLeft_L
+      parentName: GreenMonster_rig___Copy__1_:Toepad_L
+      position: {x: -0.16408598, y: 0.0054386575, z: 0.08919998}
+      rotation: {x: -0.01602962, y: 0.3738111, z: -0.039730407, w: 0.92651486}
+      scale: {x: 0.9999998, y: 1.0000001, z: 0.9999998}
+    - name: GreenMonster_rig___Copy__1_:joint20
+      parentName: GreenMonster_rig___Copy__1_:ToeLeft_L
+      position: {x: -0.2318881, y: -1.7347235e-18, z: 1.3877788e-17}
+      rotation: {x: 0.016029611, y: -0.3738111, z: 0.039730426, w: 0.92651486}
+      scale: {x: 1, y: 1, z: 1}
+    - name: GreenMonster_rig___Copy__1_:ToeRigt_L
+      parentName: GreenMonster_rig___Copy__1_:Toepad_L
+      position: {x: -0.06265784, y: 0.009227257, z: 0.18201096}
+      rotation: {x: -0.021272024, y: 0.627017, z: -0.026403187, w: 0.7782673}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: GreenMonster_rig___Copy__1_:joint18
+      parentName: GreenMonster_rig___Copy__1_:ToeRigt_L
+      position: {x: -0.21096924, y: 5.2041704e-18, z: 2.0816682e-17}
+      rotation: {x: 0.021272006, y: -0.62701696, z: 0.026403287, w: 0.77826744}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 100
+    rootMotionBoneName: GreenMonster_rig___Copy__1_:Root
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

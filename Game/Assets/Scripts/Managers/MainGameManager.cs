@@ -13,6 +13,9 @@ public class MainGameManager : MonoBehaviour
 
     [SerializeField]
     private List<GameObject> playerPrefabs;
+
+    [SerializeField]
+    private List<Transform> playerPositions;
     private bool kPressed;
 
     // Start is called before the first frame update
@@ -24,7 +27,8 @@ public class MainGameManager : MonoBehaviour
         {
             var pConfig = GameData.Instance.PlayersConfigurations[i];
             // TODO: Fix later and add prefabs
-            //PlayerInputManager.instance.playerPrefab = playerPrefabs[pConfig.character];
+            int prefabIndex = pConfig.character > (playerPrefabs.Count - 1) ? 0 : pConfig.character;
+            PlayerInputManager.instance.playerPrefab = playerPrefabs[prefabIndex];
 
             PlayerInputManager.instance.JoinPlayer(pairWithDevice: pConfig.device);
             Debug.LogWarning($"Player {i} using {pConfig.device} chose character {pConfig.character}");
@@ -86,6 +90,7 @@ public class MainGameManager : MonoBehaviour
 
     private void OnPlayerJoined(UnityEngine.InputSystem.PlayerInput pInput)
     {
+        pInput.gameObject.transform.position = playerPositions[pInput.playerIndex].transform.position;
         players.Add(pInput);
         playerCount++;
     }

@@ -140,14 +140,16 @@ MonoBehaviour:
   EnablePhysicalSize: 0
   Thumbnail: 
   HasThumbnail: 0
-  CurrentStatePreset: 
+  CurrentStatePreset: " <sbspreset pkgurl=\"pkg://GroundWork_graph\" label=\"\" >\n 
+    <presetinput identifier=\"$outputsize\" uid=\"761189192\" type=\"8\" value=\"11,11\"
+    />\n  <presetinput identifier=\"$randomseed\" uid=\"2049754394\" type=\"4\" value=\"3701\"
+    />\n </sbspreset>\n"
   IsRuntimeOnly: 0
   GenerateAllOutputs: 0
   GenerateAllMipmaps: 1
   OutputMaterial: {fileID: 2100000, guid: 0736bf5fd94bb504088826d06db09fce, type: 2}
   DefaultPreset: " <sbspreset pkgurl=\"pkg://GroundWork_graph\" label=\"\" >\n  <presetinput
-    identifier=\"$outputsize\" uid=\"761189192\" type=\"8\" value=\"10,10\" />\n
-    </sbspreset>\n"
+    identifier=\"$outputsize\" uid=\"761189192\" type=\"8\" value=\"10,10\" />\n</sbspreset>\n"
   MaterialShader: HDRP/Lit
   RenderTextures: 0
   OutputRemaped: 0
@@ -166,7 +168,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 5
           WidgetType: 0
-        Data: {x: 10, y: 10}
+        Data: {x: 11, y: 11}
         NumericalDescription:
           DefaultValue: {x: 8, y: 8}
           MinValue: {x: 0, y: 0}
@@ -185,7 +187,7 @@ MonoBehaviour:
           GuiDescription: 
           Type: 4
           WidgetType: 0
-        Data: 0
+        Data: 3701
         NumericalDescription:
           DefaultValue: 0
           MinValue: 0
