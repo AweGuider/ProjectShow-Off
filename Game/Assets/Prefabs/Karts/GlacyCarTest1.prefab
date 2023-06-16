@@ -295,7 +295,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2914501489735509775}
   m_LocalRotation: {x: 0.06032601, y: -0, z: -0, w: 0.9981787}
-  m_LocalPosition: {x: -3.972643, y: 9.03, z: 5.9787197}
+  m_LocalPosition: {x: 0, y: 8, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1551,7 +1551,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4725216946985562100}
-  m_LocalRotation: {x: 0.06032601, y: -0, z: -0, w: 0.9981787}
+  m_LocalRotation: {x: 0.06032601, y: 1e-45, z: -0, w: 0.9981787}
   m_LocalPosition: {x: 0, y: 8, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2191,6 +2191,7 @@ MonoBehaviour:
   Kart: {fileID: 8532489521356807945}
   SteeringParam: Steering
   GroundedParam: Grounded
+  steeringSmoother: 0
 --- !u!114 &1529924734179394883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2981,6 +2982,14 @@ PrefabInstance:
     - target: {fileID: 3946645144889197856, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
       propertyPath: m_Name
       value: IceWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3946645144889197856, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694340194021686889, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
+      propertyPath: _startingTime
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70e955baf5031e741a4756bd7147bf58, type: 3}
