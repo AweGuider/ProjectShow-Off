@@ -41,7 +41,7 @@ public class CannonPowerUp : ActivatableArcadeKartPowerup
 
             Fire?.Invoke(kart.Rigidbody.velocity.magnitude, FirePowerMultiplier);
 
-            /// Write below
+            /// Write above
 
         }
     }

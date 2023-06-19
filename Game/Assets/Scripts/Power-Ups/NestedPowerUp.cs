@@ -6,28 +6,34 @@ using UnityEngine.InputSystem;
 
 public class NestedPowerUp : ActivatableArcadeKartPowerup
 {
+    [SerializeField]
+    private KnockbackZone _zone;
 
     [SerializeField]
-    private Cannon _cannon;
+    int _radius;
 
-    public float FirePowerMultiplier = 1f;
+    public int Radius { get => _radius; }
+
+    [SerializeField]
+    int _force;
+
 
     event Action<float, float> Fire;
 
     private void Awake()
     {
-        if (_cannon == null) _cannon = gameObject.GetComponentInChildren<Cannon>();
+
     }
 
-    private void OnEnable()
-    {
-        Fire += _cannon.FireTheBall;
-    }
+    //private void OnEnable()
+    //{
+    //    Fire += _cannon.FireTheBall;
+    //}
 
-    private void OnDisable()
-    {
-        Fire -= _cannon.FireTheBall;
-    }
+    //private void OnDisable()
+    //{
+    //    Fire -= _cannon.FireTheBall;
+    //}
 
     public override void OnPowerUp(InputAction.CallbackContext context)
     {
@@ -39,9 +45,12 @@ public class NestedPowerUp : ActivatableArcadeKartPowerup
             ApplyPowerUps(kart);
             /// Don't change this part
 
-            Fire?.Invoke(kart.Rigidbody.velocity.magnitude, FirePowerMultiplier);
+            foreach (GameObject t in _zone.Nearby)
+            {
+                t.GetComponent<IExplosivable>().ReactToExplosion(_force, _zone.gameObject.transform.position, _radius);
+            }
 
-            /// Write below
+            /// Write above
 
         }
     }

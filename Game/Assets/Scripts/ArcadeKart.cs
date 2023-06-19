@@ -5,7 +5,7 @@ using UnityEngine.VFX;
 
 namespace KartGame.KartSystems
 {
-    public class ArcadeKart : MonoBehaviour
+    public class ArcadeKart : MonoBehaviour, IExplosivable
     {
         [System.Serializable]
         public class StatPowerup
@@ -596,6 +596,11 @@ namespace KartGame.KartSystems
             }
 
             ActivateDriftVFX(IsDrifting && GroundPercent > 0.0f);
+        }
+
+        public void ReactToExplosion(float force, Vector3 position, float radius)
+        {
+            Rigidbody.AddExplosionForce(force, position, radius);
         }
     }
 }
