@@ -21,4 +21,10 @@ public abstract class ActivatableArcadeKartPowerup : ArcadeKartPowerup
             Debug.Log($"Activated PowerUp: {context.performed}");
         }
     }
+
+    public ArcadeKart GetKart()
+    {
+        return kart;
+    }
+
 }
