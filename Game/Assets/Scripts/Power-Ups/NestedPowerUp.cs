@@ -41,13 +41,13 @@ public class NestedPowerUp : ActivatableArcadeKartPowerup
         {
             /// Don't change this part
             base.OnPowerUp(context);
-            if (isCoolingDown) return;
+            if (IsCoolingDown) return;
             ApplyPowerUps(kart);
             /// Don't change this part
 
             foreach (GameObject t in _zone.Nearby)
             {
-                t.GetComponent<IExplosivable>().ReactToExplosion(_force, _zone.gameObject.transform.position, _radius);
+                t.GetComponent<IKart>().ReactToExplosion(_force, _zone.gameObject.transform.position, _radius);
             }
 
             /// Write above

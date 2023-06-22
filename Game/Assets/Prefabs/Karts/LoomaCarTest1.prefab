@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &295320949156840747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8567822413919788188}
+  m_Layer: 0
+  m_Name: Trails
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8567822413919788188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295320949156840747}
+  m_LocalRotation: {x: -0, y: -0.26451626, z: -0, w: 0.9643813}
+  m_LocalPosition: {x: -0.10239601, y: 8.462448, z: -60.76049}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8888941986988621811}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &623263252136457223
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,8 +371,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2684356547642771447}
-  m_LocalRotation: {x: 0.04220627, y: 0.0000000021488809, z: -9.077714e-11, w: 0.99910897}
-  m_LocalPosition: {x: 0, y: 12, z: -18}
+  m_LocalRotation: {x: 0.04220686, y: 0.0000035464764, z: -0.00000015180558, w: 0.9991089}
+  m_LocalPosition: {x: -0.000039100647, y: 12, z: -17.999832}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -372,7 +403,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 5000
+  far clip plane: 3000
   field of view: 70
   orthographic: 0
   orthographic size: 5
@@ -1581,8 +1612,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5521963311992606476}
-  m_LocalRotation: {x: 0.04220627, y: 0.0000000021488809, z: -9.077714e-11, w: 0.99910897}
-  m_LocalPosition: {x: 0, y: 12, z: -18}
+  m_LocalRotation: {x: 0.04220686, y: 0.0000035464764, z: -0.00000015180558, w: 0.9991089}
+  m_LocalPosition: {x: -0.000039100647, y: 12, z: -17.999832}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2253,6 +2284,7 @@ GameObject:
   - component: {fileID: 8888941986988621806}
   - component: {fileID: 1732128663420085691}
   - component: {fileID: 2369344378727384887}
+  - component: {fileID: 1464519289113595449}
   m_Layer: 2
   m_Name: LoomaCarTest1
   m_TagString: Player
@@ -2282,6 +2314,8 @@ Transform:
   - {fileID: 1844807994660025619}
   - {fileID: 8980634641003106402}
   - {fileID: 2379374158768193040}
+  - {fileID: 7605492710766294243}
+  - {fileID: 8567822413919788188}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2550,8 +2584,8 @@ MonoBehaviour:
     m_ActionName: UI/Select[/Keyboard/s,/Keyboard/w]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ActivatableArcadeKartPowerup, Assembly-CSharp
+      - m_Target: {fileID: 1464519289113595449}
+        m_TargetAssemblyTypeName: JellyPathPowerUp, Assembly-CSharp
         m_MethodName: OnPowerUp
         m_Mode: 0
         m_Arguments:
@@ -2569,6 +2603,52 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 6281403366270965878}
+--- !u!114 &1464519289113595449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8888941986988621812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b03a2f7c187ea142908b6ec36e859e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boostStats:
+    modifiers:
+      TopSpeed: 0
+      Acceleration: 0
+      ReverseSpeed: 0
+      ReverseAcceleration: 0
+      AccelerationCurve: 0
+      Braking: 0
+      CoastingDrag: 0
+      Grip: 0
+      Steer: 0
+      AddedGravity: 0
+    PowerUpID: 
+    ElapsedTime: 0
+    MaxTime: 5
+  cooldown: 5
+  disableGameObjectWhenActivated: 0
+  onPowerupActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onPowerupFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  onPowerupFinishCooldown:
+    m_PersistentCalls:
+      m_Calls: []
+  kart: {fileID: 8888941986988621809}
+  _trailPrefab: {fileID: 4002266661859485793, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+  _trailObj: {fileID: 7814334230836003003}
+  _spawnedTrailSegments: []
+  _trailsParent: {fileID: 8567822413919788188}
+  _maxTrailSegments: 10
+  spawnInterval: 0.2
+  trailSegmentSpacing: 1
 --- !u!1 &8888941987101582441
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,6 +3237,77 @@ CapsuleCollider:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 89f82370d7f055c4bb577aead2188099, type: 3}
   m_PrefabInstance: {fileID: 5964848198319966554}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6627328078712547546
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8888941986988621811}
+    m_Modifications:
+    - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.232968
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.7989838
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -54.15302
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002266661859485793, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_Name
+      value: TrailSegment
+      objectReference: {fileID: 0}
+    - target: {fileID: 4002266661859485793, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+--- !u!4 &7605492710766294243 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+  m_PrefabInstance: {fileID: 6627328078712547546}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7814334230836003003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4002266661859485793, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+  m_PrefabInstance: {fileID: 6627328078712547546}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7192928757018433761
 PrefabInstance:
