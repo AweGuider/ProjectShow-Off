@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a85abb61ee8b544caeea229aa362cf0
+guid: b8158517585be7644a7a202a3de28701
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -89,7 +89,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 100
-    rootMotionBoneName: Chariot_Rig_V2:Root_Body
+    rootMotionBoneName: Chariot_Rig_V3:Root_Body
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
