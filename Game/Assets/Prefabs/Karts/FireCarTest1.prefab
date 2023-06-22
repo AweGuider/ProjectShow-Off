@@ -228,7 +228,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2963329917013301706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1383,10 +1383,10 @@ WheelCollider:
     spring: 35000
     damper: 4500
     targetPosition: 0.5
-  m_SuspensionDistance: 0.3
+  m_SuspensionDistance: 1
   m_ForceAppPointDistance: 0
   m_Mass: 20
-  m_WheelDampingRate: 0.25
+  m_WheelDampingRate: 1
   m_ForwardFriction:
     m_ExtremumSlip: 0.4
     m_ExtremumValue: 1
@@ -2107,7 +2107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6243455285931012557}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.58675, y: 0.0147, z: -0.04516}
+  m_LocalPosition: {x: 1.587, y: -0.515, z: -0.045}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2652,11 +2652,11 @@ MonoBehaviour:
   - {fileID: 8126369033005336867}
   CenterOfMass: {fileID: 7495041320048266441}
   AirborneReorientationCoefficient: 2
-  DriftGrip: 0.75
+  DriftGrip: 1
   DriftAdditionalSteer: 1
   MinAngleToFinishDrift: 29
   MinSpeedPercentToFinishDrift: 0.95
-  DriftControl: 16
+  DriftControl: 20
   DriftDampening: 8
   DriftSparkVFX: {fileID: 0}
   DriftSparkHorizontalOffset: 0.1
@@ -2666,8 +2666,8 @@ MonoBehaviour:
   JumpVFX: {fileID: 0}
   NozzleVFX: {fileID: 0}
   Nozzles: []
-  SuspensionHeight: 0.3
-  SuspensionSpring: 70000
+  SuspensionHeight: 1
+  SuspensionSpring: 90000
   SuspensionDamp: 5000
   WheelsPositionVerticalOffset: 0.05
   FrontLeftWheel: {fileID: 7785414532545446616}
@@ -3189,7 +3189,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a04194c0fb5768b4cb4fbc56daf2c582, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.126
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a04194c0fb5768b4cb4fbc56daf2c582, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3313,6 +3313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Firequad_FL
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 85e24ac06ba9f034f8c785d628163dfe, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 8bb85477460bedb4aaf691c08af83526, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a61647cdb6e64254d82358cd97dafed4, type: 3}
 --- !u!1 &4502364823633324508 stripped
@@ -3444,7 +3448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e287a3f85c122ad4bac6cf8f041f0d28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.072
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e287a3f85c122ad4bac6cf8f041f0d28, type: 3}
       propertyPath: m_LocalPosition.z
