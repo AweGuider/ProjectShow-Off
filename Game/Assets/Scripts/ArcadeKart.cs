@@ -5,7 +5,7 @@ using UnityEngine.VFX;
 
 namespace KartGame.KartSystems
 {
-    public class ArcadeKart : MonoBehaviour, IExplosivable
+    public class ArcadeKart : MonoBehaviour, IKart
     {
         [System.Serializable]
         public class StatPowerup
@@ -601,6 +601,15 @@ namespace KartGame.KartSystems
         public void ReactToExplosion(float force, Vector3 position, float radius)
         {
             Rigidbody.AddExplosionForce(force, position, radius);
+        }
+
+        public void ReactToBump(StatPowerup debuff)
+        {
+            AddPowerup(debuff);
+        }
+        public void ReactToJellyPath(StatPowerup debuff)
+        {
+            AddPowerup(debuff);
         }
     }
 }

@@ -35,7 +35,7 @@ public class CannonPowerUp : ActivatableArcadeKartPowerup
         {
             /// Don't change this part
             base.OnPowerUp(context);
-            if (isCoolingDown) return;
+            if (IsCoolingDown) return;
             ApplyPowerUps(kart);
             /// Don't change this part
 

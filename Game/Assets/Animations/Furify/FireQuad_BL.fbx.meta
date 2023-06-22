@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b54ef5bdd6216de4bbd2ad2f8c49bc8e
+guid: e287a3f85c122ad4bac6cf8f041f0d28
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -89,7 +89,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 100
-    rootMotionBoneName: Root2
+    rootMotionBoneName: FireQuad_Rig_V3:Root2
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

@@ -6,7 +6,7 @@ public class OnTriggerArcadeKartPowerup : ArcadeKartPowerup
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (isCoolingDown) return;
+        if (IsCoolingDown) return;
 
         var rb = other.attachedRigidbody;
 

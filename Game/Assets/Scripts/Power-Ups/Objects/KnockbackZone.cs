@@ -48,7 +48,7 @@ public class KnockbackZone : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if (other.transform.TryGetComponent(out IExplosivable explosivable))
+        if (other.transform.TryGetComponent(out IKart explosivable))
         {
             _nearby.Add(other.gameObject);
         }
