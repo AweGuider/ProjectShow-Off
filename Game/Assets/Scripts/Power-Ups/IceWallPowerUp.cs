@@ -21,7 +21,7 @@ public class IceWallPowerUp : ActivatableArcadeKartPowerup
         if (context.performed)
         {
             base.OnPowerUp(context);
-            if (isCoolingDown) return;
+            if (IsCoolingDown) return;
 
             ApplyPowerUps(kart);
 

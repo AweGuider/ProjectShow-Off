@@ -18,7 +18,10 @@ public abstract class ActivatableArcadeKartPowerup : ArcadeKartPowerup
     {
         if (context.performed)
         {
-            Debug.Log($"Activated PowerUp: {context.performed}");
+            Debug.Log($"OnPowerUp clicked: {context.performed}");
+
+            if (IsCoolingDown)
+                Debug.Log($"Can activate powerup? {!IsCoolingDown}");
         }
     }
 
