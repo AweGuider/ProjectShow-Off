@@ -25,7 +25,7 @@ MonoBehaviour:
         m_Id: With3Levels
     supportVolumetrics: 1
     supportVolumetricClouds: 0
-    supportLightLayers: 0
+    supportLightLayers: 1
     supportDistortion: 1
     supportTransparentBackface: 1
     supportTransparentDepthPrepass: 1
@@ -35,7 +35,7 @@ MonoBehaviour:
     customBufferFormat: 8
     supportedLitShaderMode: 2
     planarReflectionResolution:
-      m_Values: 000100000004000000080000
+      m_Values: 000100000004000000040000
       m_SchemaId:
         m_Id: With3Levels
     supportDecals: 1
@@ -67,13 +67,13 @@ MonoBehaviour:
         serializedVersion: 2
         m_Bits: 0
       supportFabricConvolution: 0
-      maxDirectionalLightsOnScreen: 16
-      maxPunctualLightsOnScreen: 512
-      maxAreaLightsOnScreen: 64
+      maxDirectionalLightsOnScreen: 100
+      maxPunctualLightsOnScreen: 2048
+      maxAreaLightsOnScreen: 640
       maxEnvLightsOnScreen: 64
       maxDecalsOnScreen: 512
       maxPlanarReflectionOnScreen: 16
-      maxLightsPerClusterCell: 8
+      maxLightsPerClusterCell: 24
       maxLocalVolumetricFogSize: 32
       maxLocalVolumetricFogOnScreen: 64
     hdShadowInitParams:
