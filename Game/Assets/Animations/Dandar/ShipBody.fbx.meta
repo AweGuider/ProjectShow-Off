@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7ae5322593f29d54c94af9a293571150
+guid: 6ff2e2bec3d199e4b8f3704519c3b2d8
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -88,8 +88,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
-    rootMotionBoneName: 
+    globalScale: 100
+    rootMotionBoneName: VikingShip_Rig_V3:Root3
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
@@ -97,7 +97,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
