@@ -1,4 +1,5 @@
 using KartGame.KartSystems;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -47,7 +48,10 @@ public class Cannon : MonoBehaviour {
 
         float sumVelocity = (_velocity + _powerUp.GetKart().Rigidbody.velocity.magnitude) * _powerUp.FirePowerMultiplier;
 
-        Vector3 initialVelocity = _ballSpawn.forward * Mathf.Clamp(sumVelocity, 13, 20); // Modify this calculation based on your requirements
+        sumVelocity = ClampVelocity(sumVelocity);
+
+        //Vector3 initialVelocity = _ballSpawn.forward * Mathf.Clamp(sumVelocity, _velocity, _velocity * 2); // Modify this calculation based on your requirements
+        Vector3 initialVelocity = _ballSpawn.forward * sumVelocity; // Modify this calculation based on your requirements
         //Mathf.Lerp
         Debug.Log(initialVelocity.magnitude);
         float timeStep = Time.fixedDeltaTime;
@@ -64,10 +68,15 @@ public class Cannon : MonoBehaviour {
         return points;
     }
 
+    private float ClampVelocity(float sumVelocity)
+    {
+        return Mathf.Clamp(sumVelocity, _velocity, _velocity * 2);
+    }
+
     public void FireTheBall(float kartVelocity, float multiplier)
     {
         var ball = Instantiate(_ballPrefab, _ballSpawn.position, _ballSpawn.rotation);
-        ball.Init((_velocity + kartVelocity) * multiplier);
+        ball.Init(ClampVelocity((_velocity + kartVelocity) * multiplier));
 
     }
 }
