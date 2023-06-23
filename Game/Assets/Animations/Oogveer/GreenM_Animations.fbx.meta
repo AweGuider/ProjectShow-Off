@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5f4edf6af07f425488d1f7733af13ad8
+guid: 24f2e06a4e659b84fa53faf2c0a602c2
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -88,8 +88,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
-    rootMotionBoneName: 
+    globalScale: 100
+    rootMotionBoneName: GreenMonster_rig___Copy__1_:Root
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
@@ -97,7 +97,7 @@ ModelImporter:
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
   additionalBone: 0
