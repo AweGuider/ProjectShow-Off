@@ -1,3 +1,4 @@
+using Placement;
 using UnityEditor;
 using UnityEngine;
 
@@ -51,14 +52,14 @@ public class PlacementGeneratorEditor : Editor
 
         ObjectType objectType = (ObjectType)objectTypeProp.enumValueIndex;
 
-        if (objectType == ObjectType.Building)
-        {
-            EditorGUILayout.PropertyField(rowsProp);
-            EditorGUILayout.PropertyField(columnsProp);
-            EditorGUILayout.PropertyField(rowWidthProp);
-            EditorGUILayout.PropertyField(columnWidthProp);
-            EditorGUILayout.PropertyField(buildDelaySecondsProp);
-        }
+        //if (objectType == ObjectType.Building)
+        //{
+        //    EditorGUILayout.PropertyField(rowsProp);
+        //    EditorGUILayout.PropertyField(columnsProp);
+        //    EditorGUILayout.PropertyField(rowWidthProp);
+        //    EditorGUILayout.PropertyField(columnWidthProp);
+        //    EditorGUILayout.PropertyField(buildDelaySecondsProp);
+        //}
 
         DrawDefaultInspector();
 
@@ -115,7 +116,7 @@ public class PlacementGeneratorEditor : Editor
 
 
             // Raycast onto the target object
-            GameObject targetObject = placementGenerator.targetObject;
+            GameObject targetObject = placementGenerator.TargetObject;
             if (targetObject != null)
             {
                 Ray ray = HandleUtility.GUIPointToWorldRay(Event.current.mousePosition);
