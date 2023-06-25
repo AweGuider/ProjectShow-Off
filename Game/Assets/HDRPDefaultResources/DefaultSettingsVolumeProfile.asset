@@ -60,40 +60,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 0
   quality:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   enable:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   length:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.242
   opacity:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   distanceScaleFactor:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.5
   maxDistance:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 50
   minDistance:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   fadeDistance:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 5
   fadeInDistance:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   rayBias:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.2
   thicknessScale:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.15
   m_SampleCount:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 10
 --- !u!114 &11400000
 MonoBehaviour:
@@ -345,10 +345,10 @@ MonoBehaviour:
     m_Value: 0
   limitMin:
     m_OverrideState: 1
-    m_Value: 2.5
+    m_Value: 2.2
   limitMax:
     m_OverrideState: 1
-    m_Value: 7
+    m_Value: 7.0000005
   curveMap:
     m_OverrideState: 0
     m_Value:
@@ -614,12 +614,12 @@ MonoBehaviour:
     m_Value: 0.5
   cascadeShadowSplit1:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.652
   cascadeShadowSplit2:
     m_OverrideState: 1
     m_Value: 0.8
   cascadeShadowBorder0:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: NaN
   cascadeShadowBorder1:
     m_OverrideState: 1

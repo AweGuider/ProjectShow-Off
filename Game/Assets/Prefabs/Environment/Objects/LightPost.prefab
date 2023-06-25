@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 189684508249314461}
   - component: {fileID: 3823061970795846456}
   - component: {fileID: 1363123743320682482}
+  - component: {fileID: 7088102413230600288}
   m_Layer: 0
   m_Name: LightPost
   m_TagString: Untagged
@@ -84,6 +85,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &7088102413230600288
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714442463999692327}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.0009765625, y: 0, z: -0.00012207031}
+  m_Size: 260
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1363123743320682482}
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &3890147416217246256
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,8 +154,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1734.6622
+  m_Color: {r: 1, g: 0.7230057, b: 0.0603773, a: 1}
+  m_Intensity: 4485.43
   m_Range: 48.72
   m_SpotAngle: 50
   m_InnerSpotAngle: 5
@@ -191,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Intensity: 1021.1709
+  m_Intensity: 2640.5088
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 20
