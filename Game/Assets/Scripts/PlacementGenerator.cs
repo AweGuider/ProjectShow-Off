@@ -80,10 +80,6 @@ namespace Placement
 
         public List<GameObject> instantiatedPrefabs = new();
 
-        //[Header("Set rotation and position for each building")]
-
-        //private int rotRand;
-
 #if UNITY_EDITOR
         [ContextMenu("Generate")]
         public List<GameObject> Generate(Vector3 initialSample = new())
