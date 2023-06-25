@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Umbrela1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5866384600106534356, guid: c47c3d79ca946ba45a2041ada18fa14f, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c47c3d79ca946ba45a2041ada18fa14f, type: 3}
 --- !u!4 &6821083822710025496 stripped
@@ -207,6 +211,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1039208781126539167, guid: 0cbc03b092ff5f4438bb783164680e2f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2172756188156685552, guid: 0cbc03b092ff5f4438bb783164680e2f, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
