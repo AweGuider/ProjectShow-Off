@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6649561716404369919}
   - component: {fileID: 7775507307774785114}
   - component: {fileID: 5479985722004750992}
+  - component: {fileID: 4398218546148949559}
   m_Layer: 0
   m_Name: Palmtree1
   m_TagString: Untagged
@@ -83,3 +84,28 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &4398218546148949559
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6272438455656112965}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.00048828125, y: -0.00012207031, z: -0.00048828125}
+  m_Size: 275
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5479985722004750992}
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
