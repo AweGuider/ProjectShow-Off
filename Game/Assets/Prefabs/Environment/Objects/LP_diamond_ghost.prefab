@@ -67,6 +67,7 @@ GameObject:
   - component: {fileID: 1291753515771197750}
   - component: {fileID: 1226035850423374398}
   - component: {fileID: 5649465441751658672}
+  - component: {fileID: 6134895718754948373}
   m_Layer: 0
   m_Name: polySurface2_diamond_gal
   m_TagString: Untagged
@@ -175,3 +176,28 @@ MonoBehaviour:
   jumpDelay: 0
   minJumpDelay: 1
   maxJumpDelay: 3
+--- !u!205 &6134895718754948373
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8023669015594001649}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.0017130375, y: 8.502095, z: -0.017327547}
+  m_Size: 400
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1291753515771197750}
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1

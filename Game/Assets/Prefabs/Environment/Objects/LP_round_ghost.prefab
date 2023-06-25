@@ -67,6 +67,7 @@ GameObject:
   - component: {fileID: 5868010590078828285}
   - component: {fileID: 4256809887641617102}
   - component: {fileID: 1517806014386818876}
+  - component: {fileID: 7930976174924578095}
   m_Layer: 0
   m_Name: polySurface1_roound_gal
   m_TagString: Untagged
@@ -175,3 +176,28 @@ MonoBehaviour:
   jumpDelay: 0
   minJumpDelay: 1
   maxJumpDelay: 3
+--- !u!205 &7930976174924578095
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7167013296667333094}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 8.61305, z: -0.043594122}
+  m_Size: 400
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5868010590078828285}
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1

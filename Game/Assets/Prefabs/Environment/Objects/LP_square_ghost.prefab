@@ -67,6 +67,7 @@ GameObject:
   - component: {fileID: 2089441629268752358}
   - component: {fileID: 5298856171466687613}
   - component: {fileID: 4150181740411330324}
+  - component: {fileID: 7159616091741837998}
   m_Layer: 0
   m_Name: polySurface3_square_gal
   m_TagString: Untagged
@@ -175,3 +176,28 @@ MonoBehaviour:
   jumpDelay: 0
   minJumpDelay: 1
   maxJumpDelay: 3
+--- !u!205 &7159616091741837998
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4285424083944510963}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.0050144196, y: 8.758582, z: 0.0085737705}
+  m_Size: 400
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 2089441629268752358}
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
