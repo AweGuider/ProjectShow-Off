@@ -18,7 +18,7 @@ MonoBehaviour:
     supportSSRTransparent: 0
     supportSSAO: 0
     supportSSGI: 0
-    supportSubsurfaceScattering: 1
+    supportSubsurfaceScattering: 0
     sssSampleBudget:
       m_Values: 140000002800000050000000
       m_SchemaId:
@@ -26,7 +26,7 @@ MonoBehaviour:
     supportVolumetrics: 0
     supportVolumetricClouds: 0
     supportLightLayers: 1
-    supportDistortion: 1
+    supportDistortion: 0
     supportTransparentBackface: 1
     supportTransparentDepthPrepass: 1
     supportTransparentDepthPostpass: 1
@@ -38,7 +38,7 @@ MonoBehaviour:
       m_Values: 000100000002000000020000
       m_SchemaId:
         m_Id: With3Levels
-    supportDecals: 1
+    supportDecals: 0
     supportDecalLayers: 0
     supportSurfaceGradient: 1
     decalNormalBufferHP: 0
@@ -67,17 +67,17 @@ MonoBehaviour:
         serializedVersion: 2
         m_Bits: 0
       supportFabricConvolution: 0
-      maxDirectionalLightsOnScreen: 16
-      maxPunctualLightsOnScreen: 512
-      maxAreaLightsOnScreen: 64
+      maxDirectionalLightsOnScreen: 200
+      maxPunctualLightsOnScreen: 200
+      maxAreaLightsOnScreen: 200
       maxEnvLightsOnScreen: 64
-      maxDecalsOnScreen: 512
+      maxDecalsOnScreen: 50
       maxPlanarReflectionOnScreen: 16
-      maxLightsPerClusterCell: 8
+      maxLightsPerClusterCell: 16
       maxLocalVolumetricFogSize: 32
       maxLocalVolumetricFogOnScreen: 64
     hdShadowInitParams:
-      maxShadowRequests: 500
+      maxShadowRequests: 200
       directionalShadowsDepthBits: 16
       shadowFilteringQuality: 0
       punctualLightShadowAtlas:
@@ -124,8 +124,8 @@ MonoBehaviour:
       DLSSPerfQualitySetting: 0
       DLSSUseOptimalSettings: 1
       DLSSSharpness: 0.5
-      maxPercentage: 100
-      minPercentage: 100
+      maxPercentage: 75
+      minPercentage: 75
       dynResType: 1
       upsampleFilter: 1
       forceResolution: 0
