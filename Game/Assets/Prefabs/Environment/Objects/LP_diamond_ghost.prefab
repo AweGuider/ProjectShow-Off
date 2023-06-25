@@ -41,7 +41,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469321840110021952}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 96956228b550e1b4097c73000859a139, type: 3}
   m_Controller: {fileID: 9100000, guid: c4172159a8346794eb6a5f2eb280a81b, type: 2}
   m_CullingMode: 0
@@ -66,6 +66,8 @@ GameObject:
   - component: {fileID: 8854131066514121518}
   - component: {fileID: 1291753515771197750}
   - component: {fileID: 1226035850423374398}
+  - component: {fileID: 5649465441751658672}
+  - component: {fileID: 6134895718754948373}
   m_Layer: 0
   m_Name: polySurface2_diamond_gal
   m_TagString: Untagged
@@ -159,3 +161,43 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5649465441751658672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8023669015594001649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ce4681adff19d4ca38077fadbb19b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpDelay: 0
+  minJumpDelay: 1
+  maxJumpDelay: 3
+--- !u!205 &6134895718754948373
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8023669015594001649}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.0017130375, y: 8.502095, z: -0.017327547}
+  m_Size: 400
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1291753515771197750}
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
