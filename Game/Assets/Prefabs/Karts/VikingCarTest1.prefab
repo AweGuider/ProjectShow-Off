@@ -493,7 +493,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3167455207676940290}
-  m_LocalRotation: {x: 0.20822552, y: -0.000000018815653, z: 0.0000000040057007, w: 0.97808087}
+  m_LocalRotation: {x: 0.20822552, y: 0.000000018815653, z: -0.0000000040057007, w: 0.97808087}
   m_LocalPosition: {x: 0, y: 14, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1809,7 +1809,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4761496489320601849}
-  m_LocalRotation: {x: 0.20822552, y: -0.000000018815653, z: 0.0000000040057007, w: 0.97808087}
+  m_LocalRotation: {x: 0.20822552, y: 0.000000018815653, z: -0.0000000040057007, w: 0.97808087}
   m_LocalPosition: {x: 0, y: 14, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2972,7 +2972,7 @@ Animator:
   m_GameObject: {fileID: 9037453771388762319}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 6ff2e2bec3d199e4b8f3704519c3b2d8, type: 3}
-  m_Controller: {fileID: 9100000, guid: b49359647b9a4254a809c7e9f9b5e4c4, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3428,6 +3428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FixedViking_BL (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3038f6ce50cc3ea47b8ec9f0825c2cfc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2683049683502879203, guid: 3038f6ce50cc3ea47b8ec9f0825c2cfc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3496,7 +3500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1ea9977ec7d87cc41a598596370a7837, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2683049683502879203, guid: 1ea9977ec7d87cc41a598596370a7837, type: 3}
       propertyPath: m_Materials.Array.data[0]
