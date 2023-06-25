@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 3710290205491326420}
   - component: {fileID: 347413642140246641}
   - component: {fileID: 2537415087395968699}
+  - component: {fileID: 3427167233359212689}
   m_Layer: 0
   m_Name: SignSimple
   m_TagString: Untagged
@@ -302,6 +303,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &3427167233359212689
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4050506159362914158}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: -0.00048828125}
+  m_Size: 175
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 2537415087395968699}
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.18137315
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &7031668917665102733
 GameObject:
   m_ObjectHideFlags: 0
