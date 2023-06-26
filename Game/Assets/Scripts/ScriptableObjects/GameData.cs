@@ -27,7 +27,7 @@ public class GameData : SingletonScriptableObject<GameData>
 
     private void Awake()
     {
-        _numberOfPlayers = 0;
+        _numberOfPlayers = 2;
         PlayersConfigurations = new Dictionary<int, (InputDevice device, int character)>();
         DontDestroyOnLoad(this);
     }
