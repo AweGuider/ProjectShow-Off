@@ -25,14 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43716830183665342}
-  m_LocalRotation: {x: -0.07602327, y: -0.12158328, z: 0.899926, w: 0.41179025}
-  m_LocalPosition: {x: -0.395, y: 1.7373, z: 0.185}
+  m_LocalRotation: {x: -0.044405844, y: -0.13595457, z: 0.90203905, w: 0.40727141}
+  m_LocalPosition: {x: -0.3949999, y: 1.7373021, z: 0.18500033}
   m_LocalScale: {x: 0.0024999992, y: 0.0025, z: 0.0024999992}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3280072372520257800}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 171.012, y: -193.881, z: -50.272003}
+  m_LocalEulerAnglesHint: {x: 167.93, y: -191.254, z: -49.791992}
 --- !u!108 &4093959237576711110
 Light:
   m_ObjectHideFlags: 0
@@ -44,9 +44,9 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.8162661, b: 0.66415095, a: 1}
-  m_Intensity: 13928.691
-  m_Range: 884.0704
+  m_Color: {r: 0.8207547, g: 0.7246989, b: 0.50639015, a: 1}
+  m_Intensity: 84636960
+  m_Range: 504.46347
   m_SpotAngle: 71.425095
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -515,14 +515,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8561184010644186015}
-  m_LocalRotation: {x: 0.9030571, y: 0.41942048, z: 0.011574446, w: 0.09187109}
-  m_LocalPosition: {x: -0.4178, y: 1.7373, z: -0.0904}
+  m_LocalRotation: {x: 0.9022346, y: 0.4134614, z: -0.04023492, w: 0.11577357}
+  m_LocalPosition: {x: -0.41780052, y: 1.7373033, z: -0.090400435}
   m_LocalScale: {x: 0.0024999992, y: 0.0025, z: 0.0024999992}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3280072372520257800}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 171.012, y: -5.6920166, z: -50.272003}
+  m_LocalEulerAnglesHint: {x: 165.985, y: -1.3659973, z: -49.40802}
 --- !u!108 &7564980275682974817
 Light:
   m_ObjectHideFlags: 0
@@ -534,9 +534,9 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 0.6415094, g: 0.5129524, b: 0.22029188, a: 1}
+  m_Color: {r: 0.8207547, g: 0.7246989, b: 0.50639015, a: 1}
   m_Intensity: 84636960
-  m_Range: 443.0822
+  m_Range: 504.46347
   m_SpotAngle: 71.425095
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10

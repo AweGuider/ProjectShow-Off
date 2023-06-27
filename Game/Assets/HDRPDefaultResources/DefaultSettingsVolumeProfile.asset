@@ -345,7 +345,7 @@ MonoBehaviour:
     m_Value: 0
   limitMin:
     m_OverrideState: 1
-    m_Value: 3
+    m_Value: 2.8
   limitMax:
     m_OverrideState: 1
     m_Value: 7.0000005
@@ -602,7 +602,7 @@ MonoBehaviour:
   active: 1
   maxShadowDistance:
     m_OverrideState: 1
-    m_Value: 1250
+    m_Value: 1100
   directionalTransmissionMultiplier:
     m_OverrideState: 0
     m_Value: 1

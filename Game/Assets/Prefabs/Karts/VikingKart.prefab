@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924609068221255369}
   m_LocalRotation: {x: 0.0000000055879354, y: -0, z: -0.0000000018626451, w: 1}
-  m_LocalPosition: {x: 2.7042878, y: 1.0180811, z: -2.6377032}
+  m_LocalPosition: {x: 2.7042878, y: 0.948, z: -2.6377032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40,8 +40,8 @@ WheelCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924609068221255369}
-  m_Center: {x: -0.4, y: 0.1, z: 0}
-  m_Radius: 0.64
+  m_Center: {x: -0.4, y: 0.35, z: 0}
+  m_Radius: 0.7
   m_SuspensionSpring:
     spring: 35000
     damper: 4500
@@ -200,8 +200,8 @@ WheelCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885538950262277437}
-  m_Center: {x: 0.4, y: 0.1, z: 0}
-  m_Radius: 0.64
+  m_Center: {x: 0.4, y: 0.35, z: 0}
+  m_Radius: 0.7
   m_SuspensionSpring:
     spring: 35000
     damper: 4500
@@ -328,8 +328,8 @@ WheelCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2399041198374964585}
-  m_Center: {x: 0.4, y: 0.1, z: 0}
-  m_Radius: 0.64
+  m_Center: {x: -0.4, y: 0.35, z: 0}
+  m_Radius: 0.7
   m_SuspensionSpring:
     spring: 35000
     damper: 4500
@@ -485,7 +485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2963329917013301706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -523,8 +523,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3167455207676940290}
-  m_LocalRotation: {x: 0.20822552, y: -0.000000018815653, z: 0.0000000040057007, w: 0.97808087}
-  m_LocalPosition: {x: 0, y: 14, z: -12}
+  m_LocalRotation: {x: 0.0871603, y: -0.000000004285223, z: 3.7492812e-10, w: 0.9961943}
+  m_LocalPosition: {x: 0, y: 12, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -554,8 +554,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 10
-  far clip plane: 5000
+  near clip plane: 5
+  far clip plane: 2500
   field of view: 70
   orthographic: 0
   orthographic size: 5
@@ -1776,8 +1776,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4761496489320601849}
-  m_LocalRotation: {x: 0.20822552, y: 0.000000018815653, z: -0.0000000040057007, w: 0.97808087}
-  m_LocalPosition: {x: 0, y: 14, z: -12}
+  m_LocalRotation: {x: 0.0871603, y: -0.000000004285223, z: 3.7492812e-10, w: 0.9961943}
+  m_LocalPosition: {x: 0, y: 12, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1802,14 +1802,14 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_StandbyUpdate: 2
+  m_StandbyUpdate: 0
   m_LookAt: {fileID: 8497749408110389254}
   m_Follow: {fileID: 8497749408110389254}
   m_Lens:
     FieldOfView: 70
     OrthographicSize: 5
-    NearClipPlane: 10
-    FarClipPlane: 5000
+    NearClipPlane: 5
+    FarClipPlane: 2500
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -2466,28 +2466,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats:
-    TopSpeed: 120
-    Acceleration: 56
-    ReverseSpeed: 80
-    ReverseAcceleration: 24
-    AccelerationCurve: 0.2
-    Braking: 128
-    CoastingDrag: 24
-    Grip: 0.75
-    Steer: 3
-    AddedGravity: 4
+    TopSpeed: 150
+    Acceleration: 50
+    ReverseSpeed: 40
+    ReverseAcceleration: 40
+    AccelerationCurve: 0.3
+    Braking: 75
+    CoastingDrag: 20
+    Grip: 1
+    Steer: 2.5
+    AddedGravity: 5
   m_VisualWheels:
   - {fileID: 2376043639011890312}
   - {fileID: 6550607408892154208}
   - {fileID: 7584483615804255562}
   - {fileID: 6423708284924255913}
   CenterOfMass: {fileID: 32561264851375003}
-  AirborneReorientationCoefficient: 1
-  DriftGrip: 0.85
+  AirborneReorientationCoefficient: 2
+  DriftGrip: 1
   DriftAdditionalSteer: 1
-  MinAngleToFinishDrift: 29
+  MinAngleToFinishDrift: 30
   MinSpeedPercentToFinishDrift: 0.95
-  DriftControl: 16
+  DriftControl: 20
   DriftDampening: 8
   DriftSparkVFX: {fileID: 0}
   DriftSparkHorizontalOffset: 0.1
@@ -2497,10 +2497,10 @@ MonoBehaviour:
   JumpVFX: {fileID: 0}
   NozzleVFX: {fileID: 0}
   Nozzles: []
-  SuspensionHeight: 0.3
+  SuspensionHeight: 0.1
   SuspensionSpring: 70000
-  SuspensionDamp: 5000
-  WheelsPositionVerticalOffset: 0.05
+  SuspensionDamp: 4500
+  WheelsPositionVerticalOffset: 0.35
   FrontLeftWheel: {fileID: 6710206457124865296}
   FrontRightWheel: {fileID: 4698605231091769469}
   RearLeftWheel: {fileID: 6792248180109884617}
@@ -2830,7 +2830,7 @@ MonoBehaviour:
     PowerUpID: 
     ElapsedTime: 0
     MaxTime: 1
-  cooldown: 1
+  cooldown: 15
   disableGameObjectWhenActivated: 0
   onPowerupActivated:
     m_PersistentCalls:
@@ -2903,7 +2903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 6, z: 6}
+  m_TrackedObjectOffset: {x: 0, y: 8.5, z: 6}
   m_LookaheadTime: 0.5
   m_LookaheadSmoothing: 30
   m_LookaheadIgnoreY: 0
@@ -2931,7 +2931,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 14, z: -12}
+  m_FollowOffset: {x: 0, y: 12, z: -14}
   m_XDamping: 0.3
   m_YDamping: 0.1
   m_ZDamping: 0.1
@@ -2982,7 +2982,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8925944252735084804}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7043457, y: 1.0180817, z: -2.6376953}
+  m_LocalPosition: {x: -2.7043457, y: 0.945, z: -2.664}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2997,8 +2997,8 @@ WheelCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8925944252735084804}
-  m_Center: {x: 0.4, y: 0.1, z: 0}
-  m_Radius: 0.64
+  m_Center: {x: 0.4, y: 0.35, z: -0.05}
+  m_Radius: 0.7
   m_SuspensionSpring:
     spring: 35000
     damper: 4500
@@ -3273,6 +3273,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6432853723256869789, guid: f556443bde9725c4294de722cfa1b056, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6432853723256869789, guid: f556443bde9725c4294de722cfa1b056, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 25b27cae2c954d24e84c5b368b6de379, type: 2}
@@ -3367,6 +3371,10 @@ PrefabInstance:
       value: Ship_BR
       objectReference: {fileID: 0}
     - target: {fileID: 1482580905147331960, guid: e141da7acd75e584f92dcb08ae8b3eb7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1482580905147331960, guid: e141da7acd75e584f92dcb08ae8b3eb7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 25b27cae2c954d24e84c5b368b6de379, type: 2}
@@ -3397,10 +3405,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.2
-  m_Height: 0.8
+  m_Radius: 0.25
+  m_Height: 0.7999999
   m_Direction: 0
-  m_Center: {x: 2.341249, y: 1.0173904, z: -2.641761}
+  m_Center: {x: 2.341249, y: 1.0174057, z: -2.6740742}
 --- !u!1001 &4855599924057182277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3461,12 +3469,28 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2683049683502879203, guid: 3038f6ce50cc3ea47b8ec9f0825c2cfc, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683049683502879203, guid: 3038f6ce50cc3ea47b8ec9f0825c2cfc, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 25b27cae2c954d24e84c5b368b6de379, type: 2}
     - target: {fileID: 3036536439369104655, guid: 3038f6ce50cc3ea47b8ec9f0825c2cfc, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899226767565795894, guid: 3038f6ce50cc3ea47b8ec9f0825c2cfc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.117
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899226767565795894, guid: 3038f6ce50cc3ea47b8ec9f0825c2cfc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.284
+      objectReference: {fileID: 0}
+    - target: {fileID: 4899226767565795894, guid: 3038f6ce50cc3ea47b8ec9f0825c2cfc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.104
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3038f6ce50cc3ea47b8ec9f0825c2cfc, type: 3}
@@ -3495,10 +3519,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.2
-  m_Height: 0.8
+  m_Radius: 0.2648926
+  m_Height: 0.7999999
   m_Direction: 0
-  m_Center: {x: -2.3252566, y: 1.0174072, z: -2.7053497}
+  m_Center: {x: -2.33, y: 1.184125, z: -2.7}
 --- !u!1001 &7024461116507719019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3625,6 +3649,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1451d525cae216047808f23d94a1794f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8600468828998841894, guid: 1451d525cae216047808f23d94a1794f, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8600468828998841894, guid: 1451d525cae216047808f23d94a1794f, type: 3}
