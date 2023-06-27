@@ -352,6 +352,59 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 3c213183-9035-476c-b580-3cad1fac7418
     m_ActionName: Player/PowerUp[/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: fcfe7fa6-6cd2-4043-9463-d79bc227c019
+    m_ActionName: Player/Respawn[/BDA NSW wired controller/hat,/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8ef435d4-18cc-49e0-9de2-f16e9b5dd7ca
+    m_ActionName: Menu/Navigate[/BDA NSW wired controller/stick/up,/BDA NSW wired
+      controller/stick/down,/BDA NSW wired controller/stick/left,/BDA NSW wired controller/stick/right,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ff50185d-e146-4376-bc68-bbbb341a67ad
+    m_ActionName: Menu/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ef069eae-433d-40fb-8637-e71a999a8620
+    m_ActionName: Menu/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c02c2b9f-0248-409b-9ba6-0934a9dacbe2
+    m_ActionName: Menu/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 743a297f-a9be-44f1-9d80-f373d593a0a9
+    m_ActionName: Menu/Click[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: faf42f0f-d8fb-41da-9441-4752ebae2cdb
+    m_ActionName: Menu/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 262b5d0d-fdb6-4bb3-b7b4-496c2d5017ce
+    m_ActionName: Menu/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 30f97263-51da-471e-819a-3ff55131d144
+    m_ActionName: Menu/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b2ebf3f4-a6a1-4fec-bec2-c7d63170d6b6
+    m_ActionName: Menu/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 973e7064-df70-4ee0-97b6-b1f29dde28f5
+    m_ActionName: Menu/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 209065ba-4595-4668-a085-492737e616bf
+    m_ActionName: Menu/Join[/Keyboard/q,/BDA NSW wired controller/stick]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 540a415d-eabb-4cca-828c-77a0d99a1588
+    m_ActionName: Menu/Select[/BDA NSW wired controller/button2,/BDA NSW wired controller/button3,/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: UI
@@ -369,6 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1f651b4ac6dace4ab308970ebb2f17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventSystem: {fileID: 5878315227744482593}
   canvas: {fileID: 265078937603915802}
   charactersParent: {fileID: 6764766009600578074}
   _state: 0
