@@ -376,6 +376,24 @@ namespace KartGame.KartSystems
             Vector3 euler = transform.rotation.eulerAngles;
             euler.x = euler.z = 0f;
             transform.rotation = Quaternion.Euler(euler);
+
+        }
+
+        public void ResetRigidbody()
+        {
+            Rigidbody.velocity = new();
+        }
+
+        public void SetRotation(float y)
+        {
+            Vector3 euler = transform.rotation.eulerAngles;
+            euler.x = euler.z = 0f;
+            euler.y = y;
+            Debug.Log($"Next rotation is {euler}");
+
+            transform.rotation = Quaternion.Euler(euler);
+
+            Debug.Log($"New rotation is {transform.rotation}");
         }
 
         public float LocalSpeed()

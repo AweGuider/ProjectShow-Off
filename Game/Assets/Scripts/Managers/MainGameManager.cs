@@ -1,3 +1,4 @@
+using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,8 @@ public class MainGameManager : MonoBehaviour
 
     [SerializeField]
     private List<Transform> playerPositions;
+    [SerializeField]
+    private List<LayerMask> playerLayers;
     private bool kPressed;
 
     // Start is called before the first frame update
@@ -90,9 +93,22 @@ public class MainGameManager : MonoBehaviour
 
     private void OnPlayerJoined(UnityEngine.InputSystem.PlayerInput pInput)
     {
-        pInput.gameObject.transform.position = playerPositions[pInput.playerIndex].transform.position;
         players.Add(pInput);
         playerCount++;
+
+        Transform player = pInput.transform;
+
+        player.position = playerPositions[pInput.playerIndex].transform.position;
+
+        int layerToAdd = (int)Mathf.Log(playerLayers[playerCount - 1].value, 2);
+
+        // Set the layer
+        player.GetComponentInChildren<CinemachineVirtualCamera>().gameObject.layer = layerToAdd;
+
+        //Add the layer
+        player.GetComponentInChildren<Camera>().cullingMask |= 1 << layerToAdd;
+
+        //player.GetComponentInChildren<InputHandler>
     }
 
     private void OnPlayerLeft(UnityEngine.InputSystem.PlayerInput pInput)

@@ -9,6 +9,7 @@ public class PlayerUIController : MonoBehaviour
     private int _selectedCharacterIndex;
 
     [SerializeField]
+    private GameObject canvas;
     private CanvasGroup _canvasGroup;
 
     public Transform charactersParent;
@@ -31,6 +32,8 @@ public class PlayerUIController : MonoBehaviour
     private void Awake()
     {
         _playerID = transform.GetSiblingIndex();
+        if (_canvasGroup == null && canvas != null) _canvasGroup = canvas.GetComponent<CanvasGroup>();
+
         //if (charactersParent == null) charactersParent = transform.GetChild(0).transform.GetChild(0);
 
         //_characters = new();
@@ -44,14 +47,16 @@ public class PlayerUIController : MonoBehaviour
     private void Start()
     {
         _state = PlayerState.NotReady;
-        _canvasGroup = GetComponentInChildren<CanvasGroup>();
     }
     private void OnEnable()
     {
-        //foreach (Transform button in charactersParent)
-        //{
-        //    button.GetComponent<CharacterButton>().Select += OnButtonSelect;
-        //}
+
+        foreach (Transform pCharacterWindow in canvas.transform)
+        {
+            pCharacterWindow.gameObject.SetActive(false);
+        }
+
+        canvas.transform.GetChild(_playerID).gameObject.SetActive(true);
     }
     public void OnButtonSelect(int buttonID)
     {

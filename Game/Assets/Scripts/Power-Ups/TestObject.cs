@@ -6,7 +6,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 
-public class TestObject : MonoBehaviour, IKart
+public class TestObject : MonoBehaviour, IKart, IPlayer
 {
     public void ReactToBump(ArcadeKart.StatPowerup debuff)
     {
@@ -23,6 +23,18 @@ public class TestObject : MonoBehaviour, IKart
     {
         Debug.Log($"{name} got hit by explosion");
         GetComponent<Rigidbody>().AddExplosionForce(force, position, radius);
+
+    }
+
+    public void SetCheckpoint(Checkpoint cp)
+    {
+        // Set checkpoint position
+
+    }
+    public void ReactToDead()
+    {
+        // Reset position to saved checkpoint
+        // (Additional) Set velocity/speed to zero so the player doesnt respawn with super high speed
 
     }
 }
