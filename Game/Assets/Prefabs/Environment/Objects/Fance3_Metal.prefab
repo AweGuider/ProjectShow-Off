@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4879057659667258312}
   - component: {fileID: 8366067986214327405}
   - component: {fileID: 6052496827226415271}
+  - component: {fileID: 3353995221901425833}
   m_Layer: 0
   m_Name: Fance3_Metal
   m_TagString: Untagged
@@ -83,3 +84,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3353995221901425833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5259700495474082162}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.348755, y: 25.278934, z: 29.3768}
+  m_Center: {x: 0, y: 0, z: 0}
