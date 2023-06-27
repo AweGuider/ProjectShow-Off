@@ -398,6 +398,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1689840184055042943}
   - component: {fileID: 1689840184055042942}
+  - component: {fileID: 4664045396364701835}
   m_Layer: 13
   m_Name: KartBouncingCapsule
   m_TagString: Player
@@ -434,6 +435,21 @@ CapsuleCollider:
   m_Height: 6
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4664045396364701835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689840184055042928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e902c344972e87e459798a6d55f4e04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkpoint: {fileID: 0}
+  Kart: {fileID: 1689840184166992104}
+  cantMoveDelay: 0.5
 --- !u!1 &1689840184166992109
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +460,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1689840184166992106}
   - component: {fileID: 1689840184166992107}
-  - component: {fileID: 6695428938983568293}
   - component: {fileID: 1689840184166992104}
   - component: {fileID: 1689840184166992108}
   - component: {fileID: 1689840184166992119}
@@ -498,18 +513,6 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!114 &6695428938983568293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689840184166992109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e902c344972e87e459798a6d55f4e04e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1689840184166992104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,6 +776,57 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 3c213183-9035-476c-b580-3cad1fac7418
     m_ActionName: Player/PowerUp[/Keyboard/r]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8ef435d4-18cc-49e0-9de2-f16e9b5dd7ca
+    m_ActionName: Menu/Navigate[/DualShock4GamepadHID/leftStick/up,/DualShock4GamepadHID/rightStick/up,/DualShock4GamepadHID/leftStick/down,/DualShock4GamepadHID/rightStick/down,/DualShock4GamepadHID/leftStick/left,/DualShock4GamepadHID/rightStick/left,/DualShock4GamepadHID/leftStick/right,/DualShock4GamepadHID/rightStick/right,/DualShock4GamepadHID/dpad,/BDA
+      NSW wired controller/stick/up,/BDA NSW wired controller/stick/down,/BDA NSW
+      wired controller/stick/left,/BDA NSW wired controller/stick/right,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ff50185d-e146-4376-bc68-bbbb341a67ad
+    m_ActionName: Menu/Submit[/Keyboard/enter,/DualShock4GamepadHID/buttonSouth]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ef069eae-433d-40fb-8637-e71a999a8620
+    m_ActionName: Menu/Cancel[/Keyboard/escape,/DualShock4GamepadHID/buttonEast]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: c02c2b9f-0248-409b-9ba6-0934a9dacbe2
+    m_ActionName: Menu/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 743a297f-a9be-44f1-9d80-f373d593a0a9
+    m_ActionName: Menu/Click[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: faf42f0f-d8fb-41da-9441-4752ebae2cdb
+    m_ActionName: Menu/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 262b5d0d-fdb6-4bb3-b7b4-496c2d5017ce
+    m_ActionName: Menu/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 30f97263-51da-471e-819a-3ff55131d144
+    m_ActionName: Menu/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b2ebf3f4-a6a1-4fec-bec2-c7d63170d6b6
+    m_ActionName: Menu/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 973e7064-df70-4ee0-97b6-b1f29dde28f5
+    m_ActionName: Menu/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 209065ba-4595-4668-a085-492737e616bf
+    m_ActionName: Menu/Join[/Keyboard/q,/BDA NSW wired controller/stick,/DualShock4GamepadHID/leftStick,/DualShock4GamepadHID/rightStick]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 540a415d-eabb-4cca-828c-77a0d99a1588
+    m_ActionName: Menu/Select[/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID/buttonEast,/BDA
+      NSW wired controller/button2,/BDA NSW wired controller/button3,/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
