@@ -101,7 +101,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  fDistance: 300
+  fDistance: 375
   MinAngle: 288
   MaxAngle: 0
   StartAngle: 90
