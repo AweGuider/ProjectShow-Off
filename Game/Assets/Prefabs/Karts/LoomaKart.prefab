@@ -486,7 +486,7 @@ SpriteRenderer:
   m_Size: {x: 5.05, y: 5.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!54 &2379374158768193042
@@ -532,8 +532,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2684356547642771447}
-  m_LocalRotation: {x: 0.04220627, y: 0.0000000021488813, z: -9.077716e-11, w: 0.99910897}
-  m_LocalPosition: {x: 0, y: 12, z: -18}
+  m_LocalRotation: {x: 0.04220686, y: 0.0000035464764, z: -0.00000015180558, w: 0.9991089}
+  m_LocalPosition: {x: -0.000039100647, y: 12, z: -17.999832}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -564,7 +564,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 5000
+  far clip plane: 3000
   field of view: 70
   orthographic: 0
   orthographic size: 5
@@ -1898,8 +1898,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5521963311992606476}
-  m_LocalRotation: {x: 0.04220627, y: 0.0000000021488813, z: -9.077716e-11, w: 0.99910897}
-  m_LocalPosition: {x: 0, y: 12, z: -18}
+  m_LocalRotation: {x: 0.04220686, y: 0.0000035464764, z: -0.00000015180558, w: 0.9991089}
+  m_LocalPosition: {x: -0.000039100647, y: 12, z: -17.999832}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2561,6 +2561,7 @@ GameObject:
   - component: {fileID: 8888941986988621813}
   - component: {fileID: 8888941986988621806}
   - component: {fileID: 1732128663420085691}
+  - component: {fileID: 4177463873011739338}
   - component: {fileID: 2369344378727384887}
   - component: {fileID: 1464519289113595449}
   m_Layer: 2
@@ -2726,6 +2727,21 @@ MonoBehaviour:
   Turning: {x: 0, y: 0}
   Acceleration: 0
   Breaking: 0
+--- !u!114 &4177463873011739338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8888941986988621812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e902c344972e87e459798a6d55f4e04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Checkpoint: {fileID: 0}
+  Kart: {fileID: 8888941986988621809}
+  cantMoveDelay: 0.5
 --- !u!114 &2369344378727384887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2926,6 +2942,22 @@ MonoBehaviour:
     m_ActionId: 540a415d-eabb-4cca-828c-77a0d99a1588
     m_ActionName: Menu/Select[/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID/buttonEast,/BDA
       NSW wired controller/button2,/BDA NSW wired controller/button3,/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4177463873011739338}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: Respawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: fcfe7fa6-6cd2-4043-9463-d79bc227c019
+    m_ActionName: Player/Respawn[/BDA NSW wired controller/hat,/Keyboard/r]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -2987,7 +3019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8888941987101582438}
   - component: {fileID: 8888941987101582439}
-  - component: {fileID: 8800647450070566110}
+  - component: {fileID: 5111617909115450780}
   m_Layer: 13
   m_Name: KartBouncingCapsule
   m_TagString: Player
@@ -3024,7 +3056,7 @@ CapsuleCollider:
   m_Height: 8
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8800647450070566110
+--- !u!114 &5111617909115450780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3033,12 +3065,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8888941987101582441}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e902c344972e87e459798a6d55f4e04e, type: 3}
+  m_Script: {fileID: 11500000, guid: 273748cbc76708542966417395554b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {fileID: 0}
-  Kart: {fileID: 8888941986988621809}
-  cantMoveDelay: 0.5
+  Player: {fileID: 4177463873011739338}
 --- !u!1 &9026394825034429316
 GameObject:
   m_ObjectHideFlags: 0

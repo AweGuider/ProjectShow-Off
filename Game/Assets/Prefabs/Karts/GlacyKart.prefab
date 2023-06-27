@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 338338020828103928}
   - component: {fileID: 338338020828103929}
-  - component: {fileID: 6403166610193262596}
+  - component: {fileID: 5117017017228621152}
   m_Layer: 13
   m_Name: KartBouncingCapsule
   m_TagString: Player
@@ -47,7 +47,7 @@ CapsuleCollider:
   m_Height: 12
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6403166610193262596
+--- !u!114 &5117017017228621152
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,12 +56,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 338338020828103927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e902c344972e87e459798a6d55f4e04e, type: 3}
+  m_Script: {fileID: 11500000, guid: 273748cbc76708542966417395554b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkpoint: {fileID: 0}
-  Kart: {fileID: 338338021487910767}
-  cantMoveDelay: 0.5
+  Player: {fileID: 8634953602979402051}
 --- !u!1 &338338021487910762
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,6 +74,7 @@ GameObject:
   - component: {fileID: 338338021487910763}
   - component: {fileID: 338338021487910768}
   - component: {fileID: 7485009866401269029}
+  - component: {fileID: 8634953602979402051}
   - component: {fileID: 6847797106180368297}
   - component: {fileID: 4295243516330478484}
   m_Layer: 2
@@ -240,6 +239,21 @@ MonoBehaviour:
   Turning: {x: 0, y: 0}
   Acceleration: 0
   Breaking: 0
+--- !u!114 &8634953602979402051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338338021487910762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e902c344972e87e459798a6d55f4e04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Checkpoint: {fileID: 0}
+  Kart: {fileID: 338338021487910767}
+  cantMoveDelay: 0.5
 --- !u!114 &6847797106180368297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,6 +454,22 @@ MonoBehaviour:
     m_ActionId: 540a415d-eabb-4cca-828c-77a0d99a1588
     m_ActionName: Menu/Select[/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID/buttonEast,/BDA
       NSW wired controller/button2,/BDA NSW wired controller/button3,/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8634953602979402051}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: Respawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: fcfe7fa6-6cd2-4043-9463-d79bc227c019
+    m_ActionName: Player/Respawn[/BDA NSW wired controller/hat,/Keyboard/r]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -2635,7 +2665,7 @@ SpriteRenderer:
   m_Size: {x: 5.05, y: 5.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!54 &6840093960775818892

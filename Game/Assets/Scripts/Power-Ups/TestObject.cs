@@ -6,7 +6,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 
-public class TestObject : MonoBehaviour, IKart, IPlayer
+public class TestObject : MonoBehaviour, IKart, IKartTrigger
 {
     public void ReactToBump(ArcadeKart.StatPowerup debuff)
     {
@@ -31,7 +31,7 @@ public class TestObject : MonoBehaviour, IKart, IPlayer
         // Set checkpoint position
 
     }
-    public void ReactToDead()
+    public void Respawn()
     {
         // Reset position to saved checkpoint
         // (Additional) Set velocity/speed to zero so the player doesnt respawn with super high speed
