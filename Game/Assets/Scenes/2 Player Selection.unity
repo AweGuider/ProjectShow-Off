@@ -528,6 +528,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5691148203140599283, guid: f96dd4a9febf8c34ca3b0ce14a37f3c7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e036a1581c36fdf4599e553c06e27cf4, type: 3}
     - target: {fileID: 6238352718765384947, guid: f96dd4a9febf8c34ca3b0ce14a37f3c7, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -1806,6 +1810,10 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 687865855
       objectReference: {fileID: 0}
+    - target: {fileID: 792042441770735927, guid: f96dd4a9febf8c34ca3b0ce14a37f3c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3298777963459108250, guid: f96dd4a9febf8c34ca3b0ce14a37f3c7, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1946,6 +1954,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4991333086608694295, guid: f96dd4a9febf8c34ca3b0ce14a37f3c7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691148203140599283, guid: f96dd4a9febf8c34ca3b0ce14a37f3c7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e036a1581c36fdf4599e553c06e27cf4, type: 3}
     - target: {fileID: 5691148203140599283, guid: f96dd4a9febf8c34ca3b0ce14a37f3c7, type: 3}
       propertyPath: m_Enabled
       value: 1

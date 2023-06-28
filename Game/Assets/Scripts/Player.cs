@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour, IPlayer
+public class Player : MonoBehaviour
 {
-    [SerializeField] private Checkpoint checkpoint;
+    public Checkpoint Checkpoint;
     public ArcadeKart Kart;
 
     [SerializeField] private float cantMoveDelay = .5f;
@@ -13,21 +13,21 @@ public class Player : MonoBehaviour, IPlayer
 
     private void Start()
     {
-        Kart = GetComponentInParent<ArcadeKart>();
+        if (Kart == null) Kart = GetComponent<ArcadeKart>();
     }
 
     public void SetCheckpoint(Checkpoint cp)
     {
         // Set checkpoint position
-        if (checkpoint != cp) checkpoint = cp;
+        if (Checkpoint != cp) Checkpoint = cp;
         Debug.Log($"Tried to set cp");
 
     }
-    public void ReactToDead()
+    public void Respawn()
     {
         // Reset position to saved checkpoint
         // (Additional) Set velocity/speed to zero so the player doesnt respawn with super high speed
-        StartCoroutine(PauseMovement());
+        if (Checkpoint != null) StartCoroutine(PauseMovement());
 
     }
 
@@ -37,8 +37,8 @@ public class Player : MonoBehaviour, IPlayer
         yield return new WaitForSeconds(cantMoveDelay / 20f);
         Kart.ResetRigidbody();
         yield return new WaitForSeconds(cantMoveDelay);
-        Kart.SetRotation(checkpoint.CheckpointRotation);
-        Kart.gameObject.transform.position = checkpoint.CheckpointPosition;
+        Kart.SetRotation(Checkpoint.CheckpointRotation);
+        Kart.gameObject.transform.position = Checkpoint.CheckpointPosition;
         Kart.SetCanMove(true);
     }
 }

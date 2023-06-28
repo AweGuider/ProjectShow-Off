@@ -2,9 +2,12 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.UI;
 
 public class PlayerUIController : MonoBehaviour
 {
+    [SerializeField] private MultiplayerEventSystem eventSystem;
+
     private int _playerID;
     private int _selectedCharacterIndex;
 
@@ -33,7 +36,8 @@ public class PlayerUIController : MonoBehaviour
     {
         _playerID = transform.GetSiblingIndex();
         if (_canvasGroup == null && canvas != null) _canvasGroup = canvas.GetComponent<CanvasGroup>();
-
+        if (eventSystem == null) eventSystem = GetComponentInChildren<MultiplayerEventSystem>();
+        
         //if (charactersParent == null) charactersParent = transform.GetChild(0).transform.GetChild(0);
 
         //_characters = new();
@@ -55,8 +59,9 @@ public class PlayerUIController : MonoBehaviour
         {
             pCharacterWindow.gameObject.SetActive(false);
         }
-
-        canvas.transform.GetChild(_playerID).gameObject.SetActive(true);
+        GameObject activeCharacterSelection = canvas.transform.GetChild(_playerID).gameObject;
+        activeCharacterSelection.SetActive(true);
+        eventSystem.firstSelectedGameObject = activeCharacterSelection.transform.GetChild(_playerID).transform.GetChild(0).gameObject;
     }
     public void OnButtonSelect(int buttonID)
     {

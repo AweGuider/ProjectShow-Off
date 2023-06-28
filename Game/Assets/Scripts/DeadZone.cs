@@ -18,9 +18,9 @@ public class DeadZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out IPlayer player))
+        if (other.TryGetComponent(out IKartTrigger player))
         {
-            player.ReactToDead();
+            player.Respawn();
         }
     }
 }
