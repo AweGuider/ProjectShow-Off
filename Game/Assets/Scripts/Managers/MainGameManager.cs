@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class MainGameManager : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class MainGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameData.Instance.LeaderboardList = new();
+
         PlayerInputManager.instance.playerPrefab = playerPrefabs[0];
         //Debug.LogWarning(GameData.Instance.PlayersConfigurations.Count);
         for (int i = 0; i < GameData.Instance.PlayersPlaying; i++)
@@ -109,11 +112,32 @@ public class MainGameManager : MonoBehaviour
         player.GetComponentInChildren<Camera>().cullingMask |= 1 << layerToAdd;
 
         //player.GetComponentInChildren<InputHandler>
+
+        Player p = player.gameObject.GetComponent<Player>();
+        p.PlayerID = pInput.playerIndex;
+        p.Finished += AllFinished;
     }
 
     private void OnPlayerLeft(UnityEngine.InputSystem.PlayerInput pInput)
     {
         players.Remove(pInput);
         playerCount--;
+        pInput.gameObject.GetComponent<Player>().Finished -= AllFinished;
+    }
+
+    private void AllFinished()
+    {
+        Debug.Log($"Finished: {GameData.Instance.LeaderboardList.Count}, Playing: {GameData.Instance.PlayersPlaying}");
+        if (GameData.Instance.LeaderboardList.Count == GameData.Instance.PlayersPlaying)
+        {
+            StartCoroutine(LoadScene());
+        }
+    }
+
+    private IEnumerator LoadScene()
+    {
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("End Scene");
+
     }
 }

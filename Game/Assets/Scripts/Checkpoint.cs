@@ -21,11 +21,11 @@ public class Checkpoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"Got triggered by {other.name}");
+        //Debug.Log($"Got triggered by {other.name}");
         if (other.TryGetComponent(out IKartTrigger player))
         {
             player.SetCheckpoint(this);
-            Debug.Log($"Player name: {other.name}");
+            //Debug.Log($"Player name: {other.name}");
         }
     }
 

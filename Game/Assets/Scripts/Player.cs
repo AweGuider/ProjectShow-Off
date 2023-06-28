@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public int PlayerID;
+
     public Checkpoint Checkpoint;
     public ArcadeKart Kart;
 
@@ -17,6 +19,7 @@ public class Player : MonoBehaviour
 
     [SerializeField] private float cantMoveDelay = .5f;
 
+    public event Action Finished;
 
     private void Start()
     {
@@ -55,14 +58,14 @@ public class Player : MonoBehaviour
      */
     public bool CrossedLine(bool isFinish)
     {
-
-
         if (isFinish)
         {
             if (CanFinish)
             {
                 // Need to set player place / save it
                 StopMovement();
+                if (!GameData.Instance.LeaderboardList.Contains(PlayerID)) GameData.Instance.LeaderboardList.Add(PlayerID);
+                Finished?.Invoke();
                 return true;
             }
             if (LineCount <= 0)

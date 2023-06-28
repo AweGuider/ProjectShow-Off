@@ -16,6 +16,8 @@ public class GameData : SingletonScriptableObject<GameData>
     private bool _testing;
     public bool IsTesting { get => _testing; }
 
+    public List<int> LeaderboardList = new(); 
+
     //[SerializeField]
     //public List<(InputDevice device, int character)> PlayersConfigurations;
     [SerializeField]
