@@ -62,6 +62,17 @@ public class MenuSceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            GameData.Instance.AmountOfLaps = 1;
+        }
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            GameData.Instance.AmountOfLaps = 2;
+        }
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            GameData.Instance.AmountOfLaps = 3;
+        }
     }
 }

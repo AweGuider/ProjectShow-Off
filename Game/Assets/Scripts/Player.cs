@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
     {
         if (Kart == null) Kart = GetComponent<ArcadeKart>();
         lapCount = 1;
+        maxLapCount = GameData.Instance.AmountOfLaps;
     }
 
     public void SetCheckpoint(Checkpoint cp)

@@ -1863,6 +1863,122 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""End"",
+            ""id"": ""e4354c00-561c-46ef-ac68-7c83906b7e4d"",
+            ""actions"": [
+                {
+                    ""name"": ""PlayAgain"",
+                    ""type"": ""Button"",
+                    ""id"": ""234c4047-daac-4580-a1dc-1a9bc4e7b1f8"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": ""Keyboard"",
+                    ""id"": ""1029f312-68e2-4d2c-a8e5-8e7751435455"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayAgain"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Modifier"",
+                    ""id"": ""14cd317b-b45c-4874-9e18-5cc06c8d2724"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""PlayAgain"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Binding"",
+                    ""id"": ""f6f0df27-fa57-471c-a1af-7e62ce69adea"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""PlayAgain"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Gamepad"",
+                    ""id"": ""3be0899a-7062-445f-8835-263703cadcc0"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayAgain"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Modifier"",
+                    ""id"": ""52e2bdf9-a8e6-48c2-8a6e-1b01e9de8691"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""PlayAgain"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Binding"",
+                    ""id"": ""3e53987c-be8f-4352-8905-5c55940ba6d4"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""PlayAgain"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""4dc984d8-6bd1-41a5-9ddc-b362a748b274"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PlayAgain"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""Modifier"",
+                    ""id"": ""81068546-d74d-4301-903d-bfaa94a96dc4"",
+                    ""path"": ""<HID::BDA NSW wired controller>/button7"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Joystick"",
+                    ""action"": ""PlayAgain"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Binding"",
+                    ""id"": ""9979d0fd-5189-4893-a95c-1ef1f76288d0"",
+                    ""path"": ""<HID::BDA NSW wired controller>/button8"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Joystick"",
+                    ""action"": ""PlayAgain"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
         }
     ],
     ""controlSchemes"": [
@@ -1966,6 +2082,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Menu_TrackedDeviceOrientation = m_Menu.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
         m_Menu_Join = m_Menu.FindAction("Join", throwIfNotFound: true);
         m_Menu_Select = m_Menu.FindAction("Select", throwIfNotFound: true);
+        // End
+        m_End = asset.FindActionMap("End", throwIfNotFound: true);
+        m_End_PlayAgain = m_End.FindAction("PlayAgain", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -2393,6 +2512,52 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         }
     }
     public MenuActions @Menu => new MenuActions(this);
+
+    // End
+    private readonly InputActionMap m_End;
+    private List<IEndActions> m_EndActionsCallbackInterfaces = new List<IEndActions>();
+    private readonly InputAction m_End_PlayAgain;
+    public struct EndActions
+    {
+        private @PlayerInput m_Wrapper;
+        public EndActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
+        public InputAction @PlayAgain => m_Wrapper.m_End_PlayAgain;
+        public InputActionMap Get() { return m_Wrapper.m_End; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(EndActions set) { return set.Get(); }
+        public void AddCallbacks(IEndActions instance)
+        {
+            if (instance == null || m_Wrapper.m_EndActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_EndActionsCallbackInterfaces.Add(instance);
+            @PlayAgain.started += instance.OnPlayAgain;
+            @PlayAgain.performed += instance.OnPlayAgain;
+            @PlayAgain.canceled += instance.OnPlayAgain;
+        }
+
+        private void UnregisterCallbacks(IEndActions instance)
+        {
+            @PlayAgain.started -= instance.OnPlayAgain;
+            @PlayAgain.performed -= instance.OnPlayAgain;
+            @PlayAgain.canceled -= instance.OnPlayAgain;
+        }
+
+        public void RemoveCallbacks(IEndActions instance)
+        {
+            if (m_Wrapper.m_EndActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(IEndActions instance)
+        {
+            foreach (var item in m_Wrapper.m_EndActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_EndActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public EndActions @End => new EndActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {
@@ -2478,5 +2643,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnTrackedDeviceOrientation(InputAction.CallbackContext context);
         void OnJoin(InputAction.CallbackContext context);
         void OnSelect(InputAction.CallbackContext context);
+    }
+    public interface IEndActions
+    {
+        void OnPlayAgain(InputAction.CallbackContext context);
     }
 }

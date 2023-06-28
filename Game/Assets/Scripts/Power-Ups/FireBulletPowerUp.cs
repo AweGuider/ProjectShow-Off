@@ -9,10 +9,6 @@ public class FireBulletPowerUp : ActivatableArcadeKartPowerup
 {
     public ArcadeKart.StatPowerup bumpStats = new ArcadeKart.StatPowerup();
 
-
-    [SerializeField]
-    private KnockbackZone _zone;
-
     [SerializeField]
     int _radius;
 
