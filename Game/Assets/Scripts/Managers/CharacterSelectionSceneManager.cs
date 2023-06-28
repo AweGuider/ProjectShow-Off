@@ -83,7 +83,7 @@ public class CharacterSelectionSceneManager : MonoBehaviour
             Debug.LogError($"Amount of players wasn't set!");
         }
         //Debug.Log($"Amount of players to spawn: {amount}");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(.1f);
 
         if (amount == 2)
         {
