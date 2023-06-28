@@ -67,17 +67,17 @@ MonoBehaviour:
         serializedVersion: 2
         m_Bits: 0
       supportFabricConvolution: 0
-      maxDirectionalLightsOnScreen: 200
+      maxDirectionalLightsOnScreen: 100
       maxPunctualLightsOnScreen: 200
       maxAreaLightsOnScreen: 200
       maxEnvLightsOnScreen: 64
       maxDecalsOnScreen: 50
       maxPlanarReflectionOnScreen: 16
-      maxLightsPerClusterCell: 16
+      maxLightsPerClusterCell: 24
       maxLocalVolumetricFogSize: 32
       maxLocalVolumetricFogOnScreen: 64
     hdShadowInitParams:
-      maxShadowRequests: 200
+      maxShadowRequests: 100
       directionalShadowsDepthBits: 16
       shadowFilteringQuality: 0
       punctualLightShadowAtlas:
@@ -85,11 +85,11 @@ MonoBehaviour:
         shadowAtlasDepthBits: 16
         useDynamicViewportRescale: 1
       areaLightShadowAtlas:
-        shadowAtlasResolution: 1024
-        shadowAtlasDepthBits: 32
+        shadowAtlasResolution: 512
+        shadowAtlasDepthBits: 16
         useDynamicViewportRescale: 1
       cachedPunctualLightShadowAtlas: 512
-      cachedAreaLightShadowAtlas: 1024
+      cachedAreaLightShadowAtlas: 512
       shadowResolutionDirectional:
         m_Values: 00020000000400000008000000100000
         m_SchemaId:
@@ -102,7 +102,7 @@ MonoBehaviour:
         m_Values: 00020000000400000008000000100000
         m_SchemaId:
           m_Id: With4Levels
-      maxDirectionalShadowMapResolution: 1024
+      maxDirectionalShadowMapResolution: 512
       maxPunctualShadowMapResolution: 1024
       maxAreaShadowMapResolution: 1024
       supportScreenSpaceShadows: 0
@@ -140,20 +140,20 @@ MonoBehaviour:
       singlePass: 1
       occlusionMesh: 1
       cameraJitter: 0
-      allowMotionBlur: 1
+      allowMotionBlur: 0
     postProcessQualitySettings:
-      NearBlurSampleCount: 030000000500000008000000
+      NearBlurSampleCount: 030000000300000003000000
       NearBlurMaxRadius:
       - 2
-      - 4
-      - 7
-      FarBlurSampleCount: 04000000070000000e000000
+      - 2
+      - 2
+      FarBlurSampleCount: 040000000400000004000000
       FarBlurMaxRadius:
       - 5
-      - 8
-      - 13
+      - 5
+      - 5
       DoFResolution: 040000000200000001000000
-      DoFHighQualityFiltering: 000101
+      DoFHighQualityFiltering: 000000
       DoFPhysicallyBased: 000000
       MotionBlurSampleCount: 04000000080000000c000000
       BloomRes: 040000000200000002000000

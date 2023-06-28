@@ -43,10 +43,10 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: a46ba4e273ba0684f90f4acc0fdf44d5, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 2
-  m_Height: 12
+  m_Radius: 2.1372375
+  m_Height: 11.612305
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.051483154, y: 0, z: -0.08544922}
 --- !u!114 &5117017017228621152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,28 +140,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats:
-    TopSpeed: 120
-    Acceleration: 56
-    ReverseSpeed: 80
-    ReverseAcceleration: 24
-    AccelerationCurve: 0.2
-    Braking: 128
-    CoastingDrag: 24
-    Grip: 0.75
-    Steer: 3
-    AddedGravity: 4
+    TopSpeed: 150
+    Acceleration: 50
+    ReverseSpeed: 40
+    ReverseAcceleration: 40
+    AccelerationCurve: 0.3
+    Braking: 150
+    CoastingDrag: 20
+    Grip: 1
+    Steer: 2.5
+    AddedGravity: 5
   m_VisualWheels:
   - {fileID: 7666336677095326613}
   - {fileID: 3187589584537992881}
   - {fileID: 6890508468515507718}
   - {fileID: 2316486626849224242}
   CenterOfMass: {fileID: 1828367912346663842}
-  AirborneReorientationCoefficient: 1
-  DriftGrip: 0.85
+  AirborneReorientationCoefficient: 2
+  DriftGrip: 1
   DriftAdditionalSteer: 1
-  MinAngleToFinishDrift: 29
+  MinAngleToFinishDrift: 30
   MinSpeedPercentToFinishDrift: 0.95
-  DriftControl: 16
+  DriftControl: 20
   DriftDampening: 8
   DriftSparkVFX: {fileID: 0}
   DriftSparkHorizontalOffset: 0.1
@@ -504,7 +504,7 @@ MonoBehaviour:
     PowerUpID: 
     ElapsedTime: 0
     MaxTime: 5
-  cooldown: 5
+  cooldown: 15
   disableGameObjectWhenActivated: 0
   onPowerupActivated:
     m_PersistentCalls:
@@ -1061,7 +1061,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045369380417771027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8820693, y: 1.0002364, z: -6.7418795}
+  m_LocalPosition: {x: 1.8820693, y: 1.04, z: -6.7418795}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1077,7 +1077,7 @@ WheelCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045369380417771027}
   m_Center: {x: -0.3, y: 0.1, z: 0}
-  m_Radius: 0.9
+  m_Radius: 0.95
   m_SuspensionSpring:
     spring: 35000
     damper: 4500
@@ -1250,7 +1250,7 @@ MonoBehaviour:
     FieldOfView: 70
     OrthographicSize: 5
     NearClipPlane: 0.3
-    FarClipPlane: 5000
+    FarClipPlane: 2500
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -2380,8 +2380,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6532780263673735017}
-  m_LocalRotation: {x: 0.06032601, y: 1e-45, z: -0, w: 0.9981787}
-  m_LocalPosition: {x: 0, y: 8, z: -15}
+  m_LocalRotation: {x: 0.04220627, y: 0.0000000021488809, z: -9.077714e-11, w: 0.99910897}
+  m_LocalPosition: {x: 0, y: 12, z: -18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2412,7 +2412,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 5000
+  far clip plane: 2500
   field of view: 70
   orthographic: 0
   orthographic size: 5
@@ -3089,7 +3089,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9052726992285575911}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.6278293, y: 1.00024, z: -6.7418804}
+  m_LocalPosition: {x: -2.6278293, y: 1.0400044, z: -6.7418804}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3105,7 +3105,7 @@ WheelCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9052726992285575911}
   m_Center: {x: 0.3, y: 0.1, z: 0}
-  m_Radius: 0.9
+  m_Radius: 0.95
   m_SuspensionSpring:
     spring: 35000
     damper: 4500

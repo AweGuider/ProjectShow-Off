@@ -290,7 +290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2963329917013301706}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.110000014, z: 0}
+  m_LocalPosition: {x: 0, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2195,7 +2195,7 @@ Canvas:
   m_GameObject: {fileID: 7402348612384304952}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 6456412133129211779}
   m_PlaneDistance: 1
   m_PixelPerfect: 0
@@ -2453,10 +2453,10 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: a46ba4e273ba0684f90f4acc0fdf44d5, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 2
-  m_Height: 8
+  m_Radius: 2.4162903
+  m_Height: 8.889648
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: -0.055511475, y: 0, z: 0.07763672}
 --- !u!114 &5548485259022727075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2493,7 +2493,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8497749408110389254
 Transform:
   m_ObjectHideFlags: 0
@@ -2547,7 +2547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats:
-    TopSpeed: 150
+    TopSpeed: 140
     Acceleration: 50
     ReverseSpeed: 40
     ReverseAcceleration: 40
@@ -2566,7 +2566,7 @@ MonoBehaviour:
   AirborneReorientationCoefficient: 2
   DriftGrip: 1
   DriftAdditionalSteer: 1
-  MinAngleToFinishDrift: 29
+  MinAngleToFinishDrift: 30
   MinSpeedPercentToFinishDrift: 0.95
   DriftControl: 20
   DriftDampening: 8
@@ -2578,7 +2578,7 @@ MonoBehaviour:
   JumpVFX: {fileID: 0}
   NozzleVFX: {fileID: 0}
   Nozzles: []
-  SuspensionHeight: 0.1
+  SuspensionHeight: 0.5
   SuspensionSpring: 70000
   SuspensionDamp: 4500
   WheelsPositionVerticalOffset: 0.05
@@ -2897,19 +2897,19 @@ MonoBehaviour:
   boostStats:
     modifiers:
       TopSpeed: 50
-      Acceleration: 50
+      Acceleration: 25
       ReverseSpeed: 0
       ReverseAcceleration: 0
-      AccelerationCurve: 1
+      AccelerationCurve: 0.75
       Braking: 0
       CoastingDrag: 0
-      Grip: 0
+      Grip: 1
       Steer: 0
       AddedGravity: 0
     PowerUpID: 
     ElapsedTime: 0
     MaxTime: 1
-  cooldown: 5
+  cooldown: 15
   disableGameObjectWhenActivated: 0
   onPowerupActivated:
     m_PersistentCalls:
