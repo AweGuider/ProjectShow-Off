@@ -45,6 +45,8 @@ public class NestedPowerUp : ActivatableArcadeKartPowerup
             ApplyPowerUps(kart);
             /// Don't change this part
 
+            Debug.Log(_zone.Nearby.Count);
+
             foreach (GameObject t in _zone.Nearby)
             {
                 t.GetComponent<IKart>().ReactToExplosion(_force, _zone.gameObject.transform.position, _radius);
