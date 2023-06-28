@@ -1440,8 +1440,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2963329917013301706}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.2, z: 0}
+  m_LocalRotation: {x: -0.025553482, y: -0.0039047725, z: 0.040411558, w: 0.9988487}
+  m_LocalPosition: {x: 0.037, y: -0.153, z: 0.027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1451,7 +1451,7 @@ Transform:
   - {fileID: 4012531897748215485}
   m_Father: {fileID: 8497749408110389254}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -2.908, y: -0.566, z: 4.648}
 --- !u!1 &3167455207676940290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,7 +2748,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4761496489320601849}
-  m_LocalRotation: {x: 0.0871603, y: 0.000000004285225, z: -3.749283e-10, w: 0.9961943}
+  m_LocalRotation: {x: 0.0871603, y: -0.0000000042852246, z: 3.7492826e-10, w: 0.9961943}
   m_LocalPosition: {x: 0, y: 12, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3490,7 +3490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8497749408110389254
 Transform:
   m_ObjectHideFlags: 0
@@ -3580,10 +3580,10 @@ MonoBehaviour:
   JumpVFX: {fileID: 0}
   NozzleVFX: {fileID: 0}
   Nozzles: []
-  SuspensionHeight: 0.2
+  SuspensionHeight: 0.5
   SuspensionSpring: 70000
   SuspensionDamp: 4500
-  WheelsPositionVerticalOffset: 0.35
+  WheelsPositionVerticalOffset: 0
   FrontLeftWheel: {fileID: 6710206457124865296}
   FrontRightWheel: {fileID: 4698605231091769469}
   RearLeftWheel: {fileID: 6792248180109884617}
@@ -4791,6 +4791,10 @@ PrefabInstance:
     - target: {fileID: 7528362457485410522, guid: cf56897838253ad45b57178b60b0a101, type: 3}
       propertyPath: m_Name
       value: 'Cannon '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7528362457485410522, guid: cf56897838253ad45b57178b60b0a101, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9223179743398719195, guid: cf56897838253ad45b57178b60b0a101, type: 3}
       propertyPath: m_RootOrder
