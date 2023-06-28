@@ -1,4 +1,5 @@
 using KartGame.KartSystems;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,9 @@ public class Player : MonoBehaviour
     public ArcadeKart Kart;
 
     [SerializeField] private int lapCount;
+    [SerializeField] private int maxLapCount;
+    public int LineCount;
+    [SerializeField] int MaxLineCount;
     public bool CanFinish;
 
     [SerializeField] private float cantMoveDelay = .5f;
@@ -17,6 +21,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         if (Kart == null) Kart = GetComponent<ArcadeKart>();
+        lapCount = 1;
     }
 
     public void SetCheckpoint(Checkpoint cp)
@@ -45,8 +50,43 @@ public class Player : MonoBehaviour
         Kart.SetCanMove(true);
     }
 
-    public void IncreaseLapNumber()
+    /*
+     * Returns true if crossed Finish Line
+     */
+    public bool CrossedLine(bool isFinish)
     {
-        lapCount++;
+
+
+        if (isFinish)
+        {
+            if (CanFinish)
+            {
+                // Need to set player place / save it
+                StopMovement();
+                return true;
+            }
+            if (LineCount <= 0)
+            {
+                lapCount++;
+                LineCount = MaxLineCount;
+
+            }
+            CanFinish = lapCount == maxLapCount;
+            return true;
+        }
+
+        LineCount--;
+        return false;
+
+    }
+
+    private void StopMovement()
+    {
+        Kart.SetCanMove(false);
+    }
+
+    private void OnValidate()
+    {
+        LineCount = MaxLineCount;
     }
 }

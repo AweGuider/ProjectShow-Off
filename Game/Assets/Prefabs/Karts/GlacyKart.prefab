@@ -255,6 +255,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Checkpoint: {fileID: 0}
   Kart: {fileID: 338338021487910767}
+  lapCount: 1
+  maxLapCount: 3
+  LineCount: 1
+  MaxLineCount: 1
+  CanFinish: 0
   cantMoveDelay: 0.5
 --- !u!114 &6847797106180368297
 MonoBehaviour:
@@ -2380,8 +2385,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6532780263673735017}
-  m_LocalRotation: {x: 0.053340815, y: -0.0035664933, z: 0.00019051209, w: 0.99857}
-  m_LocalPosition: {x: -0.2999878, y: 10, z: -18}
+  m_LocalRotation: {x: 0.06032601, y: 1e-45, z: -0, w: 0.9981787}
+  m_LocalPosition: {x: 0, y: 8, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2776,7 +2781,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6840093960775818889}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1000, z: 0}
   m_LocalScale: {x: 300, y: 300, z: 300}
   m_ConstrainProportionsScale: 1
   m_Children: []

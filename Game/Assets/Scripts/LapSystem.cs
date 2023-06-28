@@ -14,7 +14,7 @@ public class LapSystem : MonoBehaviour
     public static int amountOfCheckpointsLeft;
 
     [SerializeField]
-    private bool _isFinishLine;
+    private bool isFinishLine;
 
 
     public UnityEvent OnFinished;
@@ -37,14 +37,18 @@ public class LapSystem : MonoBehaviour
             KartTrigger kart = (KartTrigger) trigger;
             Player p = kart.Player;
 
-            if (_isFinishLine && amountOfCheckpointsLeft > 0)
+
+            if (isFinishLine && p.LineCount > 0)
             {
                 return;
             }
+
+            p.CrossedLine(isFinishLine);
+
         }
         if (other.CompareTag("Player"))
         {
-            if (_isFinishLine && amountOfCheckpointsLeft > 0)
+            if (isFinishLine && amountOfCheckpointsLeft > 0)
             {
                 return;
             }
