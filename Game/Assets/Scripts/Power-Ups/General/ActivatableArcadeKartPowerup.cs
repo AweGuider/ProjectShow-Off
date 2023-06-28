@@ -42,6 +42,6 @@ public abstract class ActivatableArcadeKartPowerup : ArcadeKartPowerup
 
     private void OnValidate()
     {
-        particlesNotEmpty = particlesParent.childCount > 0 && particlesParent.TryGetComponent(out ParticleSystem particle);
+        particlesNotEmpty = particlesParent.childCount > 0 && particlesParent.GetComponentsInChildren<ParticleSystem>().Length > 0;
     }
 }
