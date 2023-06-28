@@ -328,8 +328,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3167455207676940290}
-  m_LocalRotation: {x: 0.04220627, y: -0.0000000021488813, z: 9.077716e-11, w: 0.99910897}
-  m_LocalPosition: {x: 0, y: 12, z: -18}
+  m_LocalRotation: {x: 0.0871603, y: -0.0000000042852246, z: 3.7492826e-10, w: 0.9961943}
+  m_LocalPosition: {x: 2020, y: -20.671722, z: -730.25977}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -359,8 +359,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 2500
+  near clip plane: 5
+  far clip plane: 1750
   field of view: 70
   orthographic: 0
   orthographic size: 5
@@ -1692,7 +1692,7 @@ MonoBehaviour:
     FieldOfView: 70
     OrthographicSize: 5
     NearClipPlane: 0.3
-    FarClipPlane: 2500
+    FarClipPlane: 1750
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -2547,7 +2547,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats:
-    TopSpeed: 140
+    TopSpeed: 145
     Acceleration: 50
     ReverseSpeed: 40
     ReverseAcceleration: 40
