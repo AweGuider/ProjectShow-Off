@@ -8,6 +8,9 @@ public class Player : MonoBehaviour
     public Checkpoint Checkpoint;
     public ArcadeKart Kart;
 
+    [SerializeField] private int lapCount;
+    public bool CanFinish;
+
     [SerializeField] private float cantMoveDelay = .5f;
 
 
@@ -40,5 +43,10 @@ public class Player : MonoBehaviour
         Kart.SetRotation(Checkpoint.CheckpointRotation);
         Kart.gameObject.transform.position = Checkpoint.CheckpointPosition;
         Kart.SetCanMove(true);
+    }
+
+    public void IncreaseLapNumber()
+    {
+        lapCount++;
     }
 }

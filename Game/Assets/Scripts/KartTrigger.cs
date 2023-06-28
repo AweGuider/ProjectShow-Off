@@ -20,4 +20,6 @@ public class KartTrigger : MonoBehaviour, IKartTrigger
     {
         Player.Respawn();
     }
+
+    //public 
 }
