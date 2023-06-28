@@ -48,9 +48,11 @@ MonoBehaviour:
   playerCount: 0
   players: []
   playerPrefabs:
+  - {fileID: 8497749408110389249, guid: f10f7781efa14e3448cf2d938145a610, type: 3}
+  - {fileID: 338338021487910762, guid: 8d27077a75f5ab64bb401e21026e7f9e, type: 3}
   - {fileID: 8888941986988621812, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
-  - {fileID: 8532489521356807948, guid: 7368a1292e6144243b8db750add12047, type: 3}
-  - {fileID: 8888941986988621812, guid: 2408b18b5244d2a408bea01d082d32a1, type: 3}
+  - {fileID: 1689840184166992109, guid: 517aaf7133af77b46989d352ed8693d6, type: 3}
+  - {fileID: 8497749408110389249, guid: c731288e0188f404ea3c9f78bcddb646, type: 3}
   playerPositions:
   - {fileID: 0}
   - {fileID: 0}

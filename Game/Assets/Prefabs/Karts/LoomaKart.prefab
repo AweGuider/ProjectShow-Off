@@ -3345,7 +3345,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Checkpoint: {fileID: 0}
   Kart: {fileID: 8888941986988621809}
-  lapCount: 0
+  lapCount: 1
+  maxLapCount: 3
+  LineCount: 1
+  MaxLineCount: 1
   CanFinish: 0
   cantMoveDelay: 0.5
 --- !u!114 &2369344378727384887
