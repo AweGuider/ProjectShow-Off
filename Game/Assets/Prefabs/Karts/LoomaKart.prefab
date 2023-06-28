@@ -866,7 +866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2379374158768193047}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1000, z: 0}
   m_LocalScale: {x: 300, y: 300, z: 300}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -981,8 +981,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2684356547642771447}
-  m_LocalRotation: {x: 0.019868068, y: -0.0000022649765, z: 0.000000044703484, w: 0.99980265}
-  m_LocalPosition: {x: 0.00006580353, y: 11, z: -16.000233}
+  m_LocalRotation: {x: 0.019868182, y: -0.000000017202993, z: 3.4185962e-10, w: 0.99980265}
+  m_LocalPosition: {x: 0, y: 11, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2499,8 +2499,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5521963311992606476}
-  m_LocalRotation: {x: 0.019868068, y: -0.0000022649765, z: 0.000000044703484, w: 0.99980265}
-  m_LocalPosition: {x: 0.00006580353, y: 11, z: -16.000233}
+  m_LocalRotation: {x: 0.019868182, y: -0.000000017202993, z: 3.4185962e-10, w: 0.99980265}
+  m_LocalPosition: {x: 0, y: 11, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3343,6 +3343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e902c344972e87e459798a6d55f4e04e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerID: 0
   Checkpoint: {fileID: 0}
   Kart: {fileID: 8888941986988621809}
   lapCount: 1
