@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
         if (Kart == null) Kart = GetComponent<ArcadeKart>();
         lapCount = 1;
         maxLapCount = GameData.Instance.AmountOfLaps;
+        if (maxLapCount == 1) CanFinish = true;
     }
 
     public void SetCheckpoint(Checkpoint cp)
@@ -75,7 +76,7 @@ public class Player : MonoBehaviour
                 LineCount = MaxLineCount;
 
             }
-            CanFinish = lapCount == maxLapCount;
+            CanFinish = lapCount >= maxLapCount;
             return true;
         }
 

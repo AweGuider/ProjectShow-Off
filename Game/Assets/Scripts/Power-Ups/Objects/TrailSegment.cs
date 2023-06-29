@@ -16,7 +16,7 @@ public class TrailSegment : OnTriggerArcadeKartPowerup
     }
     private void Update()
     {
-        //ResizeColliderToTrailBounds();
+        ResizeColliderToTrailBounds();
     }
 
     private void ResizeColliderToTrailBounds()

@@ -51,7 +51,7 @@ public class Ball : OnTriggerArcadeKartPowerup
             ArcadeKart IKartObj = (ArcadeKart)IKart;
             if (kart == null || kart == IKartObj)
             {
-                Destroy(gameObject);
+                //Destroy(gameObject);
                 return;
             }
 

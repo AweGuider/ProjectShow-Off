@@ -1382,7 +1382,7 @@ MonoBehaviour:
   maxLapCount: 3
   LineCount: 1
   MaxLineCount: 1
-  CanFinish: 0
+  CanFinish: 1
   cantMoveDelay: 0.5
 --- !u!114 &5533168285160042542
 MonoBehaviour:
@@ -1675,8 +1675,8 @@ MonoBehaviour:
   particlesParent: {fileID: 7736146044551468697}
   particlesNotEmpty: 1
   _zone: {fileID: 6571803203231040062}
-  _radius: 15
-  _force: 20000000
+  _radius: 20
+  _force: 50000000
 --- !u!1 &2058230049132911008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,7 +1983,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2344595802568636437}
-  m_LocalRotation: {x: -0.016011618, y: 0.000000017204178, z: 2.7550204e-10, w: 0.99987185}
+  m_LocalRotation: {x: -0.016011618, y: -0.000000017204172, z: -2.7550195e-10, w: 0.99987185}
   m_LocalPosition: {x: 0, y: 10, z: -18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2472,8 +2472,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5289646104450396398}
-  m_LocalRotation: {x: 0.05334082, y: -0.0035665059, z: 0.00019051276, w: 0.99857}
-  m_LocalPosition: {x: -0.2999878, y: 10, z: -18}
+  m_LocalRotation: {x: -0.016011618, y: -0.000000017204172, z: -2.7550195e-10, w: 0.99987185}
+  m_LocalPosition: {x: 0, y: 10, z: -18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
