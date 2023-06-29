@@ -4771,7 +4771,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 182009058966607511, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: m_Time
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 182009058966607511, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4835,11 +4835,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: cooldown
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: boostStats.MaxTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: boostStats.modifiers.Acceleration

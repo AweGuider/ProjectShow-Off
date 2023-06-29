@@ -30,7 +30,7 @@ public abstract class ActivatableArcadeKartPowerup : ArcadeKartPowerup
                 }
             }
 
-            if (IsCoolingDown)
+            /*if (IsCoolingDown)*/
                 //Debug.Log($"Can activate powerup? {!IsCoolingDown}");
         }
     }
