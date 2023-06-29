@@ -4835,15 +4835,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: cooldown
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: boostStats.MaxTime
-      value: 5
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: boostStats.modifiers.TopSpeed
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: boostStats.modifiers.Acceleration
-      value: -10
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: boostStats.modifiers.ReverseSpeed
