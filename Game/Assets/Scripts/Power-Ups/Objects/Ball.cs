@@ -7,6 +7,7 @@ using UnityEngine;
 public class Ball : OnTriggerArcadeKartPowerup
 {
     public ArcadeKart kart;
+    public KartTrigger trigger;
 
     [SerializeField]
     private Rigidbody _rb;
@@ -37,6 +38,11 @@ public class Ball : OnTriggerArcadeKartPowerup
         kart = trigger;
     }
 
+    public void SetTrigger(KartTrigger trigger)
+    {
+        this.trigger = trigger;
+    }
+
     public void Init(float velocity) {
         _rb.velocity = transform.forward * velocity;
         
@@ -45,20 +51,74 @@ public class Ball : OnTriggerArcadeKartPowerup
     private void OnCollisionEnter(Collision collision)
     {
         //Debug.Log(collision.gameObject.name);
-        
-        if (collision.gameObject.TryGetComponent(out IKart IKart))
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
+        //Debug.Log(colliders.Length);
+        foreach (Collider collider in colliders)
         {
-            ArcadeKart IKartObj = (ArcadeKart)IKart;
-            if (kart == null || kart == IKartObj)
+            //// For kart collider
+            //if (collider.TryGetComponent(out IKart affectedKart))
+            //{
+            //    ArcadeKart IKartObj = (ArcadeKart)affectedKart;
+            //    if (kart == null || kart == IKartObj)
+            //    {
+            //        //Destroy(gameObject);
+            //        return;
+            //    }
+
+            //    Debug.Log($"Kart Obj name: {IKartObj.name}");
+            //    affectedKart.ReactToExplosion(force, transform.position, radius * 1.5f);
+            //}
+
+            // For kart trigger
+            if (collider.TryGetComponent(out IKartTrigger affectedTrigger))
             {
-                //Destroy(gameObject);
-                return;
+                KartTrigger trigger = (KartTrigger)affectedTrigger;
+                IKart iKart = trigger.Kart.GetComponent<IKart>();
+                //ArcadeKart IKartObj = (ArcadeKart) affectedKart;
+                //if (kart == null || kart == IKartObj)
+                //{
+                //    //Destroy(gameObject);
+                //    return;
+                //}
+                //KartTrigger IKartTrig = (KartTrigger)affectedTrigger;
+
+                if (this.trigger == null || this.trigger == trigger)
+                {
+                    //Destroy(gameObject);
+                    return;
+                }
+
+                //Debug.Log($"Trigger name: {trigger.name}");
+                //ArcadeKart affectedKartObj = (ArcadeKart)affectedKart;
+                //affectedKart.ReactToExplosion(force, transform.position, radius * 1.5f);
+                iKart.ReactToExplosion(force, transform.position, radius * 1.5f);
             }
-
-            IKart.ReactToExplosion(force, transform.position, radius);
-            //Debug.Log(kart.name);
-
         }
+
+        //if (collision.gameObject.TryGetComponent(out IKart IKart))
+        //{
+        //    ArcadeKart IKartObj = (ArcadeKart)IKart;
+        //    if (kart == null || kart == IKartObj)
+        //    {
+        //        //Destroy(gameObject);
+        //        return;
+        //    }
+
+        //    //IKart.ReactToExplosion(force, transform.position, radius);
+
+        //    Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
+        //    Debug.Log(colliders.Length);
+        //    foreach (Collider collider in colliders)
+        //    {
+        //        if (collider.TryGetComponent(out IKart affectedKart))
+        //        {
+        //            //ArcadeKart affectedKartObj = (ArcadeKart)affectedKart;
+        //            affectedKart.ReactToExplosion(force, transform.position, radius * 1.5f);
+        //        }
+        //    }
+        //    //Debug.Log(kart.name);
+
+        //}
         if (_explosion != null)
         {
             _explosion.gameObject.SetActive(true);

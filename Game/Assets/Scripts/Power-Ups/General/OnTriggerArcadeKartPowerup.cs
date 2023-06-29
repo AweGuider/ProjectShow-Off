@@ -35,7 +35,7 @@ public class OnTriggerArcadeKartPowerup : ArcadeKartPowerup
     //}
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"TRIGGERED {other.gameObject.name}");
+        //Debug.Log($"TRIGGERED {other.gameObject.name}");
 
         if (IsCoolingDown) return;
 
@@ -44,7 +44,7 @@ public class OnTriggerArcadeKartPowerup : ArcadeKartPowerup
             KartTrigger trigger = (KartTrigger) kartTrigger;
             //kartTrigger.ReactToJellyPath(boostStats);
             ApplyPowerUps(trigger.Kart);
-            Debug.Log($"TRIGGERED {other.gameObject.name}");
+            //Debug.Log($"TRIGGERED {other.gameObject.name}");
 
         }
 

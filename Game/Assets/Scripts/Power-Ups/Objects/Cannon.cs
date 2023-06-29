@@ -8,7 +8,9 @@ using UnityEngine;
 public class Cannon : MonoBehaviour
 {
     [SerializeField]
-    ArcadeKart kartTrigger;
+    ArcadeKart kart;
+    [SerializeField]
+    KartTrigger trigger;
 
     [SerializeField]
     CannonPowerUp _powerUp;
@@ -83,7 +85,8 @@ public class Cannon : MonoBehaviour
     public void FireTheBall(float kartVelocity, float multiplier)
     {
         var ball = Instantiate(_ballPrefab, _ballSpawn.position, _ballSpawn.rotation);
-        ball.SetKart(kartTrigger);
+        ball.SetKart(kart);
+        ball.SetTrigger(trigger);
         //ball.Init((_velocity + kartVelocity) * multiplier);
         ball.Init(ClampVelocity((_velocity + kartVelocity) * multiplier));
 

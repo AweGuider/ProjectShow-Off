@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 247282228500047371}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.340267, y: 0.959, z: 1.4023135}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 737582522965924842}
@@ -99,7 +99,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5924872118086199498
 MonoBehaviour:
@@ -140,10 +140,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   kart: {fileID: 0}
+  trigger: {fileID: 0}
   _rb: {fileID: 3618321057630165456}
   _gravity: {fileID: 8405229644168997885}
-  radius: 10
-  force: 30000000
+  radius: 25
+  force: 2500000
   _explosion: {fileID: 2847943475397242108}
 --- !u!54 &3618321057630165456
 Rigidbody:

@@ -4798,6 +4798,14 @@ PrefabInstance:
       value: 33.5
       objectReference: {fileID: 0}
     - target: {fileID: 5532359337827215812, guid: cf56897838253ad45b57178b60b0a101, type: 3}
+      propertyPath: kart
+      value: 
+      objectReference: {fileID: 8497749408110389252}
+    - target: {fileID: 5532359337827215812, guid: cf56897838253ad45b57178b60b0a101, type: 3}
+      propertyPath: trigger
+      value: 
+      objectReference: {fileID: 6585529728515525964}
+    - target: {fileID: 5532359337827215812, guid: cf56897838253ad45b57178b60b0a101, type: 3}
       propertyPath: _powerUp
       value: 
       objectReference: {fileID: 5869408455569643457}
