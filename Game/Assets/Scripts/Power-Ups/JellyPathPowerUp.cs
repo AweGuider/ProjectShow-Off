@@ -61,7 +61,7 @@ public class JellyPathPowerUp : ActivatableArcadeKartPowerup
     {
 
         // Position the trail segment behind the kart
-        Vector3 spawnPosition = kart.transform.position - kart.transform.forward * trailSegmentSpacing + new Vector3(0, 1, 0);
+        Vector3 spawnPosition = kart.transform.position - kart.transform.forward * trailSegmentSpacing + new Vector3(0, 3f, -5f);
         Quaternion spawnRotation = kart.transform.rotation;
 
         _trailObj.transform.position = spawnPosition;

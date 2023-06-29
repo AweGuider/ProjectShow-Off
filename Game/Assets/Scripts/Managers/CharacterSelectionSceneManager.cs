@@ -12,6 +12,8 @@ public class CharacterSelectionSceneManager : MonoBehaviour
 
     [SerializeField]
     private Transform _playerPanel;
+    [SerializeField]
+    private GameObject controlsImage;
 
     [SerializeField]
     private int _playersAmount;
@@ -28,6 +30,7 @@ public class CharacterSelectionSceneManager : MonoBehaviour
 
     private void Start()
     {
+        controlsImage.SetActive(false);
         //DontDestroyOnLoad(PlayerInputManager.instance.gameObject);
     }
 
@@ -45,7 +48,7 @@ public class CharacterSelectionSceneManager : MonoBehaviour
 
         GameData.Instance.AddOrSetPlayerConfiguration(playerInput.playerIndex, playerInput.devices[0].device);
 
-        Debug.LogWarning($"Player Joined");
+        //Debug.LogWarning($"Player Joined");
     }
     private void OnPlayerLeft(UnityEngine.InputSystem.PlayerInput playerInput)
     {
@@ -59,12 +62,12 @@ public class CharacterSelectionSceneManager : MonoBehaviour
 
         //GameData.Instance.RemovePlayerConfiguration(playerInput.playerIndex);
 
-        Debug.LogWarning($"Player Left");
+        //Debug.LogWarning($"Player Left");
     }
 
     public void StartGameOnAllPlayersReady(bool allPlayersReady, int currentAmountOfPlayers)
     {
-        if (allPlayersReady && (pData.IsTesting || PlayerInputManager.instance.maxPlayerCount == currentAmountOfPlayers))
+        if (allPlayersReady && (pData.Testing || PlayerInputManager.instance.maxPlayerCount == currentAmountOfPlayers))
         {
             pData.PlayersPlaying = currentAmountOfPlayers;
             // TODO: Depending on amount of initially selected players and so probably the amount of playing
@@ -77,13 +80,17 @@ public class CharacterSelectionSceneManager : MonoBehaviour
 
     private IEnumerator LoadScene(int amount)
     {
+        yield return new WaitForSeconds(1f);
 
         if (amount == 0)
         {
-            Debug.LogError($"Amount of players wasn't set!");
+            //Debug.LogError($"Amount of players wasn't set!");
         }
+
+        controlsImage.SetActive(true);
+
         //Debug.Log($"Amount of players to spawn: {amount}");
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(5f);
 
         if (amount == 2)
         {

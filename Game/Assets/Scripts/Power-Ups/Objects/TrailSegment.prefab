@@ -158,3 +158,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d9121abb7d35143a3a6af65a0eb5e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boostStats:
+    modifiers:
+      TopSpeed: -50
+      Acceleration: 0
+      ReverseSpeed: 0
+      ReverseAcceleration: 0
+      AccelerationCurve: 0
+      Braking: 0
+      CoastingDrag: 0
+      Grip: 0
+      Steer: 0
+      AddedGravity: 0
+    PowerUpID: 
+    ElapsedTime: 0
+    MaxTime: 5
+  cooldown: 5
+  disableGameObjectWhenActivated: 0
+  onPowerupActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onPowerupFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  onPowerupFinishCooldown:
+    m_PersistentCalls:
+      m_Calls: []

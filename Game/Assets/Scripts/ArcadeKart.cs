@@ -20,13 +20,13 @@ namespace KartGame.KartSystems
         public struct Stats
         {
             [Header("Movement Settings")]
-            [Min(0.001f), Tooltip("Top speed attainable when moving forward.")]
+            [Tooltip("Top speed attainable when moving forward.")]
             public float TopSpeed;
 
             [Tooltip("How quickly the kart reaches top speed.")]
             public float Acceleration;
 
-            [Min(0.001f), Tooltip("Top speed attainable when moving backward.")]
+            [Tooltip("Top speed attainable when moving backward.")]
             public float ReverseSpeed;
 
             [Tooltip("How quickly the kart reaches top speed, when moving backward.")]
@@ -307,7 +307,7 @@ namespace KartGame.KartSystems
             // calculate how grounded and airborne we are
             GroundPercent = (float) groundedCount / 4.0f;
             AirPercent = 1 - GroundPercent;
-            Debug.Log($"Can move? {m_CanMove}");
+            //Debug.Log($"Can move? {m_CanMove}");
             // apply vehicle physics
             if (m_CanMove)
             {
@@ -389,11 +389,11 @@ namespace KartGame.KartSystems
             Vector3 euler = transform.rotation.eulerAngles;
             euler.x = euler.z = 0f;
             euler.y = y;
-            Debug.Log($"Next rotation is {euler}");
+            //Debug.Log($"Next rotation is {euler}");
 
             transform.rotation = Quaternion.Euler(euler);
 
-            Debug.Log($"New rotation is {transform.rotation}");
+            //Debug.Log($"New rotation is {transform.rotation}");
         }
 
         public float LocalSpeed()
@@ -619,6 +619,7 @@ namespace KartGame.KartSystems
         public void ReactToExplosion(float force, Vector3 position, float radius)
         {
             Rigidbody.AddExplosionForce(force, position, radius);
+            //Debug.Log($"GOT HIT!");
         }
 
         public void ReactToBump(StatPowerup debuff)

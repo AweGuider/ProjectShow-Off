@@ -54,7 +54,7 @@ public class GeneralPlayerSelectionController : MonoBehaviour
         pController.Ready += OnReady;
         _playerBoxes[id].JoinPlayer();
         _playerControllers.Add(id, pController);
-        Debug.Log($"Name: {player.name}, Controller: {player.GetComponent<PlayerUIController>()}");
+        //Debug.Log($"Name: {player.name}, Controller: {player.GetComponent<PlayerUIController>()}");
     }
     public void OnPlayerLeft(int id, GameObject player)
     {
@@ -69,7 +69,7 @@ public class GeneralPlayerSelectionController : MonoBehaviour
     private void OnReady(int playerID, bool isReady)
     {
         _playerBoxes[playerID].Ready(isReady);
-        Debug.Log($"Player State Ready: {isReady}");
+        //Debug.Log($"Player State Ready: {isReady}");
 
         _selectionManager.StartGameOnAllPlayersReady(CheckAllPlayersReady(), _playerControllers.Count);
     }

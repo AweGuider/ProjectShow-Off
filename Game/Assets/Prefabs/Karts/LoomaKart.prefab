@@ -956,7 +956,7 @@ RectTransform:
   m_GameObject: {fileID: 2337687911948542597}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1618083128636004240}
@@ -965,7 +965,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -300, y: 300}
+  m_AnchoredPosition: {x: -190, y: 225}
   m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7503851637094064133
@@ -1181,7 +1181,7 @@ RectTransform:
   m_GameObject: {fileID: 2379374158695707414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7834746412371166172}
@@ -1192,7 +1192,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -400, y: -200}
+  m_AnchoredPosition: {x: -380, y: -200}
   m_SizeDelta: {x: 180, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2379374158695707409
@@ -4286,7 +4286,7 @@ MonoBehaviour:
       AddedGravity: 0
     PowerUpID: 
     ElapsedTime: 0
-    MaxTime: 5
+    MaxTime: 6
   cooldown: 15
   disableGameObjectWhenActivated: 0
   onPowerupActivated:
@@ -4392,6 +4392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 4177463873011739338}
+  Kart: {fileID: 0}
 --- !u!1 &9026394825034429316
 GameObject:
   m_ObjectHideFlags: 0
@@ -4769,9 +4770,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 8888941986988621811}
     m_Modifications:
     - target: {fileID: 182009058966607511, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_Time
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 182009058966607511, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 23dac334e041cf947916387d72eccffd, type: 2}
+    - target: {fileID: 182009058966607511, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: m_Parameters.widthMultiplier
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -4782,11 +4791,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 3635773333358648377, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4823,6 +4832,26 @@ PrefabInstance:
     - target: {fileID: 4002266661859485793, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: cooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: boostStats.MaxTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: boostStats.modifiers.Acceleration
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: boostStats.modifiers.ReverseSpeed
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223530182878895741, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}
+      propertyPath: boostStats.modifiers.ReverseAcceleration
+      value: -20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae5db6d84e8fb3b438124ec491af8ae7, type: 3}

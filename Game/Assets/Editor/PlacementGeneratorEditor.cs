@@ -123,10 +123,10 @@ public class PlacementGeneratorEditor : Editor
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit))
                 {
-                    Debug.Log($"Hit {hit.collider.name}");
+                    //Debug.Log($"Hit {hit.collider.name}");
                     if (hit.collider.gameObject == targetObject)
                     {
-                        Debug.Log("Building added at mouse position: " + hit.point);
+                        //Debug.Log("Building added at mouse position: " + hit.point);
                         foreach (GameObject obj in placementGenerator.Generate(hit.point))
                         {
                             Undo.RegisterCreatedObjectUndo(obj, "Added building");

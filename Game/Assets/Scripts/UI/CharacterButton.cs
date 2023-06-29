@@ -46,7 +46,7 @@ public class CharacterButton : MonoBehaviour
 
     private void OnClick()
     {
-        Debug.Log($"{transform.GetSiblingIndex()} button was clicked");
+        //Debug.Log($"{transform.GetSiblingIndex()} button was clicked");
         Click?.Invoke();
     }
     private void OnDisable()

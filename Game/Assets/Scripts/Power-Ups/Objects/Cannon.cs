@@ -5,7 +5,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer))]
-public class Cannon : MonoBehaviour {
+public class Cannon : MonoBehaviour
+{
+    [SerializeField]
+    ArcadeKart kartTrigger;
 
     [SerializeField]
     CannonPowerUp _powerUp;
@@ -18,6 +21,8 @@ public class Cannon : MonoBehaviour {
 
     [SerializeField]
     private float _velocity = 10;
+    [SerializeField]
+    private float clampValue = 1.25f;
 
     [SerializeField]
     private int _trajectoryResolution = 30; // Number of points in the trajectory line
@@ -50,10 +55,12 @@ public class Cannon : MonoBehaviour {
 
         sumVelocity = ClampVelocity(sumVelocity);
 
+        //Debug.Log(sumVelocity);
+
         //Vector3 initialVelocity = _ballSpawn.forward * Mathf.Clamp(sumVelocity, _velocity, _velocity * 2); // Modify this calculation based on your requirements
         Vector3 initialVelocity = _ballSpawn.forward * sumVelocity; // Modify this calculation based on your requirements
         //Mathf.Lerp
-        Debug.Log(initialVelocity.magnitude);
+        //Debug.Log(initialVelocity.magnitude);
         float timeStep = Time.fixedDeltaTime;
 
         Vector3 initialGravity = Physics.gravity * _ballPrefab.GravityScale;
@@ -70,12 +77,14 @@ public class Cannon : MonoBehaviour {
 
     private float ClampVelocity(float sumVelocity)
     {
-        return Mathf.Clamp(sumVelocity, _velocity, _velocity * 2);
+        return Mathf.Clamp(sumVelocity, _velocity * _powerUp.FirePowerMultiplier, _velocity * _powerUp.FirePowerMultiplier * clampValue);
     }
 
     public void FireTheBall(float kartVelocity, float multiplier)
     {
         var ball = Instantiate(_ballPrefab, _ballSpawn.position, _ballSpawn.rotation);
+        ball.SetKart(kartTrigger);
+        //ball.Init((_velocity + kartVelocity) * multiplier);
         ball.Init(ClampVelocity((_velocity + kartVelocity) * multiplier));
 
     }

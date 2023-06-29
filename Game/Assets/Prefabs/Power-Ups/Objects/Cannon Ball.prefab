@@ -33,7 +33,8 @@ Transform:
   m_LocalPosition: {x: -8.340267, y: 0.959, z: 1.4023135}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 737582522965924842}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -112,9 +113,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535093baf3581cf4c99080aeea66d00e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boostStats:
+    modifiers:
+      TopSpeed: -50
+      Acceleration: -10
+      ReverseSpeed: 0
+      ReverseAcceleration: 0
+      AccelerationCurve: 0
+      Braking: 0
+      CoastingDrag: 0
+      Grip: 0
+      Steer: 0
+      AddedGravity: 0
+    PowerUpID: 
+    ElapsedTime: 0
+    MaxTime: 1.5
+  cooldown: 1.5
+  disableGameObjectWhenActivated: 0
+  onPowerupActivated:
+    m_PersistentCalls:
+      m_Calls: []
+  onPowerupFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  onPowerupFinishCooldown:
+    m_PersistentCalls:
+      m_Calls: []
+  kart: {fileID: 0}
   _rb: {fileID: 3618321057630165456}
   _gravity: {fileID: 8405229644168997885}
-  _explosion: {fileID: 0}
+  radius: 1
+  force: 9000000
+  _explosion: {fileID: 2847943475397242108}
 --- !u!54 &3618321057630165456
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -144,3 +174,112 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravityScale: 8
+--- !u!1001 &1831953933317541732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6369807553859721316}
+    m_Modifications:
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4533301718639977368, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599487696260529525, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: m_Name
+      value: Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 8050088301862746739, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+--- !u!4 &737582522965924842 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1391615587178648718, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+  m_PrefabInstance: {fileID: 1831953933317541732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2847943475397242108 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4533301718639977368, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+  m_PrefabInstance: {fileID: 1831953933317541732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8077951051384943121 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7599487696260529525, guid: de822a8a5873e2b4e9cb6174d6b02a93, type: 3}
+  m_PrefabInstance: {fileID: 1831953933317541732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &469357829112097523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8077951051384943121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6f25643d24b5d54e81b89460baa1e97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 2

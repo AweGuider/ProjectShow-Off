@@ -25,7 +25,7 @@ public class FencePlacement : MonoBehaviour
         //road = mRoad.road;
         //Debug.Log(road.GetName());
         //fencePrefab.
-        Debug.Log(mRoad.markers.Count);
+        //Debug.Log(mRoad.markers.Count);
 
         PlaceFencesAlongRoad();
     }

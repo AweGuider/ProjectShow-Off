@@ -11,6 +11,13 @@ public class BumperCar : MonoBehaviour
 
     private int currentPointIndex = 0;
 
+    private void Start()
+    {
+        rotationSpeed = Random.Range(50f, 100f);
+        travelSpeed = Random.Range(35f, 65f);
+        transform.position = travelPoints[0].position;
+    }
+
     private void Update()
     {
         // Move towards the current travel point

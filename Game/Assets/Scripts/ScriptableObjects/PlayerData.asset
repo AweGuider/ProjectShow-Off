@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _numberOfPlayers: 2
   _numberOfPlayersPlaying: 1
-  _testing: 0
+  Testing: 1
   LeaderboardList: 
+  AmountOfLaps: 1

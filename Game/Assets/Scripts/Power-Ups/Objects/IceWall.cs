@@ -9,12 +9,15 @@ public class IceWall : MonoBehaviour
 
     public float ElapsedTime;
 
+    [SerializeField] ParticleSystem particles;
+
     //[SerializeField]
     //private float _elapsedTime;
     // Start is called before the first frame update
     void Start()
     {
         ElapsedTime = _startingTime;
+        if (particles != null) particles.Play();
     }
 
     // Update is called once per frame

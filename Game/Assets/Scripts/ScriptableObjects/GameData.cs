@@ -12,9 +12,7 @@ public class GameData : SingletonScriptableObject<GameData>
     private int _numberOfPlayersPlaying;
     public int PlayersPlaying { get => _numberOfPlayersPlaying; set => _numberOfPlayersPlaying = value; }
 
-    [SerializeField]
-    private bool _testing;
-    public bool IsTesting { get => _testing; }
+    public bool Testing;
 
     public List<int> LeaderboardList = new();
 

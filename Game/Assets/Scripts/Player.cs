@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     {
         // Set checkpoint position
         if (Checkpoint != cp) Checkpoint = cp;
-        Debug.Log($"Tried to set cp");
+        //Debug.Log($"Tried to set cp");
 
     }
     public void Respawn()

@@ -28,6 +28,8 @@ public class MenuSceneManager : MonoBehaviour
         fourPlayers.GetComponent<Button>().onClick.AddListener(() =>
             OnButtonClicked(fourPlayers));
 
+        GameData.Instance.AmountOfLaps = 1;
+        GameData.Instance.Testing = false;
     }
 
     private void OnButtonClicked(GameObject buttonObj)
@@ -44,7 +46,7 @@ public class MenuSceneManager : MonoBehaviour
 
         if (amount == 0)
         {
-            Debug.LogError($"Amount of players wasn't set!");
+            //Debug.LogError($"Amount of players wasn't set!");
         }
 
         yield return new WaitForSeconds(2f);
@@ -73,6 +75,10 @@ public class MenuSceneManager : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.Alpha3))
         {
             GameData.Instance.AmountOfLaps = 3;
+        }
+        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.T))
+        {
+            GameData.Instance.Testing = !GameData.Instance.Testing;
         }
     }
 }

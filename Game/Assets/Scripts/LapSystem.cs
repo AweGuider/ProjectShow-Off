@@ -55,7 +55,7 @@ public class LapSystem : MonoBehaviour
 
             if (_canFinish)
             {
-                Debug.Log($"Name: {other.gameObject.name}");
+                //Debug.Log($"Name: {other.gameObject.name}");
 
                 other.gameObject.GetComponentInParent<ArcadeKart>().SetCanMove(false);
                 return;
@@ -65,7 +65,7 @@ public class LapSystem : MonoBehaviour
             gameObject.SetActive(false);
             _canFinish = amountOfCheckpointsLeft == 0;
         }
-        Debug.Log($"Amount of CP left: {amountOfCheckpointsLeft}");
-        Debug.Log($"Can finish? {_canFinish}");
+        //Debug.Log($"Amount of CP left: {amountOfCheckpointsLeft}");
+        //Debug.Log($"Can finish? {_canFinish}");
     }
 }

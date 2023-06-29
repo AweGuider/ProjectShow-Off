@@ -37,7 +37,7 @@ public class MainGameManager : MonoBehaviour
             PlayerInputManager.instance.playerPrefab = playerPrefabs[prefabIndex];
 
             PlayerInputManager.instance.JoinPlayer(pairWithDevice: pConfig.device);
-            Debug.LogWarning($"Player {i} using {pConfig.device} chose character {pConfig.character}");
+            //Debug.LogWarning($"Player {i} using {pConfig.device} chose character {pConfig.character}");
 
         }
         players = new();
@@ -127,7 +127,7 @@ public class MainGameManager : MonoBehaviour
 
     private void AllFinished()
     {
-        Debug.Log($"Finished: {GameData.Instance.LeaderboardList.Count}, Playing: {GameData.Instance.PlayersPlaying}");
+        //Debug.Log($"Finished: {GameData.Instance.LeaderboardList.Count}, Playing: {GameData.Instance.PlayersPlaying}");
         if (GameData.Instance.LeaderboardList.Count == GameData.Instance.PlayersPlaying)
         {
             StartCoroutine(LoadScene());

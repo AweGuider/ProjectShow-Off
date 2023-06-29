@@ -24,7 +24,7 @@ public class EndManager : MonoBehaviour
     {
         if (context.performed)
         {
-            Debug.Log($"Pressed to Play Again");
+            //Debug.Log($"Pressed to Play Again");
             PlayAgain();
         }
     }

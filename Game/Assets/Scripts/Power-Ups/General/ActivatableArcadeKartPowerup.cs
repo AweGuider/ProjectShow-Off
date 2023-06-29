@@ -24,7 +24,7 @@ public abstract class ActivatableArcadeKartPowerup : ArcadeKartPowerup
             Debug.Log($"OnPowerUp clicked: {context.performed}");
             if (particlesNotEmpty)
             {
-                foreach (ParticleSystem particle in particlesParent.transform)
+                foreach (ParticleSystem particle in particlesParent.GetComponentsInChildren<ParticleSystem>())
                 {
                     particle.Play();
                 }

@@ -11,7 +11,7 @@ public class ButtonCustomHandler : MonoBehaviour, ISelectHandler
     public void OnButtonSelected()
     {
         onSelect?.Invoke();
-        Debug.Log("Button selected!");
+        //Debug.Log("Button selected!");
         // Add your custom actions here
     }
 

@@ -7,6 +7,7 @@ public class KnockbackZone : MonoBehaviour
 {
     private NestedPowerUp _powerUp;
 
+    [SerializeField]
     private List<GameObject> _nearby;
     public List<GameObject> Nearby { get => _nearby; }
 
@@ -48,9 +49,10 @@ public class KnockbackZone : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if (other.transform.TryGetComponent(out IKart explosivable))
+        if (other.transform.TryGetComponent(out IKartTrigger explosivable))
         {
-            _nearby.Add(other.gameObject);
+            KartTrigger trigger = (KartTrigger) explosivable;
+            _nearby.Add(trigger.Kart.gameObject);
         }
 
         Debug.Log($"Nearby Count Now: {Nearby.Count}");
@@ -58,8 +60,13 @@ public class KnockbackZone : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (_nearby.Contains(other.gameObject))
-            _nearby.Remove(other.gameObject);
+        if (other.transform.TryGetComponent(out IKartTrigger explosivable))
+        {
+            KartTrigger trigger = (KartTrigger) explosivable;
+            if (_nearby.Contains(trigger.Kart.gameObject))
+                _nearby.Remove(trigger.Kart.gameObject);
+        }
+
         Debug.Log($"Nearby Count Left: {Nearby.Count}");
 
     }
