@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     public int LineCount;
     [SerializeField] int MaxLineCount;
     public bool CanFinish;
+    public bool HasFinished;
 
     [SerializeField] private float cantMoveDelay = .5f;
 
@@ -40,7 +41,7 @@ public class Player : MonoBehaviour
     {
         // Reset position to saved checkpoint
         // (Additional) Set velocity/speed to zero so the player doesnt respawn with super high speed
-        if (Checkpoint != null) StartCoroutine(PauseMovement());
+        if (Checkpoint != null && !HasFinished) StartCoroutine(PauseMovement());
 
     }
 
@@ -60,6 +61,7 @@ public class Player : MonoBehaviour
      */
     public bool CrossedLine(bool isFinish)
     {
+        if (HasFinished) return false;
         if (isFinish)
         {
             if (CanFinish)
@@ -68,6 +70,7 @@ public class Player : MonoBehaviour
                 StopMovement();
                 if (!GameData.Instance.LeaderboardList.Contains(PlayerID)) GameData.Instance.LeaderboardList.Add(PlayerID);
                 Finished?.Invoke();
+                HasFinished = true;
                 return true;
             }
             if (LineCount <= 0)
@@ -76,7 +79,7 @@ public class Player : MonoBehaviour
                 LineCount = MaxLineCount;
 
             }
-            CanFinish = lapCount >= maxLapCount;
+            CanFinish = lapCount == maxLapCount;
             return true;
         }
 
