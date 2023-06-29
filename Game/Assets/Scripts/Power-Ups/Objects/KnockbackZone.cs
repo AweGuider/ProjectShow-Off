@@ -55,7 +55,7 @@ public class KnockbackZone : MonoBehaviour
             _nearby.Add(trigger.Kart.gameObject);
         }
 
-        Debug.Log($"Nearby Count Now: {Nearby.Count}");
+        //Debug.Log($"Nearby Count Now: {Nearby.Count}");
     }
 
     private void OnTriggerExit(Collider other)
@@ -67,7 +67,7 @@ public class KnockbackZone : MonoBehaviour
                 _nearby.Remove(trigger.Kart.gameObject);
         }
 
-        Debug.Log($"Nearby Count Left: {Nearby.Count}");
+        //Debug.Log($"Nearby Count Left: {Nearby.Count}");
 
     }
 }

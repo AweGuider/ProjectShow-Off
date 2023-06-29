@@ -21,7 +21,7 @@ public class TestObject : MonoBehaviour, IKart, IKartTrigger
 
     public void ReactToExplosion(float force, Vector3 position, float radius)
     {
-        Debug.Log($"{name} got hit by explosion");
+        //Debug.Log($"{name} got hit by explosion");
         GetComponent<Rigidbody>().AddExplosionForce(force, position, radius);
 
     }

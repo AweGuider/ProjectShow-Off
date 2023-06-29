@@ -12,7 +12,7 @@ public class OnTriggerArcadeKartPowerup : ArcadeKartPowerup
         {
             KartTrigger trigger = (KartTrigger) kartTrigger;
             ApplyPowerUps(trigger.Kart);
-            Debug.Log($"TRIGGERED {other.name}");
+            //Debug.Log($"TRIGGERED {other.name}");
 
         }
 

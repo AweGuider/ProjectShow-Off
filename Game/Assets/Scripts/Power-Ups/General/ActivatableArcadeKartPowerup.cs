@@ -14,14 +14,14 @@ public abstract class ActivatableArcadeKartPowerup : ArcadeKartPowerup
     private void Start()
     {
         if (kart == null) kart = GetComponent<ArcadeKart>();
-        Debug.Log($"Kart name: {kart.name}");
+        //Debug.Log($"Kart name: {kart.name}");
     }
 
     public virtual void OnPowerUp(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            Debug.Log($"OnPowerUp clicked: {context.performed}");
+            //Debug.Log($"OnPowerUp clicked: {context.performed}");
             if (particlesNotEmpty)
             {
                 foreach (ParticleSystem particle in particlesParent.GetComponentsInChildren<ParticleSystem>())
@@ -31,7 +31,7 @@ public abstract class ActivatableArcadeKartPowerup : ArcadeKartPowerup
             }
 
             if (IsCoolingDown)
-                Debug.Log($"Can activate powerup? {!IsCoolingDown}");
+                //Debug.Log($"Can activate powerup? {!IsCoolingDown}");
         }
     }
 
