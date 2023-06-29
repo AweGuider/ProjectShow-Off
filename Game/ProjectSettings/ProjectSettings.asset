@@ -135,7 +135,8 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 2.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 11400000, guid: 35ccd3bd7de82ff4f98d82b5c3793a49, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -155,7 +156,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.FatCat-Forge.Game
+    Standalone: com.FatCat-Forge.Sunset-Monster-Cup
   buildNumber:
     Standalone: 0
     iPhone: 0
