@@ -1,0 +1,89 @@
+{
+    "name": "GlobalActions",
+    "maps": [
+        {
+            "name": "Join",
+            "id": "0175dc6b-1401-4359-be79-501ff34cb09d",
+            "actions": [
+                {
+                    "name": "Join",
+                    "type": "Button",
+                    "id": "88e27c7d-db28-4371-9e4e-3d7a236e8b45",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "bf22ddec-538f-46a6-b5a3-0ec52e879f51",
+                    "path": "<Keyboard>/q",
+                    "interactions": "Hold(duration=5),MultiTap(tapCount=5)",
+                    "processors": "",
+                    "groups": "Join",
+                    "action": "Join",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "53b2eaef-005d-4fce-b448-635ce4f979ae",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Join",
+                    "action": "Join",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8df92fc0-00c3-449d-a584-40541a39706b",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Join",
+                    "action": "Join",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "06606d4d-44c3-445f-899c-f1544c205df6",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Join",
+                    "action": "Join",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Join",
+            "bindingGroup": "Join",
+            "devices": [
+                {
+                    "devicePath": "<Gamepad>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Joystick>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
